@@ -90,7 +90,7 @@ const ClientSatisfaction = () => {
               <div className="flex flex-col items-center justify-center gap-y-2">
                 <figure className="size-6 overflow-hidden rounded-full">
                   <Image
-                    src="/images/opai-avatar-img-13.png"
+                    src="/images/aclaw-avatar-img-13.webp"
                     alt="Akiko Tanaka, Chief Strategy Officer profile img"
                     width={24}
                     height={24}
@@ -133,7 +133,7 @@ const ClientSatisfaction = () => {
               <div className="flex flex-col items-center justify-center gap-y-2">
                 <figure className="size-6 overflow-hidden rounded-full">
                   <Image
-                    src="/images/opai-avatar-img-13.png"
+                    src="/images/aclaw-avatar-img-13.webp"
                     alt="Akiko Tanaka, Chief Strategy Officer profile img"
                     width={24}
                     height={24}
@@ -176,7 +176,7 @@ const ClientSatisfaction = () => {
               <div className="flex flex-col items-center justify-center gap-y-2">
                 <figure className="size-6 overflow-hidden rounded-full">
                   <Image
-                    src="/images/opai-avatar-img-13.png"
+                    src="/images/aclaw-avatar-img-13.webp"
                     alt="Akiko Tanaka, Chief Strategy Officer profile"
                     width={24}
                     height={24}
