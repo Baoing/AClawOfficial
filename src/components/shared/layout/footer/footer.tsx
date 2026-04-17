@@ -41,29 +41,35 @@ const Footer = () => {
                   />
                 </Link>
                 <div className="space-y-6">
-                  <div>
-                    <p className="text-tagline-2 text-background-11 mb-1 font-semibold">Address:</p>
-                    <p className="text-tagline-3 font-normal text-white/50">
-                      9 Queen&apos;s Road Central, Central, Hong Kong
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-tagline-2 text-background-11 mb-1 font-semibold">Contact:</p>
-                    <Link
-                      href="tel:+12025550130"
-                      className="text-tagline-3 inline-block font-normal text-white/50 transition-colors duration-300 hover:text-white hover:underline"
-                    >
-                      +1 (202) 555-0130
-                    </Link>
-                    <br />
-                    <Link
-                      href="mailto:will@baoea.com"
-                      className="text-tagline-3 inline-block font-normal text-white/50 transition-colors duration-300 hover:text-white hover:underline"
-                    >
-                      will@baoea.com
-                    </Link>
-                  </div>
+                  <p className="text-tagline-2 text-background-11 max-w-md">
+                    Intelligent Shopify help—launch, fix, and grow your store so you spend less time on the platform
+                    and more on customers and sales.
+                  </p>
                 </div>
+                {/*<div className="space-y-6">*/}
+                {/*  <div>*/}
+                {/*    <p className="text-tagline-2 text-background-11 mb-1 font-semibold">Address:</p>*/}
+                {/*    <p className="text-tagline-3 font-normal text-white/50">*/}
+                {/*      9 Queen&apos;s Road Central, Central, Hong Kong*/}
+                {/*    </p>*/}
+                {/*  </div>*/}
+                {/*  <div>*/}
+                {/*    <p className="text-tagline-2 text-background-11 mb-1 font-semibold">Contact:</p>*/}
+                {/*    <Link*/}
+                {/*      href="tel:+12025550130"*/}
+                {/*      className="text-tagline-3 inline-block font-normal text-white/50 transition-colors duration-300 hover:text-white hover:underline"*/}
+                {/*    >*/}
+                {/*      +1 (202) 555-0130*/}
+                {/*    </Link>*/}
+                {/*    <br />*/}
+                {/*    <Link*/}
+                {/*      href="mailto:will@baoea.com"*/}
+                {/*      className="text-tagline-3 inline-block font-normal text-white/50 transition-colors duration-300 hover:text-white hover:underline"*/}
+                {/*    >*/}
+                {/*      will@baoea.com*/}
+                {/*    </Link>*/}
+                {/*  </div>*/}
+                {/*</div>*/}
                 {/* <SocialIcons links={defaultSocialLinks} /> */}
               </div>
             </RevealAnimation>
