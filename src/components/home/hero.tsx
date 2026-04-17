@@ -1,6 +1,6 @@
 'use client';
 
-import heroImage from '@/public/images/opai-img-95.png';
+import heroImage from '@/public/images/aclaw-img-95.png';
 import heroThumbImg from '@/public/images/opai-img-96.png';
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { TextReveal } from '@/src/components/animation/text-reveal-animation';
