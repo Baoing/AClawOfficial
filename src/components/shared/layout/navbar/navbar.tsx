@@ -50,10 +50,10 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
               'bg-background-6 border-stroke-3/18 flex items-center justify-between rounded-full border py-1.5 pr-5 pl-2 lg:gap-12 lg:py-0 lg:pr-1.5 lg:pl-1.5'
             )}
           >
-            <Link href="/" className="block size-11" aria-label="AIClawers home">
+            <Link href="/" className="block size-11 ml-2" aria-label="AIClawers home">
               <figure className="size-full">
                 <Image
-                  src="/images/logo/logo-white-small.svg"
+                  src="/images/logo/logo.svg"
                   alt="AIClawers"
                   width={44}
                   height={44}

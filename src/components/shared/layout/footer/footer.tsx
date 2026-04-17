@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-4">
             <RevealAnimation delay={0.1}>
               <div className="space-y-8">
-                <Link href="/" className="-ml-3 block" aria-label="AIClawers home">
+                <Link href="/" className="block" aria-label="AIClawers home">
                   <Image
                     src="/images/logo/logo-white.svg"
                     alt="AIClawers"
@@ -44,7 +44,7 @@ const Footer = () => {
                   <div>
                     <p className="text-tagline-2 text-background-11 mb-1 font-semibold">Address:</p>
                     <p className="text-tagline-3 font-normal text-white/50">
-                      30 North Gould Street, Sheridan, WY 8280
+                      9 Queen&apos;s Road Central, Central, Hong Kong
                     </p>
                   </div>
                   <div>
@@ -57,14 +57,14 @@ const Footer = () => {
                     </Link>
                     <br />
                     <Link
-                      href="mailto:hello@pixels71.com"
+                      href="mailto:will@baoea.com"
                       className="text-tagline-3 inline-block font-normal text-white/50 transition-colors duration-300 hover:text-white hover:underline"
                     >
-                      hello@pixels71.com
+                      will@baoea.com
                     </Link>
                   </div>
                 </div>
-                <SocialIcons links={defaultSocialLinks} />
+                {/* <SocialIcons links={defaultSocialLinks} /> */}
               </div>
             </RevealAnimation>
           </div>

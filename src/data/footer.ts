@@ -8,14 +8,14 @@ export const footerData: FooterData = {
   },
   address: {
     label: 'Address:',
-    text: '30 North Gould Street, Sheridan, WY 8280',
+    text: '9 Queen\'s Road Central, Central, Hong Kong',
   },
   contact: {
     label: 'Contact:',
     phone: '+1 (202) 555-0130',
     phoneHref: 'tel:+12025550130',
-    email: 'hello@pixels71.com',
-    emailHref: 'mailto:hello@pixels71.com',
+    email: 'will@baoea.com',
+    emailHref: 'mailto:will@baoea.com',
   },
   social: [
     { name: 'Facebook', href: '#' },

@@ -1,5 +1,5 @@
 'use client';
-import logoSmall from '@/public/images/logo/logo-white-small.svg';
+import logoSmall from '@/public/images/logo/logo.svg';
 import { useMobileMenuContext } from '@/src/context/MobileMenuContext';
 import { cn } from '@/src/utils/cn';
 import Image from 'next/image';
