@@ -1,29 +1,31 @@
-import AboutMap from '@/components/about/AboutMap';
-import CTA from '@/components/about/CTA';
-import Feature from '@/components/about/Feature';
-import Innovation from '@/components/about/Innovation';
-import OurMission from '@/components/about/OurMission';
-import OurVision from '@/components/about/OurVision';
-import Teams from '@/components/about/Teams';
-import { defaultMetadata } from '@/utils/generateMetaData';
+import AiBusiness from '@/src/components/about/ai-business';
+import BornInfo from '@/src/components/about/born-info';
+import AboutHero from '@/src/components/about/hero';
+import Team from '@/src/components/about/team';
+import WhyUs from '@/src/components/about/why-us';
+import AboutFaq from '@/src/components/home/faq';
+import CTA from '@/src/components/shared/cta';
+import { generateMetadata } from '@/src/utils/generateMetaData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'About Us - Smart Solutions || NextSaaS',
+  ...generateMetadata(),
+  title: 'About us - AI Solutions || Nexsas',
+  description:
+    'Learn how Nexsas revolutionizes workflows with AI. Our vision, mission, and team dedicated to empowering businesses with cutting-edge AI solutions.',
 };
 
 const page = () => {
   return (
-    <main className="bg-background-3 dark:bg-background-5">
-      <Feature />
-      <OurMission />
-      <OurVision />
-      <Innovation />
-      <Teams />
-      <AboutMap />
+    <>
+      <AboutHero />
+      <BornInfo />
+      <AiBusiness />
+      <WhyUs />
+      <Team />
+      <AboutFaq />
       <CTA />
-    </main>
+    </>
   );
 };
 

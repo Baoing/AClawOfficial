@@ -1,39 +1,54 @@
-import BlogContent from '@/components/blog-details/BlogContent';
-import CTA from '@/components/shared/cta/CTA';
-import { defaultMetadata } from '@/utils/generateMetaData';
-import getMarkDownContent from '@/utils/getMarkDownContent';
-import getMarkDownData from '@/utils/getMarkDownData';
-import { Metadata } from 'next';
+import BlogDetailsContent from '@/src/components/blog-details/blog-details-content';
+import RelatedBlog from '@/src/components/blog-details/related-blog';
+import CTA from '@/src/components/shared/cta';
+import type { BlogPost } from '@/src/interface';
+import { generateMetadata as buildMetadata } from '@/src/utils/generateMetaData';
+import getMarkDownContent from '@/src/utils/getMarkDownContent';
+import getMarkDownData from '@/src/utils/getMarkDownData';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
-  const blogs = getMarkDownData('src/data/blogs');
-  return blogs.map((post) => ({
-    slug: post.slug,
-  }));
+  const posts = getMarkDownData<BlogPost>('src/data/blog');
+  return posts?.map((post) => ({ slug: post?.slug })) ?? [];
 }
 
-export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Blog Details - Smart Solutions || NextSaaS',
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  try {
+    const blog = getMarkDownContent('src/data/blog', slug);
+    const title = (blog?.data?.title as string) ?? 'Blog';
+    const description = (blog?.data?.description as string) ?? undefined;
+    return buildMetadata(`${title} - AI Solutions || Nexsas`, description, `/blog/${slug}`);
+  } catch {
+    return buildMetadata('Blog Details - AI Solutions || Nexsas', undefined, `/blog/${slug}`);
+  }
+}
 
-const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const slug = (await params).slug;
-  const blogContent = getMarkDownContent('src/data/blogs/', slug);
+const BlogSlugPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+
+  let blog: { data: Record<string, unknown>; content: string } | null = null;
+  try {
+    const result = getMarkDownContent('src/data/blog', slug);
+    blog = { data: result.data as Record<string, unknown>, content: result.content };
+  } catch {
+    notFound();
+  }
+
+  const allPosts = getMarkDownData<BlogPost>('src/data/blog', true, 'publishDate');
 
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <BlogContent blog={blogContent} />
-      <CTA
-        className="dark:bg-background-7 bg-white"
-        badgeClass="!badge-yellow-v2"
-        badgeText="Get started"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        ctaBtnText="Get started"
-      />
+    <main className="bg-background-6">
+      <BlogDetailsContent blog={blog} />
+      <RelatedBlog posts={allPosts} currentSlug={slug} />
+      <CTA />
     </main>
   );
 };
 
-export default page;
+export default BlogSlugPage;

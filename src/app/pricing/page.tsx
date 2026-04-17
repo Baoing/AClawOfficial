@@ -1,31 +1,25 @@
-import Client from '@/components/pricing/Client';
-import Faq from '@/components/pricing/Faq';
-import Pricing from '@/components/pricing/Pricing';
-import CTA from '@/components/shared/cta/CTA';
-import { defaultMetadata } from '@/utils/generateMetaData';
+import OurImpact from '@/src/components/home/our-impact';
+import IncludeInEveryPlan from '@/src/components/pricing/include-in-every-plan';
+import Pricing from '@/src/components/pricing/pricing';
+import CTA from '@/src/components/shared/cta';
+import { generateMetadata } from '@/src/utils/generateMetaData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Pricing - Smart Solutions || NextSaaS',
+  ...generateMetadata(),
+  title: 'Pricing - AI Solutions || Nexsas',
+  description:
+    'Transparent pricing designed to scale with your business. No hidden fees, no surprises.',
 };
 
 const page = () => {
   return (
-    <main className="bg-background-1 dark:bg-background-6">
+    <>
       <Pricing />
-      <Client />
-      <Faq />
-      <CTA
-        className="dark:bg-background-7 bg-accent"
-        badgeText="Get started"
-        badgeClass="!badge-cyan"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        ctaBtnText="Get started"
-        btnClass="btn-primary hover:btn-secondary dark:hover:btn-accent"
-      />
-    </main>
+      <OurImpact />
+      <IncludeInEveryPlan />
+      <CTA />
+    </>
   );
 };
 

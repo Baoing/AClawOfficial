@@ -1,35 +1,40 @@
-import Blog from '@/components/home/Blog';
-import CTA from '@/components/home/CTA';
-import Clients from '@/components/home/Clients';
-import DownloadApp from '@/components/home/DownloadApp';
-import GetStarted from '@/components/home/GetStarted';
-import Hero from '@/components/home/Hero';
-import MeetOurTeam from '@/components/home/MeetOurTeam';
-import Solutions from '@/components/home/Solutions';
-import Steps from '@/components/home/Steps';
-import Tools from '@/components/home/Tools';
-import { defaultMetadata } from '@/utils/generateMetaData';
+import Blog from '@/src/components/home/blog';
+import EmpoweringBusiness from '@/src/components/home/empowering-business';
+import FAQ from '@/src/components/home/faq';
+import Hero from '@/src/components/home/hero';
+import InnovativeSolutions from '@/src/components/home/innovative-solutions';
+import OurImpact from '@/src/components/home/our-impact';
+import Projects from '@/src/components/home/projects';
+import Subscribe from '@/src/components/home/subscribe';
+import Testimonial from '@/src/components/home/testimonial';
+import Contact from '@/src/components/shared/contact';
+import CTA from '@/src/components/shared/cta';
+import VideoModal from '@/src/components/shared/VideoModal';
+import ModalProvider from '@/src/context/ModalContext';
+import { generateMetadata } from '@/src/utils/generateMetaData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Smart Solutions - NextSaaS',
+  ...generateMetadata(),
+  title: 'AI Solutions || Nexsas',
 };
 
 const page = () => {
   return (
-    <main className="bg-background-3 dark:bg-background-7">
+    <ModalProvider>
       <Hero />
-      <MeetOurTeam />
-      <Solutions />
-      <Clients />
-      <Tools />
-      <GetStarted />
-      <DownloadApp />
-      <Steps />
+      <OurImpact />
+      <EmpoweringBusiness />
+      <InnovativeSolutions />
+      <Projects />
+      <Testimonial />
       <Blog />
+      <FAQ />
+      <Subscribe />
       <CTA />
-    </main>
+      <Contact />
+      <VideoModal />
+    </ModalProvider>
   );
 };
 

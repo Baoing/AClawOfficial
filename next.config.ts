@@ -1,14 +1,9 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  turbopack: {
-    resolveAlias: {
-      '@': './src',
-      '@public': './public',
-    },
-  },
+  /* config options here */
   images: {
-    qualities: [25, 50, 75, 100],
+    qualities: [100, 75],
   },
 };
 

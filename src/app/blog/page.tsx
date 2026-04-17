@@ -1,27 +1,63 @@
-import BlogListWrapper from '@/components/blog/BlogListWrapper';
-import CTA from '@/components/shared/cta/CTA';
-import { defaultMetadata } from '@/utils/generateMetaData';
-import { Metadata } from 'next';
+import BlogsWrapper from '@/src/components/blog/blogs-wrapper';
+import Hero from '@/src/components/blog/hero';
+import CTA from '@/src/components/shared/cta';
+import type { BlogPost } from '@/src/interface';
+import {
+  filterPosts,
+  getCategoriesFromPosts,
+  getCurrentPage,
+  getDateRecordsFromPosts,
+  getFilterFromParams,
+  getTotalPages,
+  paginatePosts,
+} from '@/src/utils/blogFilters';
+import getMarkDownData from '@/src/utils/getMarkDownData';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Blog - Smart Solutions || NextSaaS',
+  title: 'Blog - AI Solutions || Nexsas',
+  description: 'Insights, tips, and trends from Nexsas on AI and business.',
 };
 
-const page = () => {
+interface BlogPageProps {
+  searchParams: Promise<{
+    category?: string | string[];
+    search?: string | string[];
+    date?: string | string[];
+    page?: string | string[];
+  }>;
+}
+
+const BlogPage = async ({ searchParams }: BlogPageProps) => {
+  const params = await searchParams;
+  const allPosts = getMarkDownData<BlogPost>('src/data/blog', true, 'publishDate');
+  const { type: filterType, value: filterValue } = getFilterFromParams(params);
+  const filtered = filterPosts(allPosts, filterType, filterValue);
+  const totalPages = getTotalPages(filtered.length);
+  const currentPage = getCurrentPage(params.page);
+  const pageToUse = Math.max(1, Math.min(currentPage, totalPages));
+  const posts = paginatePosts(filtered, pageToUse);
+
+  const categories = getCategoriesFromPosts(allPosts);
+  const dateRecords = getDateRecordsFromPosts(allPosts);
+
   return (
-    <main className="bg-background-3 dark:bg-background-5">
-      <BlogListWrapper />
-      <CTA
-        className="dark:bg-background-7 bg-white"
-        badgeClass="!badge-yellow-v2"
-        badgeText="Get started"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        ctaBtnText="Get started"
+    <>
+      <Hero />
+      <BlogsWrapper
+        posts={posts}
+        allPosts={allPosts}
+        totalPages={totalPages}
+        currentPage={pageToUse}
+        categories={categories}
+        dateRecords={dateRecords}
+        currentCategory={filterType === 'category' ? filterValue : null}
+        currentSearch={filterType === 'search' ? filterValue : null}
+        currentDate={filterType === 'date' ? filterValue : null}
       />
-    </main>
+      <CTA />
+    </>
   );
 };
 
-export default page;
+export default BlogPage;

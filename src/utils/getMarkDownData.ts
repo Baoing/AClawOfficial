@@ -16,12 +16,13 @@ const getMarkDownData = <T extends MarkdownData = MarkdownData>(
   if (!sortBy) {
     sortBy = 'title';
   }
-  const files = fs.readdirSync(folder);
+  const dir = path.join(process.cwd(), folder);
+  const files = fs.readdirSync(dir);
   const markdownPosts = files.filter((file) => file.endsWith('.md'));
 
   const postsData = markdownPosts
     .map((file) => {
-      const filePath = path.join(folder, file);
+      const filePath = path.join(dir, file);
       try {
         const content = fs.readFileSync(filePath, 'utf8');
         const data = matter(content);

@@ -1,36 +1,26 @@
-import Feature from '@/components/services/Feature';
-import Integration from '@/components/services/Integration';
-import Services from '@/components/services/Services';
-import UseCases from '@/components/services/UseCases';
-import CTA from '@/components/shared/cta/CTA';
-import { defaultMetadata } from '@/utils/generateMetaData';
-import { Metadata } from 'next';
+import ServicesHero from '@/src/components/services/hero';
+import OurServices from '@/src/components/services/our-services';
+import CTA from '@/src/components/shared/cta';
+import WhyChooseUs from '@/src/components/shared/why-choose-us';
+import type { ServicePost } from '@/src/interface';
+import getMarkDownData from '@/src/utils/getMarkDownData';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Services - Smart Solutions || NextSaaS',
+  title: 'Services - AI Solutions || Nexsas',
+  description: 'Tailored AI solutions and proven results.',
 };
 
-const page = () => {
+const page = async () => {
+  const services = getMarkDownData<ServicePost>('src/data/services');
+
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <Services />
-      <Integration />
-      <UseCases />
-      <Feature
-        btnClassName="btn btn-md hover:btn-primary btn-white"
-        className="bg-background-3 dark:bg-background-7 py-[100px] lg:py-[200px]"
-      />
-      <CTA
-        className="dark:bg-background-6 bg-white"
-        badgeClass="hidden"
-        ctaHeading="Build a complete website using the"
-        spanText="assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        btnClass="hover:btn-secondary dark:hover:btn-accent"
-        ctaBtnText="Get started"
-      />
-    </main>
+    <>
+      <ServicesHero />
+      <OurServices services={services} />
+      <WhyChooseUs />
+      <CTA />
+    </>
   );
 };
 

@@ -1,34 +1,71 @@
-import CTA from '@/components/shared/cta/CTA';
-import Contact from '@/components/team-details/Contact';
-import Details from '@/components/team-details/Details';
-import { defaultMetadata } from '@/utils/generateMetaData';
-import { Metadata } from 'next';
+import DetailsHero from '@/src/components/team-details/details-hero';
+import DetailsMarkdownData from '@/src/components/team-details/details-markdown-data';
+import type { TeamMemberHero } from '@/src/components/team-details/details-hero';
+import CTA from '@/src/components/shared/cta';
+import { generateMetadata as buildMetadata } from '@/src/utils/generateMetaData';
+import getMarkDownContent from '@/src/utils/getMarkDownContent';
+import getMarkDownData from '@/src/utils/getMarkDownData';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
-export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Team Details - Smart Solutions || NextSaaS',
-};
+/** Shape returned by getMarkDownData for team .md files; satisfies MarkdownData. */
+interface TeamMemberData {
+  slug: string;
+  content: string;
+  imageSrc?: string;
+  title?: string;
+  [key: string]: unknown;
+}
+
+export async function generateStaticParams() {
+  const data = getMarkDownData<TeamMemberData>('src/data/team');
+  const members = data.filter((m) => m.imageSrc);
+  return members.map((m) => ({ slug: m.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  try {
+    const result = getMarkDownContent('src/data/team', slug);
+    const title = (result?.data?.title as string) ?? 'Team member';
+    const description = (result?.data?.description as string) ?? undefined;
+    return buildMetadata(
+      `${title} - Team || Nexsas`,
+      description,
+      `/team-details/${slug}`
+    );
+  } catch {
+    return buildMetadata(
+      'Team Details - AI Solutions || Nexsas',
+      undefined,
+      `/team-details/${slug}`
+    );
+  }
+}
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const slug = (await params).slug;
+  const { slug } = await params;
+
+  let result: { data: Record<string, unknown>; content: string } | null = null;
+  try {
+    const raw = getMarkDownContent('src/data/team', slug);
+    result = { data: raw.data as Record<string, unknown>, content: raw.content };
+  } catch {
+    notFound();
+  }
+
+  const member = { ...result.data } as unknown as TeamMemberHero;
 
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <Details slug={slug} />
-      <Contact />
-      <CTA
-        className="bg-secondary dark:bg-background-5 py-28"
-        ctaHeading="Join the future of cloud software"
-        headingClass="text-accent"
-        description="Start your free trial today and experience the power of NexSaaS—where efficiency meets innovation."
-        descriptionClass="max-w-[530px] text-accent/60"
-        ctaBtnText="Get started"
-        btnClass="btn-md btn-primary hover:btn-white h-12 w-full max-[376px]:w-[97%%] md:w-auto"
-        listTextClass="text-tagline-2 text-accent dark:text-accent/60"
-        inputFieldClass="border-0 px-[18px] shadow-1 h-12 py-3 placeholder:text-accent/60 rounded-full focus:outline-1 text-accent focus:outline-primary-600 dark:focus:outline-primary-400 bg-accent/5 lg:max-w-[340px] md:w-[71%] w-full dark:border-stroke-7 dark:placeholder:text-accent/60 placeholder:font-normal font-normal"
-        checkListVariant="gray"
-      />
-    </main>
+    <>
+      <DetailsHero member={member} />
+      <DetailsMarkdownData content={result.content} />
+      <CTA />
+    </>
   );
 };
 

@@ -1,34 +1,51 @@
 'use client';
 
-import { useMobileMenu } from '@/hooks/useMobileMenu';
-import { createContext, ReactNode, useContext } from 'react';
+import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
 
-interface MobileMenuContextType {
+type MobileMenuContextValue = {
   isOpen: boolean;
   openMenu: () => void;
   closeMenu: () => void;
   toggleMenu: () => void;
   activeSubmenu: string | null;
-  toggleSubmenu: (menuId: string) => void;
-  closeAllSubmenus: () => void;
-}
-
-const MobileMenuContext = createContext<MobileMenuContextType | undefined>(undefined);
-
-interface MobileMenuProviderProps {
-  children: ReactNode;
-}
-
-export const MobileMenuProvider = ({ children }: MobileMenuProviderProps) => {
-  const mobileMenuState = useMobileMenu();
-
-  return <MobileMenuContext.Provider value={mobileMenuState}>{children}</MobileMenuContext.Provider>;
+  toggleSubmenu: (id: string) => void;
 };
 
-export const useMobileMenuContext = () => {
-  const context = useContext(MobileMenuContext);
-  if (context === undefined) {
-    throw new Error('useMobileMenuContext must be used within a MobileMenuProvider');
-  }
-  return context;
-};
+const MobileMenuContext = createContext<MobileMenuContextValue | null>(null);
+
+export function MobileMenuProvider({ children }: { readonly children: ReactNode }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+
+  const openMenu = useCallback(() => {
+    setIsOpen(true);
+    setActiveSubmenu('company');
+  }, []);
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+    setActiveSubmenu(null);
+  }, []);
+  const toggleMenu = useCallback(() => {
+    setIsOpen((prev) => {
+      if (!prev) setActiveSubmenu('company');
+      return !prev;
+    });
+  }, []);
+
+  const toggleSubmenu = useCallback((id: string) => {
+    setActiveSubmenu((prev) => (prev === id ? null : id));
+  }, []);
+
+  const value = useMemo(
+    () => ({ isOpen, openMenu, closeMenu, toggleMenu, activeSubmenu, toggleSubmenu }),
+    [isOpen, activeSubmenu, openMenu, closeMenu, toggleMenu, toggleSubmenu]
+  );
+
+  return <MobileMenuContext.Provider value={value}>{children}</MobileMenuContext.Provider>;
+}
+
+export function useMobileMenuContext() {
+  const ctx = useContext(MobileMenuContext);
+  if (!ctx) throw new Error('useMobileMenuContext must be used within MobileMenuProvider');
+  return ctx;
+}

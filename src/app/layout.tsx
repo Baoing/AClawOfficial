@@ -1,17 +1,9 @@
-import SmoothScrollProvider from '@/components/shared/SmoothScroll';
-import { ThemeProvider } from '@/components/shared/ThemeProvider';
-import DemoShowcase from '@/components/shared/demo-showcase';
-import Footer from '@/components/shared/footer/Footer';
-import Navbar from '@/components/shared/navbar/Navbar';
-import { interTight } from '@/utils/font';
-import { generateMetadata } from '@/utils/generateMetaData';
-import { Metadata } from 'next';
+import SmoothScrollProvider from '@/src/components/animation/smooth-scroll';
+import Footer from '@/src/components/shared/layout/footer/footer';
+import Navbar from '@/src/components/shared/layout/navbar/navbar';
+import { fontVariables } from '@/src/utils/font';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
-
-export const metadata: Metadata = {
-  ...generateMetadata(),
-};
 
 export default function RootLayout({
   children,
@@ -20,17 +12,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${interTight.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Suspense>
-            <SmoothScrollProvider>
-              <Navbar />
-              <DemoShowcase activeDemoId={22} />
-              {children}
-              <Footer />
-            </SmoothScrollProvider>
-          </Suspense>
-        </ThemeProvider>
+      <body className={`${fontVariables} antialiased`}>
+        <Suspense>
+          <SmoothScrollProvider>
+            <Navbar />
+            <main className="bg-background-6">{children}</main>
+            <Footer />
+          </SmoothScrollProvider>
+        </Suspense>
       </body>
     </html>
   );

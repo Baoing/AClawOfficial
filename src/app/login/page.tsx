@@ -1,27 +1,16 @@
-import LoginHero from '@/components/authentication/LoginHero';
-import CTA from '@/components/shared/cta/CTA';
-import { defaultMetadata } from '@/utils/generateMetaData';
+import Login from '@/src/components/auth/login';
+import { generateMetadata } from '@/src/utils/generateMetaData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
-  title: 'Login - Smart Solutions || NextSaaS',
+  ...generateMetadata(),
+  title: 'Login - AI Solutions || Nexsas',
+  description:
+    'Sign in to your Nexsas account. Access AI-driven solutions and manage your projects.',
 };
 
 const page = () => {
-  return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <LoginHero />
-      <CTA
-        className="dark:bg-background-6 bg-white"
-        badgeClass="badge-yellow-v2"
-        badgeText="Get Started"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        btnClass="hover:btn-secondary dark:hover:btn-accent"
-        ctaBtnText="Get started"
-      />
-    </main>
-  );
+  return <Login />;
 };
+
 export default page;

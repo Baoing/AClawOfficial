@@ -13,7 +13,7 @@ function simulateSpringStep(
   stiffness: number,
   damping: number,
   dt: number,
-  resultArray: [number, number],
+  resultArray: [number, number]
 ): [number, number] {
   const springForce = -stiffness * (position - target);
   const dampingForce = -damping * velocity;
@@ -43,7 +43,15 @@ function createSpring(tension: number = 0.5, friction: number = 0.5): (t: number
 
   // Exact simulation loop from original JS
   while (position !== target || velocity !== 0) {
-    const result = simulateSpringStep(position, target, velocity, stiffness, damping, dt, resultArray);
+    const result = simulateSpringStep(
+      position,
+      target,
+      velocity,
+      stiffness,
+      damping,
+      dt,
+      resultArray
+    );
     position = result[0];
     velocity = result[1];
     points.push(position / target);
@@ -84,6 +92,6 @@ declare global {
 }
 
 // Auto-attach to window if in browser environment (for backward compatibility)
-if (typeof window !== 'undefined') {
-  window.Springer = Springer;
+if (globalThis.window !== undefined) {
+  (globalThis as unknown as Window).Springer = Springer;
 }

@@ -1,9 +1,10 @@
 import fs from 'fs';
+import path from 'path';
 import matter from 'gray-matter';
 
 const getMarkDownContent = (folder: string, slug: string) => {
-  const file = `${folder}${slug}.md`;
-  const content = fs.readFileSync(file, 'utf8');
+  const filePath = path.join(process.cwd(), folder, `${slug}.md`);
+  const content = fs.readFileSync(filePath, 'utf8');
   const matterResult = matter(content);
   return matterResult;
 };
