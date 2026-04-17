@@ -29,10 +29,10 @@ const EmpoweringBusiness = () => {
                 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 text-background-13/90 mx-auto max-w-[700px] font-normal max-md:leading-[110%]"
                 itemProp="name"
               >
-                Empowering your{' '}
+                Shopify builds,{' '}
                 <span className="text-background-13/50">
-                  business <br className="hidden md:block" />
-                  with AI expertise
+                  optimization & apps <br className="hidden md:block" />
+                  backed by practical AI
                 </span>
               </h2>
             </TextReveal>
@@ -40,10 +40,11 @@ const EmpoweringBusiness = () => {
             <TextReveal delay={0.2}>
               <p
                 className="font-inter-tight text-tagline-2 text-background-13/60 mx-auto max-w-[350px] font-normal"
-                aria-label="Description of AI business solutions"
+                aria-label="Description of Shopify technical services"
                 itemProp="description"
               >
-                Our tailored solutions address your challenges, delivering innovation at scale.
+                We ship launch-ready storefronts, harden themes for speed and SEO, and build custom
+                Shopify apps—so your stack scales without the firefighting.
               </p>
             </TextReveal>
           </div>
@@ -52,7 +53,7 @@ const EmpoweringBusiness = () => {
           <div className="relative z-5">
             <GlowingCards
               className="flex flex-col items-center justify-center gap-y-8"
-              aria-label="AI business solutions showcase"
+              aria-label="Shopify technical services showcase"
             >
               {/* row one */}
               <div className="flex w-full flex-col items-center justify-center gap-x-4 gap-y-8 overflow-hidden md:flex-row md:gap-y-0">

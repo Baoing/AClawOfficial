@@ -57,24 +57,25 @@ const DataAnalyticsInsights = () => {
             className="font-sora text-sora-heading-5 max-w-[200px] font-normal text-white/80"
             itemProp="name"
           >
-            Data analytics & insights
+            Store health & ops clarity
           </h3>
           <p
             className="font-inter-tight text-tagline-2 w-full max-w-[269px] text-left font-normal text-white/50"
             itemProp="description"
           >
-            Use AI to discover trends and make informed decisions.
+            Unify revenue, fulfillment, and CX signals so leadership sees one Shopify truth—not ten
+            disconnected tabs.
           </p>
         </div>
 
         <div
           ref={progressContainerRef}
           className="border-stroke-1/18 z-10 w-full max-w-[270px] space-y-4 rounded-lg border px-10.5 pt-6 pb-[43px] lg:max-w-[300px]"
-          aria-label="Analytics data visualization"
+          aria-label="Shopify store metrics visualization"
         >
           <div className="flex w-full items-center justify-between gap-x-2">
             <h4 className="font-manrope text-manrope-heading-6 font-medium text-white/30">
-              Analytics
+              Performance
             </h4>
             <div className="border-stroke-1/18 w-full max-w-[97px] cursor-pointer rounded-sm border py-[3px] pr-1 pl-2">
               <button
@@ -98,7 +99,7 @@ const DataAnalyticsInsights = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-start gap-x-11">
                 <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">
-                  Airtable
+                  Theme speed
                 </h5>
                 <span
                   ref={(el) => {
@@ -109,7 +110,7 @@ const DataAnalyticsInsights = () => {
               </div>
               <div className="flex items-center justify-start gap-x-5">
                 <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">
-                  Google drive
+                  Checkout
                 </h5>
                 <span
                   ref={(el) => {
@@ -119,7 +120,9 @@ const DataAnalyticsInsights = () => {
                 />
               </div>
               <div className="flex items-center justify-start gap-x-14">
-                <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">Mega</h5>
+                <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">
+                  Retention
+                </h5>
                 <span
                   ref={(el) => {
                     progressBarRefs.current[2] = el;
@@ -131,11 +134,11 @@ const DataAnalyticsInsights = () => {
 
             <p
               className="font-inter-tight text-tagline-4 flex w-full items-center justify-center gap-x-2.5 font-normal text-white/20"
-              aria-label="Storage capacity indicators: 0 Byte, 400GB, 600GB"
+              aria-label="KPI scale markers: baseline, target, stretch"
             >
-              <span>0 Byte</span>
-              <span>400GB</span>
-              <span>600GB</span>
+              <span>Baseline</span>
+              <span>Target</span>
+              <span>Stretch</span>
             </p>
           </div>
         </div>

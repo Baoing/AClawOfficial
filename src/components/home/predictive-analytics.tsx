@@ -78,13 +78,14 @@ const PredictiveAnalytics = () => {
             className="font-sora text-sora-heading-5 font-normal text-white/80"
             itemProp="name"
           >
-            Predictive analytics
+            Growth & conversion signals
           </h3>
           <p
             className="font-inter-tight text-tagline-2 w-full text-left font-normal text-white/50 md:max-w-[269px]"
             itemProp="description"
           >
-            Forecast trends and outcomes to stay ahead of the competition.
+            See what moves AOV, retention, and funnel drop-offs—then prioritize Shopify fixes that
+            pay back fastest.
           </p>
         </div>
       </RevealAnimation>

@@ -6,7 +6,7 @@ const ExploreAllServices = () => {
     <RevealAnimation delay={0.2}>
       <div
         className="border-stroke-1/18 bg-background-6 relative flex h-[331px] w-full items-center justify-center overflow-hidden rounded-lg border p-6 md:w-[560px] md:p-10.5"
-        aria-label="Call to action section"
+        aria-label="Explore Shopify services call to action"
       >
         {/* glowing gradient */}
         <div className="pointer-events-none absolute top-[-57%] left-[-25%] select-none">
@@ -18,7 +18,7 @@ const ExploreAllServices = () => {
         <div className="z-10">
           <RevealAnimation delay={0.1}>
             <PrimaryLinkButton href="/services" className="w-full">
-              Explore all services
+              Explore Shopify services
             </PrimaryLinkButton>
           </RevealAnimation>
         </div>

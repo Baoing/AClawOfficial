@@ -22,11 +22,11 @@ const IntelligentAutomation = () => {
               <GloveIcon className="stroke-opai-blue/60 size-full" />
             </span>
             <span className="text-opai-blue/60 font-inter-tight text-tagline-4 font-normal">
-              Launch
+              Kickoff
             </span>
           </div>
           <p className="bg-background-5 font-inter-tight text-tagline-3 rounded-[3px] px-6 py-3 text-center font-normal text-white/20 backdrop-blur-[17px]">
-            New application is approved
+            Scope, stack, and success metrics locked
           </p>
         </div>
       </RevealAnimation>
@@ -45,13 +45,13 @@ const IntelligentAutomation = () => {
               <InfinityIcon className="stroke-opai-lemon/60 size-full" />
             </span>
             <span className="text-opai-lemon/60 font-inter-tight text-tagline-4 font-normal">
-              Initiate
+              Build
             </span>
           </div>
           <div className="bg-background-5 space-y-1 rounded-[3px] px-6 py-3 text-center backdrop-blur-[17px]">
-            <p className="text-white/60">Send welcome email</p>
+            <p className="text-white/60">Theme, sections, and app blocks</p>
             <p className="font-inter-tight text-tagline-3 font-normal text-white/20">
-              Include links to employee handbook initial documents
+              Liquid architecture wired to your catalog and ops
             </p>
           </div>
         </div>
@@ -71,11 +71,11 @@ const IntelligentAutomation = () => {
               <InfinityIcon className="stroke-opai-purple/60 size-full" />
             </span>
             <span className="text-opai-purple/60 font-inter-tight text-tagline-4 shrink-0 font-normal">
-              Check if/else
+              Review
             </span>
           </div>
           <p className="bg-background-5 font-inter-tight text-tagline-3 rounded-[3px] px-6 py-3 text-center font-normal text-white/20 backdrop-blur-[17px]">
-            New application is approved
+            Checkout, SEO, accessibility, and speed pass
           </p>
         </div>
       </RevealAnimation>
@@ -94,11 +94,11 @@ const IntelligentAutomation = () => {
               <InfinityIcon className="stroke-opai-green/60 size-full" />
             </span>
             <span className="text-opai-green/60 font-inter-tight text-tagline-4 shrink-0 font-normal">
-              Lunch
+              Ship
             </span>
           </div>
           <p className="font-inter-tight text-tagline-3 rounded-[3px] px-6 py-3 text-center font-normal text-white/20 backdrop-blur-[17px]">
-            Send welcome email Include links to employee handbook initial documents
+            Production go-live with monitoring and rollback plan
           </p>
         </div>
       </RevealAnimation>
@@ -114,7 +114,7 @@ const IntelligentAutomation = () => {
             className="font-sora text-sora-heading-5 font-normal text-white/80"
             itemProp="name"
           >
-            Intelligent automation
+            Store build & optimization
           </h3>
         </RevealAnimation>
         <RevealAnimation delay={0.2}>
@@ -122,7 +122,8 @@ const IntelligentAutomation = () => {
             className="font-inter-tight text-tagline-2 font-normal text-white/50"
             itemProp="description"
           >
-            Automate mundane tasks and focus on what matters most.
+            Launch-ready themes, performance tuning, and SEO-safe Liquid—so every release ships
+            with confidence.
           </p>
         </RevealAnimation>
       </div>

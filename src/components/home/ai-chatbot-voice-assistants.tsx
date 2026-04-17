@@ -6,7 +6,7 @@ const AIChatbotVoiceAssistants = () => {
   return (
     <div
       className="border-stroke-1/18 bg-background-6 relative z-10 flex h-[344px] w-full flex-col items-start justify-between overflow-hidden rounded-lg border pt-10.5 pl-10.5 max-lg:gap-y-10 lg:flex-row"
-      aria-labelledby="ai-chatbot-heading"
+      aria-labelledby="shopify-apps-heading"
     >
       {/* glowing gradient */}
       <div className="pointer-events-none absolute top-[-52%] left-[-17%] select-none">
@@ -18,17 +18,18 @@ const AIChatbotVoiceAssistants = () => {
       <RevealAnimation delay={0.1}>
         <div className="w-full space-y-1">
           <h3
-            id="ai-chatbot-heading"
+            id="shopify-apps-heading"
             className="font-sora text-sora-heading-5 max-w-[200px] font-normal text-white/80 sm:mx-auto md:mx-0"
             itemProp="name"
           >
-            AI chatbot & voice assistants
+            Custom Shopify apps
           </h3>
           <p
             className="font-inter-tight text-tagline-2 w-full max-w-[269px] text-left font-normal text-white/50 sm:mx-auto sm:text-center md:mx-0 md:text-left"
             itemProp="description"
           >
-            Enhance customer engagement with natural, seamless interactions.
+            Embedded admin tools, storefront features, and AI copilots that sit where merchants
+            work every day.
           </p>
         </div>
       </RevealAnimation>
@@ -37,7 +38,7 @@ const AIChatbotVoiceAssistants = () => {
         <figure className="w-full max-w-[502px]">
           <Image
             src={AI_CHATBOT_IMAGE}
-            alt="AI chatbot and voice assistants interface showing conversational AI technology"
+            alt="Custom Shopify app interface with admin and storefront controls"
             loading="lazy"
             className="size-full object-cover"
             width={502}
