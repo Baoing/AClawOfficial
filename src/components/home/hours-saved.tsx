@@ -11,7 +11,7 @@ const HoursSaved = () => {
       <RevealAnimation delay={0.4}>
         <div
           className="border-stroke-3/18 relative h-[420px] w-full max-w-[409px] rounded-lg border bg-white p-4 max-md:mx-auto min-[1050px]:p-4.5! min-[1100px]:p-5! min-[1200px]:p-10.5! sm:p-10.5 md:p-4 lg:p-2"
-          aria-label="Process workflow visualization"
+          aria-label="Operations hours returned through automation"
         >
           <div
             className="pointer-events-none absolute bottom-0 left-0 z-20 h-[334px] w-full bg-linear-to-b from-transparent from-[10.09%] to-[#FFF] to-[99.05%] select-none"
@@ -94,19 +94,19 @@ const HoursSaved = () => {
               <div className="text-center">
                 <h3
                   className="font-sora text-sora-heading-3 flex items-center justify-center font-normal text-black"
-                  aria-label="3 million plus hours saved"
+                  aria-label="60 thousand plus hours returned to teams"
                 >
                   <NumberAnimation
-                    number={3}
+                    number={60}
                     speed={2000}
                     interval={200}
-                    rooms={1}
+                    rooms={2}
                     heightSpaceRatio={1.9}
                   />
-                  M+
+                  K+
                 </h3>
                 <p className="font-inter-tight text-tagline-2 text-background-13/50 font-normal">
-                  Hours saved
+                  Ops hours given back to teams
                 </p>
               </div>
             </div>

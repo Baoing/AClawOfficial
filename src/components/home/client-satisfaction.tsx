@@ -213,19 +213,19 @@ const ClientSatisfaction = () => {
               <div className="text-center">
                 <h3
                   className="font-sora text-sora-heading-3 flex items-center justify-center font-normal text-black"
-                  aria-label="99 percent client satisfaction"
+                  aria-label="100 percent plus five-star partner reviews"
                 >
                   <NumberAnimation
-                    number={99}
+                    number={100}
                     speed={2000}
                     interval={200}
-                    rooms={2}
+                    rooms={3}
                     heightSpaceRatio={1.9}
                     showPercentage
                   />
                 </h3>
                 <p className="font-inter-tight text-tagline-2 text-background-13/50 font-normal">
-                  Client satisfaction
+                  100% five-star partner reviews
                 </p>
               </div>
             </div>

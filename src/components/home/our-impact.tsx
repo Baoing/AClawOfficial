@@ -20,8 +20,8 @@ const OurImpact = () => {
                 id="impact-heading"
                 className="font-sora lg:text-sora-heading-2 md:text-sora-heading-3 text-sora-heading-4 font-normal max-md:leading-[110%]"
               >
-                <span className="text-background-13/90 font-normal"> Our Impact </span>
-                <span className="text-background-13/50"> in numbers </span>
+                <span className="text-background-13/90 font-normal">Fresh team,</span>{' '}
+                <span className="text-background-13/50">serious outcomes</span>
               </h2>
             </TextReveal>
           </div>

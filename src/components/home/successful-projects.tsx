@@ -62,7 +62,7 @@ const SuccessfulProjects = () => {
       <RevealAnimation delay={0.2}>
         <div
           className="border-stroke-3/18 relative h-[420px] max-w-[409px] basis-[409px] rounded-lg border bg-white px-10.5 pt-[27px] pb-10.5 max-md:mx-auto lg:px-5 xl:px-10.5"
-          aria-label="Successful projects statistics"
+          aria-label="Shopify builds shipped statistics"
         >
           {/* image group */}
           <div ref={imageGroupRef} className="relative h-[294px] w-full max-w-[324px]">
@@ -113,19 +113,19 @@ const SuccessfulProjects = () => {
             <div className="text-center">
               <h3
                 className="font-sora text-sora-heading-3 flex items-center justify-center font-normal text-black"
-                aria-label="500 plus successful projects"
+                aria-label="42 plus Shopify builds shipped"
               >
                 <NumberAnimation
-                  number={500}
+                  number={42}
                   speed={2000}
                   interval={200}
-                  rooms={3}
+                  rooms={2}
                   heightSpaceRatio={1.7}
                 />
                 +
               </h3>
               <p className="font-inter-tight text-tagline-2 text-background-13/50 font-normal">
-                Successful projects
+                Shopify builds shipped
               </p>
             </div>
           </div>
