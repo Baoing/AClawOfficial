@@ -1,64 +1,36 @@
 ---
-title: 'Prompt engineering: write better inputs, get better outputs'
-author: 'Lena Torres'
+title: 'Better prompts for Shopify merchandising and support drafts'
+author: 'AIClawers'
 authorImage: '/images/opai-avatar-img-01.png'
-category: 'Prompt Engineering'
-publishDate: '2025-01-28'
-readTime: '4 min read'
+category: 'Shopify'
+publishDate: '2026-03-18'
+readTime: '6 min read'
 thumbnail: '/images/opai-img-498.jpg'
 heroImages:
   - '/images/opai-img-498.jpg'
-  - '/images/opai-img-499.jpg'
 tags:
-  - Prompt Engineering
-description: 'Tips to craft prompts that get the results you need from AI.'
-related:
-  - five-ai-tools-business-streamline-operations
-  - beginners-guide-automating-workflows-ai
+  - AI
+  - Content
+description: 'Practical prompt patterns for PDP copy, FAQs, and macros—grounded in metafields and policy pages so outputs stay on-brand on Shopify.'
+related: []
 ---
 
-### Why Prompts Matter
+### Anchor every prompt to Shopify objects
 
-When working with AI tools, the quality of the output depends heavily on the quality of the input. Clear and well-structured prompts help AI systems understand the context, the task, and the expected format of the response.
+Pass **metafield values, variant facts, and market** explicitly. “Write a PDP” without inputs invites hallucinated specs.
 
-Businesses and professionals rely on effective prompting to:
+### Ask for structured output
 
-- Reduce vague or incomplete responses
-- Generate more consistent and useful outputs
-- Speed up experimentation and iteration
+Request bullets with **Claim / Evidence / CTA** sections so editors can scan faster than paragraphs. JSON or markdown tables work well for downstream tooling.
 
-> "Strong prompts are not about writing longer instructions — they are about clarity, context, and defining the desired outcome."
+### Include negative constraints
 
-By improving how prompts are written, users can significantly increase the usefulness of AI tools.
+List words to avoid, claims that require legal, and tone ceilings (“no superlatives about medical outcomes”). Negative prompts reduce revert churn more than clever adjectives.
 
-### Best Practices for Prompt Engineering
+### Chain prompts for QA
 
-Prompt engineering is the process of designing inputs that guide AI models toward better responses. Small improvements in prompt structure can lead to noticeably better results.
+First draft, second pass for **plain language reading level**, third pass for **link and price sanity**. Smaller steps beat one mega-prompt.
 
-Effective techniques include:
+### Log what shipped
 
-- Providing clear context about the task or topic
-- Specifying the desired output format (list, summary, steps, etc.)
-- Including examples when possible (few-shot prompting)
-- Refining prompts based on the AI’s responses
-
-These practices help users get reliable results from chatbots, code assistants, and analytics tools.
-
-### Where Prompt Engineering Is Used
-
-Prompt engineering is useful across many AI-powered applications.
-
-Common use cases include:
-
-- Generating marketing or blog content
-- Writing and debugging code with AI assistants
-- Creating summaries from long documents
-- Extracting insights from large datasets
-
-Learning how to structure prompts effectively can improve productivity across many different workflows.
-
-### Conclusion
-
-Prompt engineering is quickly becoming an essential skill when working with AI tools. By focusing on clarity, context, and iteration, users can guide AI systems to produce more accurate and helpful results.
-
-Start with one use case, refine your prompts, and continue improving as you learn what works best.
+Store prompt version and model with the content change. When compliance asks “why did this say X?”, you have an answer.
