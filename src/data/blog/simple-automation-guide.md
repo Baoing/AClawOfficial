@@ -1,6 +1,6 @@
 ---
 title: 'Simple Shopify automation you can ship this week'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-03-24'

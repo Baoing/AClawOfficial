@@ -1,7 +1,7 @@
 ---
 title: 'Yuki Tanaka'
 imageSrc: '/images/opai-avatar-img-284.jpg'
-imageAlt: 'Yuki Tanaka using AIClawers'
+imageAlt: 'Yuki Tanaka using AI Clawers'
 description: 'Rephrasing and language product lead.'
 role: 'Language Product Lead'
 href: '/team-details'
@@ -35,7 +35,7 @@ Senior learning scientist and content designer for English learning paths. Desig
 
 **2021 – present**
 
-#### AIClawers
+#### AI Clawers
 
 Owns product and content for rephrasing, tone adjustment, and language-level features. Ensures outputs respect learner level, dialect, and register. Collaborates with research and localization on quality and fairness metrics.
 

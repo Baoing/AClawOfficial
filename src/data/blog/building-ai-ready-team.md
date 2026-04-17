@@ -1,6 +1,6 @@
 ---
 title: 'Building a Shopify + AI ready delivery team'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-05.png'
 category: 'Shopify'
 publishDate: '2026-03-20'

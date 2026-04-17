@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'Pricing - AI Solutions || AIClawers',
+  title: 'Pricing - AI Solutions || AI Clawers',
   description:
     'Transparent pricing designed to scale with your business. No hidden fees, no surprises.',
 };

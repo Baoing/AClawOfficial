@@ -1,6 +1,6 @@
 ---
 title: 'Beginner’s guide to Shopify automation (before you add AI)'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-01.png'
 category: 'Shopify'
 publishDate: '2026-03-28'

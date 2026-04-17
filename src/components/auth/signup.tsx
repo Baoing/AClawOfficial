@@ -25,7 +25,7 @@ const Signup = () => {
               </TextReveal>
               <TextReveal delay={0.2}>
                 <p className="text-tagline-2 mx-auto max-w-xs font-normal text-white/60">
-                  Join AIClawers and explore AI-driven solutions tailored to your goals.
+                  Join AI Clawers and explore AI-driven solutions tailored to your goals.
                 </p>
               </TextReveal>
             </div>

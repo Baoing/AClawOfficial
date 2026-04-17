@@ -1,6 +1,6 @@
 ---
 title: 'The future Shopify agency: automation, apps, and human judgment'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-04.png'
 category: 'Shopify'
 publishDate: '2026-03-12'

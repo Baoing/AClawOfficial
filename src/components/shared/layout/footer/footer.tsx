@@ -31,10 +31,10 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-4">
             <RevealAnimation delay={0.1}>
               <div className="space-y-8">
-                <Link href="/" className="block" aria-label="AIClawers home">
+                <Link href="/" className="block" aria-label="AI Clawers home">
                   <Image
                     src="/images/logo/logo-white.svg"
-                    alt="AIClawers"
+                    alt="AI Clawers"
                     width={166}
                     height={40}
                     className="h-[40px] w-[166px]"

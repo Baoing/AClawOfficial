@@ -1,6 +1,6 @@
 ---
 title: 'Getting started on Shopify: where automation and AI fit first'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-05.png'
 category: 'Shopify'
 publishDate: '2026-03-30'

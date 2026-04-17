@@ -1,6 +1,6 @@
 ---
 title: 'Five AI surfaces that actually streamline Shopify operations'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-04-06'

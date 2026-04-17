@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'Contact us - AI Solutions || AIClawers',
+  title: 'Contact us - AI Solutions || AI Clawers',
   description:
-    'Reach out to AIClawers. We’ll get back within 24 hours. Get in touch for AI solutions and support.',
+    'Reach out to AI Clawers. We’ll get back within 24 hours. Get in touch for AI solutions and support.',
 };
 
 const page = () => {

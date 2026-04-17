@@ -9,12 +9,12 @@ const Hero = () => {
             <h1 className="xl:text-sora-heading-2 lg:text-sora-heading-3 text-sora-heading-4 font-sora inline-block font-normal text-white/90">
               Insights, tips, and trends
               <br className="hidden lg:block" />
-              <span className="text-white/30"> from AIClawers</span>
+              <span className="text-white/30"> from AI Clawers</span>
             </h1>
           </TextReveal>
           <TextReveal delay={0.2}>
             <p className="text-tagline-2 mx-auto mt-3 mb-14 max-w-xl font-normal text-white/60">
-              At AIClawers, we share practical insights and real-world tips to help you make the most
+              At AI Clawers, we share practical insights and real-world tips to help you make the most
               of AI in your business.
             </p>
           </TextReveal>

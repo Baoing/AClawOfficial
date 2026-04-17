@@ -93,7 +93,7 @@ const CTA = () => {
             </TextReveal>
             <TextReveal delay={0.4}>
               <p className="font-inter-tight text-tagline-2 text-white/60">
-                Let&apos;s explore how AIClawers can drive success for your business.
+                Let&apos;s explore how AI Clawers can drive success for your business.
               </p>
             </TextReveal>
             <RevealAnimation delay={0.5}>

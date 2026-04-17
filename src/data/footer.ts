@@ -3,7 +3,7 @@ import { FooterData } from '../interface';
 export const footerData: FooterData = {
   logo: {
     src: '/images/logo/logo-white.svg',
-    alt: 'AIClawers',
+    alt: 'AI Clawers',
     href: '/',
   },
   address: {

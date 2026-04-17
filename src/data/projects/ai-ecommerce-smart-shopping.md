@@ -1,7 +1,7 @@
 ---
 title: 'Transforming e-Commerce'
 titleItalic: 'with AI precision'
-excerpt: "AIClawers boosted a top online retailer's conversions by 40% with AI-powered recommendations, enhancing shopping experiences and driving revenue growth."
+excerpt: "AI Clawers boosted a top online retailer's conversions by 40% with AI-powered recommendations, enhancing shopping experiences and driving revenue growth."
 heroImage: '/images/opai-img-488.jpg'
 details:
   client: 'Alex Jonson'
@@ -22,7 +22,7 @@ after:
   - 'Smarter checkout flows reducing cart abandonment.'
   - 'AI-optimized inventory, pricing, and supply chain efficiency.'
 testimonial:
-  quote: "The AI solutions from AIClawers transformed our operations. We've never seen such fast, impressive growth!"
+  quote: "The AI solutions from AI Clawers transformed our operations. We've never seen such fast, impressive growth!"
   authorName: 'Emma Taylor'
   authorRole: 'CMO'
   authorCompany: 'Sarah Mitchell, VP of E-commerce, NovaRetail'

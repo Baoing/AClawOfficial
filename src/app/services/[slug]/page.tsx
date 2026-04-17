@@ -24,9 +24,9 @@ export async function generateMetadata({
     const result = getMarkDownContent('src/data/services', slug);
     const title = (result?.data?.title as string) ?? 'Service';
     const description = (result?.data?.description as string) ?? undefined;
-    return buildMetadata(`${title} - AI Solutions || AIClawers`, description, `/services/${slug}`);
+    return buildMetadata(`${title} - AI Solutions || AI Clawers`, description, `/services/${slug}`);
   } catch {
-    return buildMetadata('Service Details - AI Solutions | AIClawers', undefined, `/services/${slug}`);
+    return buildMetadata('Service Details - AI Solutions | AI Clawers', undefined, `/services/${slug}`);
   }
 }
 

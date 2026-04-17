@@ -1,6 +1,6 @@
 ---
 title: 'Responsible AI on Shopify: what “safe to ship” means for merchants'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-03-14'

@@ -1,6 +1,6 @@
 ---
 title: 'Shopify workflow automation: insights from production stores'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-04-02'

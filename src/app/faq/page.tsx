@@ -12,9 +12,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'FAQ - AI Solutions || AIClawers',
+  title: 'FAQ - AI Solutions || AI Clawers',
   description:
-    'Frequently asked questions about AIClawers AI solutions. Find answers on pricing, security, features, and getting started.',
+    'Frequently asked questions about AI Clawers AI solutions. Find answers on pricing, security, features, and getting started.',
 };
 
 const page = () => {

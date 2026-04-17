@@ -7,7 +7,7 @@ import getMarkDownData from '@/src/utils/getMarkDownData';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services - AI Solutions || AIClawers',
+  title: 'Services - AI Solutions || AI Clawers',
   description: 'Tailored AI solutions and proven results.',
 };
 

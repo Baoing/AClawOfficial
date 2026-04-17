@@ -23,7 +23,7 @@ after:
   - 'Demand forecasting that optimizes stock and promotions.'
   - 'Clear attribution from marketing to shelf performance.'
 testimonial:
-  quote: 'AIClawers turned our data into a strategic asset. We finally know what moves the needle.'
+  quote: 'AI Clawers turned our data into a strategic asset. We finally know what moves the needle.'
   authorName: 'James Chen'
   authorRole: 'Head of Merchandising'
   authorCompany: 'Retail Corp'

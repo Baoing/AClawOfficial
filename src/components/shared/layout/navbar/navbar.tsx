@@ -50,17 +50,17 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
               'bg-background-6 border-stroke-3/18 flex items-center justify-between rounded-full border py-1.5 pr-5 pl-2 lg:gap-12 lg:py-0 lg:pr-1.5 lg:pl-1.5'
             )}
           >
-            <Link href="/" className="block size-11 ml-2" aria-label="AIClawers home">
+            <Link href="/" className="block size-11 ml-2" aria-label="AI Clawers home">
               <figure className="size-full">
                 <Image
                   src="/images/logo/logo.svg"
-                  alt="AIClawers"
+                  alt="AI Clawers"
                   width={44}
                   height={44}
                   className="size-full"
                 />
               </figure>
-              <span className="sr-only">AIClawers</span>
+              <span className="sr-only">AI Clawers</span>
             </Link>
 
             <ul className="relative hidden items-center gap-6 lg:flex lg:gap-8">

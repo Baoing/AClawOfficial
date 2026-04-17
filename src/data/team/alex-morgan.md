@@ -1,7 +1,7 @@
 ---
 title: 'Alex Morgan'
 imageSrc: '/images/opai-avatar-img-285.jpg'
-imageAlt: 'Alex Morgan using AIClawers'
+imageAlt: 'Alex Morgan using AI Clawers'
 description: 'Tone and voice product lead.'
 role: 'Tone & Voice Lead'
 href: '/team-details'
@@ -35,7 +35,7 @@ Staff writer and later senior editor for culture and identity. Developed voice a
 
 **2019 – present**
 
-#### AIClawers
+#### AI Clawers
 
 Leads product design for tone, voice, and style features. Defines how users set and refine “your tone” across emails, social, and long-form content. Works with design and research to make tone controls intuitive and effective.
 

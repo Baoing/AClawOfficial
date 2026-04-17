@@ -1,7 +1,7 @@
 ---
 title: 'David Okonkwo'
 imageSrc: '/images/opai-avatar-img-286.jpg'
-imageAlt: 'David Okonkwo using AIClawers'
+imageAlt: 'David Okonkwo using AI Clawers'
 description: 'Simplification and summarization lead.'
 role: 'Simplification Lead'
 href: '/team-details'
@@ -35,7 +35,7 @@ Editor and then senior editor for Nature Communications and outreach content. Co
 
 **2020 – present**
 
-#### AIClawers
+#### AI Clawers
 
 Heads product and content for simplification and summarization tools. Ensures outputs are accurate, readable, and appropriate for target audience and use case. Works with research and compliance on clarity, sourcing, and responsible AI.
 

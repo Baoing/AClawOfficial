@@ -1,6 +1,6 @@
 ---
 title: 'Customer data on Shopify: what commerce leaders should audit'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-03-16'

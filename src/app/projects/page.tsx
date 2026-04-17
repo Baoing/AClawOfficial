@@ -9,7 +9,7 @@ import type { Metadata } from 'next';
 const PROJECTS_PER_PAGE = 8;
 
 export const metadata: Metadata = {
-  title: 'Projects - AI Solutions || AIClawers',
+  title: 'Projects - AI Solutions || AI Clawers',
   description: 'See how our AI solutions have helped businesses succeed.',
 };
 

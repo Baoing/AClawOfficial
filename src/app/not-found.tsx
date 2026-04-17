@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: '404 - AI Solutions || AIClawers',
+  title: '404 - AI Solutions || AI Clawers',
 };
 
 const page = () => {

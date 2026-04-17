@@ -15,8 +15,8 @@ import getMarkDownData from '@/src/utils/getMarkDownData';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog - AI Solutions || AIClawers',
-  description: 'Insights, tips, and trends from AIClawers on AI and business.',
+  title: 'Blog - AI Solutions || AI Clawers',
+  description: 'Insights, tips, and trends from AI Clawers on AI and business.',
 };
 
 interface BlogPageProps {

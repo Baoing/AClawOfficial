@@ -1,7 +1,7 @@
 ---
 title: 'Emma Rodriguez'
 imageSrc: '/images/opai-avatar-img-283.jpg'
-imageAlt: 'Emma Rodriguez using AIClawers'
+imageAlt: 'Emma Rodriguez using AI Clawers'
 description: 'Content and campaign strategy lead.'
 role: 'Content Strategy Lead'
 href: '/team-details'
@@ -35,7 +35,7 @@ Content marketing manager for the blog and resource library. Grew organic traffi
 
 **2020 – present**
 
-#### AIClawers
+#### AI Clawers
 
 Leads content and campaign strategy for AI-powered marketing tools. Designs prompts and workflows for ads, social copy, and long-form content. Works with product and growth teams to align content features with marketer needs.
 

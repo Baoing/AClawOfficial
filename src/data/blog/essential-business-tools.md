@@ -1,6 +1,6 @@
 ---
 title: 'Essential Shopify tools beyond the theme editor'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-04.png'
 category: 'Shopify'
 publishDate: '2026-03-22'

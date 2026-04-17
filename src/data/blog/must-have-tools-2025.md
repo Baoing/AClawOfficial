@@ -1,6 +1,6 @@
 ---
 title: 'Must-have Shopify stack for serious merchants in 2025'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-04.png'
 category: 'Shopify'
 publishDate: '2026-04-08'

@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'Sign up - AI Solutions || AIClawers',
+  title: 'Sign up - AI Solutions || AI Clawers',
   description:
-    'Create your AIClawers account. Join and explore AI-driven solutions tailored to your goals.',
+    'Create your AI Clawers account. Join and explore AI-driven solutions tailored to your goals.',
 };
 
 const page = () => {

@@ -1,6 +1,6 @@
 ---
 title: 'Beginner workflows every Shopify team should wire first'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-03-26'

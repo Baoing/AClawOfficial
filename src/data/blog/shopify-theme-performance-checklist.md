@@ -1,6 +1,6 @@
 ---
 title: 'A practical Shopify theme performance checklist'
-author: 'AIClawers'
+author: 'AI Clawers'
 authorImage: '/images/opai-avatar-img-01.png'
 category: 'Shopify'
 publishDate: '2026-04-12'

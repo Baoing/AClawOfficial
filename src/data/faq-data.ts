@@ -20,15 +20,15 @@ const generalFaqSection: FaqSection = {
   items: [
     {
       value: 'general-1',
-      question: 'What is AIClawers?',
+      question: 'What is AI Clawers?',
       answer:
-        'AIClawers is an AI solutions platform that helps businesses automate workflows, gain data-driven insights, and deploy intelligent systems. We offer end-to-end AI services—from strategy and integration to custom models and ongoing support—so you can scale AI across your organization with confidence.',
+        'AI Clawers is an AI solutions platform that helps businesses automate workflows, gain data-driven insights, and deploy intelligent systems. We offer end-to-end AI services—from strategy and integration to custom models and ongoing support—so you can scale AI across your organization with confidence.',
     },
     {
       value: 'general-2',
       question: 'Who is it for?',
       answer:
-        'AIClawers is built for organizations of all sizes that want to adopt AI without the complexity. Whether you’re a startup looking to automate operations, a mid-market company improving customer experience, or an enterprise scaling predictive analytics, our solutions are tailored to your industry, goals, and technical maturity.',
+        'AI Clawers is built for organizations of all sizes that want to adopt AI without the complexity. Whether you’re a startup looking to automate operations, a mid-market company improving customer experience, or an enterprise scaling predictive analytics, our solutions are tailored to your industry, goals, and technical maturity.',
     },
     {
       value: 'general-3',
@@ -38,9 +38,9 @@ const generalFaqSection: FaqSection = {
     },
     {
       value: 'general-4',
-      question: 'Can I use AIClawers for commercial projects?',
+      question: 'Can I use AI Clawers for commercial projects?',
       answer:
-        'Absolutely. AIClawers is built for commercial use. Our plans support business and enterprise deployments, including customer-facing applications, internal tools, and white-label solutions. Contact us to discuss licensing and terms for your specific use case.',
+        'Absolutely. AI Clawers is built for commercial use. Our plans support business and enterprise deployments, including customer-facing applications, internal tools, and white-label solutions. Contact us to discuss licensing and terms for your specific use case.',
     },
   ],
 };
@@ -65,9 +65,9 @@ const servicesAndFeaturesFaqSection: FaqSection = {
     },
     {
       value: 'services-3',
-      question: 'Can I use AIClawers for commercial projects?',
+      question: 'Can I use AI Clawers for commercial projects?',
       answer:
-        'Yes. AIClawers is designed for commercial use. You can deploy our AI solutions in customer-facing products, internal tools, and white-label offerings. Reach out to discuss licensing and commercial terms for your project.',
+        'Yes. AI Clawers is designed for commercial use. You can deploy our AI solutions in customer-facing products, internal tools, and white-label offerings. Reach out to discuss licensing and commercial terms for your project.',
     },
   ],
 };
@@ -80,7 +80,7 @@ const pricingAndBillingFaqSection: FaqSection = {
   items: [
     {
       value: 'pricing-1',
-      question: 'How much does AIClawers cost?',
+      question: 'How much does AI Clawers cost?',
       answer:
         'Pricing depends on scope, usage, and support level. We offer flexible plans from pilot projects to enterprise deployments. Book a call with our team for a tailored quote based on your use case, data volume, and goals.',
     },
@@ -98,7 +98,7 @@ const pricingAndBillingFaqSection: FaqSection = {
     },
     {
       value: 'pricing-4',
-      question: 'Can I use AIClawers for commercial projects?',
+      question: 'Can I use AI Clawers for commercial projects?',
       answer:
         'Yes. Our plans support commercial use, including customer-facing apps and internal tools. Commercial licensing and pricing can be tailored to your project—contact sales for details.',
     },
@@ -113,13 +113,13 @@ const privacyAndSecurityFaqSection: FaqSection = {
   items: [
     {
       value: 'privacy-1',
-      question: 'Is my data secure with AIClawers?',
+      question: 'Is my data secure with AI Clawers?',
       answer:
         'Yes. We use encryption in transit and at rest, follow security best practices, and support compliance requirements such as GDPR and SOC 2. Data can be processed in your environment or in our secure cloud, depending on your preferences and policies.',
     },
     {
       value: 'privacy-2',
-      question: 'Will AIClawers sell my data?',
+      question: 'Will AI Clawers sell my data?',
       answer:
         'No. We never sell your data. Your data is used only to deliver and improve your AI solutions. We outline data use, retention, and ownership in our agreements and are transparent about how we handle your information.',
     },
@@ -131,7 +131,7 @@ const privacyAndSecurityFaqSection: FaqSection = {
     },
     {
       value: 'privacy-4',
-      question: 'Can I use AIClawers for commercial projects?',
+      question: 'Can I use AI Clawers for commercial projects?',
       answer:
         'Yes. Commercial use is supported under our terms. We can discuss data handling, compliance, and licensing for your commercial AI projects during onboarding.',
     },
@@ -160,13 +160,13 @@ const technicalSupportFaqSection: FaqSection = {
       value: 'technical-3',
       question: 'Where can I learn more?',
       answer:
-        'You can explore our website, documentation, and resource center. For deeper technical or commercial discussions, book a call with our team. We’re happy to walk you through use cases, architecture, and how AIClawers can fit your roadmap.',
+        'You can explore our website, documentation, and resource center. For deeper technical or commercial discussions, book a call with our team. We’re happy to walk you through use cases, architecture, and how AI Clawers can fit your roadmap.',
     },
     {
       value: 'technical-4',
-      question: 'Can I use AIClawers for commercial projects?',
+      question: 'Can I use AI Clawers for commercial projects?',
       answer:
-        'Yes. AIClawers is built for commercial deployments. Technical support and SLA options are available for production and commercial use—contact us to align support with your needs.',
+        'Yes. AI Clawers is built for commercial deployments. Technical support and SLA options are available for production and commercial use—contact us to align support with your needs.',
     },
   ],
 };
@@ -191,15 +191,15 @@ const gettingStartedFaqSection: FaqSection = {
     },
     {
       value: 'getting-started-3',
-      question: 'Is AIClawers mobile-friendly?',
+      question: 'Is AI Clawers mobile-friendly?',
       answer:
         'Our dashboards and interfaces are responsive and work on tablets and phones. For mobile apps or embedded AI, we can deliver APIs and SDKs that integrate into your native or web mobile experiences.',
     },
     {
       value: 'getting-started-4',
-      question: 'Can I use AIClawers for commercial projects?',
+      question: 'Can I use AI Clawers for commercial projects?',
       answer:
-        'Yes. AIClawers is intended for commercial use. You can use our AI solutions in products and services you offer to customers. Get in touch to confirm licensing and terms for your commercial project.',
+        'Yes. AI Clawers is intended for commercial use. You can use our AI solutions in products and services you offer to customers. Get in touch to confirm licensing and terms for your commercial project.',
     },
   ],
 };

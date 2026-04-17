@@ -1,7 +1,7 @@
 ---
 title: 'Sarah Chen'
 imageSrc: '/images/opai-avatar-img-281.jpg'
-imageAlt: 'Sarah Chen using AIClawers'
+imageAlt: 'Sarah Chen using AI Clawers'
 description: 'Academic writing and learning design lead.'
 role: 'Academic Writing Lead'
 href: '/team-details'
@@ -35,7 +35,7 @@ Senior content developer for higher-ed writing and grammar products. Led curricu
 
 **2019 – present**
 
-#### AIClawers
+#### AI Clawers
 
 Leading product design for academic writing tools and AI-assisted feedback. Works with educators and students to improve clarity, structure, and citation in academic work. Drives research on learning gains and engagement metrics.
 
