@@ -87,18 +87,18 @@ const CTA = () => {
           <div className="space-y-1.5 sm:max-w-[400px] lg:max-w-[567px] lg:space-y-3">
             <TextReveal delay={0.3}>
               <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%]">
-                <span className="font-normal text-white/90"> Start Your AI </span>
-                <span className="text-white/30"> Transformation Today. </span>
+                <span className="font-normal text-white/90"> Ship a faster </span>
+                <span className="text-white/30"> Shopify storefront. </span>
               </h2>
             </TextReveal>
             <TextReveal delay={0.4}>
               <p className="font-inter-tight text-tagline-2 text-white/60">
-                Let&apos;s explore how AI Clawers can drive success for your business.
+                Themes, checkout UX, apps, and Flow—tell us your catalog and markets and we&apos;ll map a practical build.
               </p>
             </TextReveal>
             <RevealAnimation delay={0.5}>
               <div className="mt-6 md:mt-12" data-opai-animate>
-                <PrimaryLinkButton href="/contact">Learn more</PrimaryLinkButton>
+                <PrimaryLinkButton href="/contact">Plan a project</PrimaryLinkButton>
               </div>
             </RevealAnimation>
           </div>

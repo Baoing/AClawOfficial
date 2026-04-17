@@ -11,45 +11,45 @@ import {
 const faqData = [
   {
     value: 'item-one',
-    question: 'What AI solutions do you offer for businesses?',
+    question: 'What Shopify work do you take on?',
     answer:
-      'We deliver end-to-end AI solutions including intelligent automation, predictive analytics, natural language processing, and computer vision. Our offerings are tailored to your industry and goals—from process optimization and customer insights to AI-powered chatbots and decision support systems.',
+      'We help merchants and brands with Online Store 2.0 themes, performance and Core Web Vitals, checkout and cart UX, metafields and content modeling, Shopify Flow and admin automation, public and custom apps, integrations (ERP, CRM, 3PL), and data reporting. We scope each engagement around your catalog, markets, and launch goals—not generic “AI packages.”',
   },
   {
     value: 'item-two',
-    question: 'How long does it take to implement an AI solution?',
+    question: 'How long does a typical Shopify project take?',
     answer:
-      'Timeline depends on scope and complexity. A focused use case (e.g. chatbot or document automation) can go live in weeks. Larger initiatives like enterprise analytics or custom ML models typically run 2–6 months. We start with a discovery phase to define scope and a realistic rollout plan.',
+      'It depends on scope. A focused theme tune-up, speed pass, or Flow build can ship in a few weeks. A new storefront, migration, or app-heavy build usually runs several weeks to a few months. We start with discovery on catalog structure, apps, markets, and checkout constraints so timelines and milestones match reality.',
   },
   {
     value: 'item-three',
-    question: 'Is my data secure when using your AI services?',
+    question: 'How do you handle data, apps, and compliance on Shopify?',
     answer:
-      'Yes. We follow industry best practices for data security and compliance. Data can be processed in your environment or in our secure cloud with encryption at rest and in transit. We support compliance requirements such as GDPR and SOC 2 and can work under your preferred data residency and governance rules.',
+      'We follow least-privilege app installs, document which apps and scopes touch customer data, and align tracking and marketing consent with your policies. For GDPR-style programs we map PII flows across Shopify, storefront, and connected tools. Work can stay in your org and collaborators where you prefer—we do not need open-ended exports of your order data to deliver storefront work.',
   },
   {
     value: 'item-four',
-    question: 'Can your AI integrate with our existing systems?',
+    question: 'Can you work with our live store or migrate us to Shopify?',
     answer:
-      'Our solutions are built to integrate with your current tech stack via APIs, connectors, and standard protocols. We work with common ERP, CRM, databases, and cloud platforms so you can augment existing workflows with AI without a full replacement.',
+      'Yes. We often work on production stores with staged themes, duplicate environments, and clear QA checklists. For migrations we plan redirects, handle collection and URL structure, reconcile metafields, and test checkout, taxes, and shipping before cutover. ERP and fulfillment integrations are scoped early so launch week stays boring—in a good way.',
   },
   {
     value: 'item-five',
-    question: 'What kind of ROI can we expect from AI implementation?',
+    question: 'What results should we expect from a rebuild or optimization?',
     answer:
-      'ROI varies by use case: automation often cuts manual effort by 30–50%; predictive models improve forecasting and reduce waste; and AI-driven support can increase satisfaction and conversion. We help you define clear KPIs and measure impact from pilot through scale.',
+      'We tie work to metrics you already care about: conversion rate, mobile speed, average order value, support ticket volume, and operational time saved in admin. Theme and performance work targets measurable storefront gains; Flow and better data modeling reduce manual work. We agree on KPIs before build and review them after launch.',
   },
   {
     value: 'item-six',
-    question: 'Do you offer custom AI development or only off-the-shelf tools?',
+    question: 'Do you build custom themes and apps, or only configure existing ones?',
     answer:
-      'We do both. We use proven platforms and frameworks where they fit, and build custom models and applications when your needs are unique. Many engagements combine pre-built components with tailored logic, training, and integration so you get speed and flexibility.',
+      'Both. We use quality themes, apps, and Shopify-native features whenever they fit your roadmap. When you need something only your business does—custom sections, checkout UI extensions, private apps, or middleware—we design and ship that too. Most projects mix configuration, light custom Liquid or app code, and clear documentation so your team can own the store afterward.',
   },
   {
     value: 'item-seven',
-    question: 'What support and training do you provide after rollout?',
+    question: 'What happens after launch—do you offer ongoing support?',
     answer:
-      'We provide training for your teams, runbooks, and documentation so you can operate and iterate on the solution. Ongoing support options include monitoring, tuning, and enhancement as your data and requirements evolve. We aim for a smooth handover and long-term success.',
+      'We hand over theme notes, app list, and runbooks for campaigns and catalog updates. Many clients keep us on a light retainer for seasonal releases, A/B follow-ups, new markets, and app upgrades. We can also train your staff on Flow, metafields, and safe theme editing so day-to-day changes do not depend on a single vendor.',
   },
 ];
 
@@ -60,13 +60,13 @@ const FAQ = () => {
         <div className="space-y-1.5 text-center md:space-y-3">
           <TextReveal>
             <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 max-md:-leading-[110%] mx-auto max-w-[700px] font-normal">
-              <span className="font-normal text-white/90"> Your questions, </span>
+              <span className="font-normal text-white/90"> Shopify questions, </span>
               <span className="text-white/30"> answered </span>
             </h2>
           </TextReveal>
           <TextReveal delay={0.2}>
-            <p className="font-inter-tight text-tagline-2 mx-auto max-w-[300px] text-white/60">
-              Explore our most frequently asked questions to get started.
+            <p className="font-inter-tight text-tagline-2 mx-auto max-w-[340px] text-white/60">
+              Themes, apps, migrations, and how we ship—before you book a call.
             </p>
           </TextReveal>
         </div>

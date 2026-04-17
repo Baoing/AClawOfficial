@@ -21,7 +21,7 @@ const FaqContact = () => {
           Still have questions?
         </h4>
         <p className="text-tagline-4 font-inter-tight mb-6 text-white/60">
-          Support details to capture customers that might be on the fence.
+          Tell us about your store, timeline, and markets—we reply with next steps.
         </p>
         <form className="space-y-4">
           <input
