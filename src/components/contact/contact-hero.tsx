@@ -43,10 +43,10 @@ const ContactHero = () => {
                   <div className="mt-6 mb-5 space-y-1">
                     <h2 className="text-sora-heading-6 font-normal text-white/90">Email</h2>
                     <a
-                      href="mailto:support@Nexsas.com"
+                      href="mailto:support@aiclawers.com"
                       className="text-tagline-2 inline-block font-normal text-white/60 transition-all duration-300 ease-in-out hover:text-white"
                     >
-                      support@Nexsas.com
+                      support@aiclawers.com
                     </a>
                   </div>
                   <p className="text-tagline-2 font-normal text-white/50 underline underline-offset-2">

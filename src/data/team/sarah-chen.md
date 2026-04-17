@@ -1,13 +1,13 @@
 ---
 title: 'Sarah Chen'
 imageSrc: '/images/opai-avatar-img-281.jpg'
-imageAlt: 'Sarah Chen using Nexsas'
+imageAlt: 'Sarah Chen using AIClawers'
 description: 'Academic writing and learning design lead.'
 role: 'Academic Writing Lead'
 href: '/team-details'
 contactPhones:
   - '+1 (555) 100 2001'
-email: 'sarah.chen@nexsas.com'
+email: 'sarah.chen@aiclawers.com'
 socialLinks:
   - name: LinkedIn
     href: 'https://linkedin.com/in/sarah-chen'
@@ -35,7 +35,7 @@ Senior content developer for higher-ed writing and grammar products. Led curricu
 
 **2019 – present**
 
-#### Nexsas
+#### AIClawers
 
 Leading product design for academic writing tools and AI-assisted feedback. Works with educators and students to improve clarity, structure, and citation in academic work. Drives research on learning gains and engagement metrics.
 

@@ -1,13 +1,13 @@
 ---
 title: 'James Mitchell'
 imageSrc: '/images/opai-avatar-img-282.jpg'
-imageAlt: 'James Mitchell using Nexsas'
+imageAlt: 'James Mitchell using AIClawers'
 description: 'Professional communication and product lead.'
 role: 'Professional Communication Lead'
 href: '/team-details'
 contactPhones:
   - '+1 (555) 100 2002'
-email: 'james.mitchell@nexsas.com'
+email: 'james.mitchell@aiclawers.com'
 socialLinks:
   - name: LinkedIn
     href: 'https://linkedin.com/in/james-mitchell'
@@ -35,7 +35,7 @@ Consultant and later manager in communications and change management. Supported 
 
 **2019 – present**
 
-#### Nexsas
+#### AIClawers
 
 Heads product and content strategy for professional email and business writing tools. Ensures tone, structure, and clarity meet enterprise and SMB needs. Works with sales and customer success to align product with real-world use cases.
 

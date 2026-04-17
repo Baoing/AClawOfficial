@@ -22,12 +22,12 @@ const BornInfo = () => {
             <div className="space-y-3">
               <TextReveal>
                 <h2 className="font-sora text-sora-heading-4 lg:text-sora-heading-3 xl:text-sora-heading-2 inline-block font-normal text-white/90">
-                  How Nexsas <span className="text-white/30">was born</span>
+                  How AIClawers <span className="text-white/30">was born</span>
                 </h2>
               </TextReveal>
               <TextReveal delay={0.2}>
                 <p className="text-tagline-2 max-w-xl font-normal text-white/60">
-                  Nexsas was founded to make AI accessible for businesses. Our tools are trusted
+                  AIClawers was founded to make AI accessible for businesses. Our tools are trusted
                   globally for their simplicity, power, and real-world impact.
                 </p>
               </TextReveal>

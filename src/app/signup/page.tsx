@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'Sign up - AI Solutions || Nexsas',
+  title: 'Sign up - AI Solutions || AIClawers',
   description:
-    'Create your Nexsas account. Join and explore AI-driven solutions tailored to your goals.',
+    'Create your AIClawers account. Join and explore AI-driven solutions tailored to your goals.',
 };
 
 const page = () => {

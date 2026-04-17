@@ -1,13 +1,13 @@
 ---
 title: 'Yuki Tanaka'
 imageSrc: '/images/opai-avatar-img-284.jpg'
-imageAlt: 'Yuki Tanaka using Nexsas'
+imageAlt: 'Yuki Tanaka using AIClawers'
 description: 'Rephrasing and language product lead.'
 role: 'Language Product Lead'
 href: '/team-details'
 contactPhones:
   - '+1 (555) 100 2004'
-email: 'yuki.tanaka@nexsas.com'
+email: 'yuki.tanaka@aiclawers.com'
 socialLinks:
   - name: LinkedIn
     href: 'https://linkedin.com/in/yuki-tanaka'
@@ -35,7 +35,7 @@ Senior learning scientist and content designer for English learning paths. Desig
 
 **2021 – present**
 
-#### Nexsas
+#### AIClawers
 
 Owns product and content for rephrasing, tone adjustment, and language-level features. Ensures outputs respect learner level, dialect, and register. Collaborates with research and localization on quality and fairness metrics.
 

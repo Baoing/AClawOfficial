@@ -14,7 +14,7 @@ const ProjectsHero = () => {
           </TextReveal>
           <TextReveal delay={0.2}>
             <p className="text-tagline-2 mx-auto mt-3 mb-14 max-w-xl font-normal text-white/60">
-              At Nexsas, we build AI solutions that drive results. See how our projects have helped
+              At AIClawers, we build AI solutions that drive results. See how our projects have helped
               businesses succeed.
             </p>
           </TextReveal>

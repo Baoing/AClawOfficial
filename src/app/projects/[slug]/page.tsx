@@ -22,10 +22,10 @@ export async function generateMetadata({
     const result = getMarkDownContent('src/data/projects', slug);
     const title = (result?.data?.title as string) ?? 'Project';
     const description = (result?.data?.excerpt as string) ?? undefined;
-    return buildMetadata(`${title} - AI Solutions || Nexsas`, description, `/projects/${slug}`);
+    return buildMetadata(`${title} - AI Solutions || AIClawers`, description, `/projects/${slug}`);
   } catch {
     return buildMetadata(
-      'Project Details - AI Solutions || Nexsas',
+      'Project Details - AI Solutions || AIClawers',
       undefined,
       `/projects/${slug}`
     );

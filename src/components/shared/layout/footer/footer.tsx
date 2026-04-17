@@ -31,10 +31,10 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-4">
             <RevealAnimation delay={0.1}>
               <div className="space-y-8">
-                <Link href="/" className="-ml-3 block" aria-label="Nexsas home">
+                <Link href="/" className="-ml-3 block" aria-label="AIClawers home">
                   <Image
                     src="/images/logo/logo-white.svg"
-                    alt="Nexsas"
+                    alt="AIClawers"
                     width={166}
                     height={40}
                     className="h-[40px] w-[166px]"
@@ -204,7 +204,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* NEXSAS title */}
+        {/* AICLWERS title */}
         <ShuffledTitle />
 
         <BottomBar />

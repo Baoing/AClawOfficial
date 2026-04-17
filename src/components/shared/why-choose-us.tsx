@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
           <div className="text-center">
             <TextReveal>
               <h2 className="xl:text-sora-heading-2 lg:text-sora-heading-3 text-sora-heading-4 inline-block text-center font-normal text-white/90">
-                Why <span className="text-white/30">Nexsas?</span>
+                Why <span className="text-white/30">AIClawers?</span>
               </h2>
             </TextReveal>
           </div>

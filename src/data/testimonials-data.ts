@@ -29,7 +29,7 @@ export const testimonialsData: TestimonialItem[] = [
   {
     id: '3',
     quote:
-      'From day one, Nexsas felt like an extension of our internal team. Their tools and support are truly next-level.',
+      'From day one, AIClawers felt like an extension of our internal team. Their tools and support are truly next-level.',
     name: 'Derek Singh',
     role: 'Head of Product, E-commerce Platform',
     imageSrc: '/images/opai-avatar-img-03.png',
@@ -47,7 +47,7 @@ export const testimonialsData: TestimonialItem[] = [
   {
     id: '5',
     quote:
-      'What impressed me most was the flexibility. Nexsas adapted to our workflow instead of forcing us to change.',
+      'What impressed me most was the flexibility. AIClawers adapted to our workflow instead of forcing us to change.',
     name: 'Jonas Müller',
     role: 'Growth Manager, Logistics Startup',
     imageSrc: '/images/opai-avatar-img-05.png',

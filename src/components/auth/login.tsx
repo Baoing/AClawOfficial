@@ -26,7 +26,7 @@ const Login = () => {
               </TextReveal>
               <TextReveal delay={0.2}>
                 <p className="text-tagline-2 mx-auto max-w-xs font-normal text-white/60">
-                  Let&apos;s explore how Nexsas can support your goals with AI-driven solutions.
+                  Let&apos;s explore how AIClawers can support your goals with AI-driven solutions.
                 </p>
               </TextReveal>
             </div>

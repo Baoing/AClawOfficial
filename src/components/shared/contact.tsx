@@ -46,10 +46,10 @@ const Contact = () => {
                     <div className="flex flex-col gap-1">
                       <p className="text-it-heading-6 text-white/90">Email</p>
                       <a
-                        href="mailto:support@Nexsas.com"
+                        href="mailto:support@aiclawers.com"
                         className="text-tagline-2 font-inter-tight text-white/60"
                       >
-                        support@Nexsas.com
+                        support@aiclawers.com
                       </a>
                     </div>
                   </div>

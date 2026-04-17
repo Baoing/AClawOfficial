@@ -9,7 +9,7 @@ import type { Metadata } from 'next';
 const PROJECTS_PER_PAGE = 8;
 
 export const metadata: Metadata = {
-  title: 'Projects - AI Solutions || Nexsas',
+  title: 'Projects - AI Solutions || AIClawers',
   description: 'See how our AI solutions have helped businesses succeed.',
 };
 

@@ -17,7 +17,7 @@ const ServicesHero = () => {
             </div>
             <TextReveal delay={0.2}>
               <p className="text-tagline-2 font-inter-tight mx-auto w-full max-w-[442px] text-white/60">
-                Nexsas&apos;s Creative & Visual AI tools let you generate high-quality visuals
+                AIClawers&apos;s Creative & Visual AI tools let you generate high-quality visuals
                 instantly, no design or coding skills needed.
               </p>
             </TextReveal>

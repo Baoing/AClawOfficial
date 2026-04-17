@@ -17,7 +17,7 @@ const Blog = () => {
         <div className="space-y-4 text-center max-md:pb-4">
           <TextReveal>
             <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal text-white/90 max-md:leading-[110%]">
-              Insights, tips, and trends <span className="text-white/30">from Nexsas</span>
+              Insights, tips, and trends <span className="text-white/30">from AIClawers</span>
             </h2>
           </TextReveal>
 

@@ -16,7 +16,7 @@ const Subscribe = () => {
           <TextReveal delay={0.1}>
             <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%]">
               <span className="font-normal text-white/90"> Stay Informed with </span>
-              <span className="text-white/30"> Nexsas updates </span>
+              <span className="text-white/30"> AIClawers updates </span>
             </h2>
           </TextReveal>
           <TextReveal delay={0.2}>

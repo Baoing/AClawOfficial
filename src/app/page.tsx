@@ -16,7 +16,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'AI Solutions || Nexsas',
+  title: 'AI Solutions || AIClawers',
 };
 
 const page = () => {

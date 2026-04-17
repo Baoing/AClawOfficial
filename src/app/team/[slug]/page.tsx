@@ -34,13 +34,13 @@ export async function generateMetadata({
     const title = (result?.data?.title as string) ?? 'Team member';
     const description = (result?.data?.description as string) ?? undefined;
     return buildMetadata(
-      `${title} - Team || Nexsas`,
+      `${title} - Team || AIClawers`,
       description,
       `/team-details/${slug}`
     );
   } catch {
     return buildMetadata(
-      'Team Details - AI Solutions || Nexsas',
+      'Team Details - AI Solutions || AIClawers',
       undefined,
       `/team-details/${slug}`
     );

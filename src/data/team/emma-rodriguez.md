@@ -1,13 +1,13 @@
 ---
 title: 'Emma Rodriguez'
 imageSrc: '/images/opai-avatar-img-283.jpg'
-imageAlt: 'Emma Rodriguez using Nexsas'
+imageAlt: 'Emma Rodriguez using AIClawers'
 description: 'Content and campaign strategy lead.'
 role: 'Content Strategy Lead'
 href: '/team-details'
 contactPhones:
   - '+1 (555) 100 2003'
-email: 'emma.rodriguez@nexsas.com'
+email: 'emma.rodriguez@aiclawers.com'
 socialLinks:
   - name: LinkedIn
     href: 'https://linkedin.com/in/emma-rodriguez'
@@ -35,7 +35,7 @@ Content marketing manager for the blog and resource library. Grew organic traffi
 
 **2020 – present**
 
-#### Nexsas
+#### AIClawers
 
 Leads content and campaign strategy for AI-powered marketing tools. Designs prompts and workflows for ads, social copy, and long-form content. Works with product and growth teams to align content features with marketer needs.
 

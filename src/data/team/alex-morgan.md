@@ -1,13 +1,13 @@
 ---
 title: 'Alex Morgan'
 imageSrc: '/images/opai-avatar-img-285.jpg'
-imageAlt: 'Alex Morgan using Nexsas'
+imageAlt: 'Alex Morgan using AIClawers'
 description: 'Tone and voice product lead.'
 role: 'Tone & Voice Lead'
 href: '/team-details'
 contactPhones:
   - '+1 (555) 100 2005'
-email: 'alex.morgan@nexsas.com'
+email: 'alex.morgan@aiclawers.com'
 socialLinks:
   - name: LinkedIn
     href: 'https://linkedin.com/in/alex-morgan'
@@ -35,7 +35,7 @@ Staff writer and later senior editor for culture and identity. Developed voice a
 
 **2019 – present**
 
-#### Nexsas
+#### AIClawers
 
 Leads product design for tone, voice, and style features. Defines how users set and refine “your tone” across emails, social, and long-form content. Works with design and research to make tone controls intuitive and effective.
 

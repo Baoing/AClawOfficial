@@ -1,13 +1,13 @@
 ---
 title: 'David Okonkwo'
 imageSrc: '/images/opai-avatar-img-286.jpg'
-imageAlt: 'David Okonkwo using Nexsas'
+imageAlt: 'David Okonkwo using AIClawers'
 description: 'Simplification and summarization lead.'
 role: 'Simplification Lead'
 href: '/team-details'
 contactPhones:
   - '+1 (555) 100 2006'
-email: 'david.okonkwo@nexsas.com'
+email: 'david.okonkwo@aiclawers.com'
 socialLinks:
   - name: LinkedIn
     href: 'https://linkedin.com/in/david-okonkwo'
@@ -35,7 +35,7 @@ Editor and then senior editor for Nature Communications and outreach content. Co
 
 **2020 – present**
 
-#### Nexsas
+#### AIClawers
 
 Heads product and content for simplification and summarization tools. Ensures outputs are accurate, readable, and appropriate for target audience and use case. Works with research and compliance on clarity, sourcing, and responsible AI.
 
