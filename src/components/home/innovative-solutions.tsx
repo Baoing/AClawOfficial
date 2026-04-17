@@ -19,32 +19,42 @@ const iconMap: Record<
   LegalRealEstate: LegalRealEstateIcon,
 };
 
+interface InnovativeSolutionCard {
+  id: string;
+  iconId: keyof typeof iconMap;
+  title: string;
+  description: string;
+}
+
 const InnovativeSolutions = () => {
-  const innovativeSolutionsCards = [
+  const innovativeSolutionsCards: InnovativeSolutionCard[] = [
     {
-      id: 'retail-ecommerce',
+      id: 'store-builds',
       iconId: 'RetailEcommerce',
-      title: 'Retail & E-commerce',
-      description: 'Personalize customer journeys and drive sales.',
+      title: 'Store builds & optimization',
+      description:
+        'Launches, migrations, OS 2.0 rebuilds when you need them.\nSpeed, SEO, accessibility, and checkout passes so the store stays fast under traffic.',
     },
     {
-      id: 'healthcare',
-      iconId: 'Healthcare',
-      title: 'Healthcare',
-      description: 'Enable better outcomes with predictive diagnostics.',
-    },
-    {
-      id: 'finance',
-      iconId: 'Finance',
-      title: 'Finance',
-      description: 'Detect fraud and optimize financial strategies.',
-    },
-    {
-      id: 'legal-real-estate',
+      id: 'theme-liquid',
       iconId: 'LegalRealEstate',
-      title: 'Legal & real estate',
-      description: 'Automate research and streamline processes.',
-      gridClassName: 'lg:col-span-4 lg:col-start-5',
+      title: 'Themes & Liquid',
+      description:
+        'Section libraries, metafields, and multi-market UX your team can own.\nLiquid architecture that stays readable as merchandising and promos evolve.',
+    },
+    {
+      id: 'custom-apps',
+      iconId: 'Finance',
+      title: 'Custom apps',
+      description:
+        'Private and embedded apps for admin workflows merchants live in daily.\nIntegrations that keep catalog, finance, and fulfillment aligned with the storefront.',
+    },
+    {
+      id: 'ai-growth',
+      iconId: 'Healthcare',
+      title: 'AI for growth',
+      description:
+        'Copilots for merchandising, content, and support grounded in your rules.\nOutputs tied to Shopify data so teams gain speed without losing brand control.',
     },
   ];
 
@@ -52,6 +62,7 @@ const InnovativeSolutions = () => {
     <section
       className="bg-background-7 py-10 pb-20 sm:py-20 md:py-28 lg:py-30 xl:py-40 2xl:py-44"
       aria-labelledby="innovative-solutions-heading"
+      data-section="innovative-solutions"
     >
       <div className="main-container">
         <div className="mb-10 space-y-12 lg:space-y-19">
@@ -62,18 +73,19 @@ const InnovativeSolutions = () => {
                 className="font-sora text-sora-heading-4 text-background-13/90 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%] lg:mx-auto lg:max-w-[600px]"
                 itemProp="name"
               >
-                Innovative AI{' '}
+                Four ways we help{' '}
                 <span className="text-background-13/50">
-                  solutions for <br className="hidden md:block" /> every industry
+                  build, tune, extend, <br className="hidden md:block" />
+                  and grow on Shopify
                 </span>
               </h2>
             </TextReveal>
             <TextReveal>
               <p
-                className="font-inter-tight text-tagline-2 text-background-13/60 font-normal lg:mx-auto lg:max-w-[350px]"
+                className="font-inter-tight text-tagline-2 text-background-13/60 font-normal lg:mx-auto lg:max-w-[380px]"
                 itemProp="description"
               >
-                We specialize in delivering AI-driven transformations across sectors.
+                Storefronts, themes, apps, and lean AI—kept tight so your team ships without noise.
               </p>
             </TextReveal>
           </div>
@@ -101,7 +113,7 @@ const InnovativeSolutions = () => {
                         >
                           {card.title}
                         </h3>
-                        <p className="font-inter-tight text-tagline-3 text-background-6/50 font-normal">
+                        <p className="mt-2 font-inter-tight text-tagline-3 text-background-6/50 mx-auto max-w-[280px] whitespace-pre-line font-normal leading-snug">
                           {card.description}
                         </p>
                       </div>
@@ -111,19 +123,18 @@ const InnovativeSolutions = () => {
               );
             })}
           </div>
+          <RevealAnimation delay={0.5}>
+            <div className="inline-flex w-full justify-center md:flex">
+              <SecondaryLinkButton
+                href="/services"
+                displayClassName="max-md:w-[85%] max-md:mx-auto"
+                className="w-full"
+              >
+                Explore services
+              </SecondaryLinkButton>
+            </div>
+          </RevealAnimation>
         </div>
-
-        <RevealAnimation delay={0.5}>
-          <div className="inline-flex w-full justify-center md:flex">
-            <SecondaryLinkButton
-              href="/about"
-              displayClassName="max-md:w-[85%] max-md:mx-auto"
-              className="w-full"
-            >
-              Learn more about industries
-            </SecondaryLinkButton>
-          </div>
-        </RevealAnimation>
       </div>
     </section>
   );

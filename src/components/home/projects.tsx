@@ -16,7 +16,11 @@ const Projects = async () => {
     .slice(0, HOME_PROJECTS_LIMIT);
 
   return (
-    <section className="bg-background-6 relative overflow-hidden py-10 pt-20 sm:py-20 md:py-28 lg:py-36 xl:py-40 2xl:py-44">
+    <section
+      className="bg-background-6 relative overflow-hidden py-10 pt-20 sm:py-20 md:py-28 lg:py-36 xl:py-40 2xl:py-44"
+      aria-labelledby="projects-heading"
+      data-section="home-projects"
+    >
       <div className="absolute -top-1 left-0 z-4 h-[796px] w-full md:h-[760px] lg:-top-4 2xl:-top-12">
         <Image src={opai1} alt="" aria-hidden className="h-full w-full object-cover" />
       </div>
@@ -29,15 +33,17 @@ const Projects = async () => {
                 className="font-sora text-sora-heading-4 text-background-7 min-[500px]:text-background-13/90 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%] lg:mx-auto lg:max-w-[600px]"
                 id="projects-heading"
               >
-                Delivering{' '}
+                Proof on{' '}
                 <span className="text-background-7/50 min-[500px]:text-background-13/50">
-                  real impact.
+                  Shopify—builds, apps, <br className="hidden md:block" />
+                  and themes we shipped
                 </span>
               </h2>
             </TextReveal>
             <TextReveal delay={0.2}>
-              <p className="font-inter-tight text-tagline-2 text-background-7 min-[500px]:text-background-13/50 font-normal lg:mx-auto lg:max-w-[350px]">
-                Explore how our solutions have helped clients succeed.
+              <p className="font-inter-tight text-tagline-2 text-background-7 min-[500px]:text-background-13/50 font-normal lg:mx-auto lg:max-w-[380px]">
+                Launches, custom apps, and optimization passes—real merchants, real timelines, no
+                fluff.
               </p>
             </TextReveal>
           </div>
@@ -61,7 +67,7 @@ const Projects = async () => {
           <RevealAnimation delay={0.1}>
             <div className="mx-auto w-full text-center max-md:w-[85%] md:mx-0 md:w-auto">
               <PrimaryLinkButton href="/projects" className="w-full md:w-auto">
-                View all projects
+                View Shopify work
               </PrimaryLinkButton>
             </div>
           </RevealAnimation>

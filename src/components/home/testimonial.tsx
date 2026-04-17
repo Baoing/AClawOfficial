@@ -6,18 +6,22 @@ import Marquee from 'react-fast-marquee';
 
 const Testimonial = () => {
   return (
-    <section className="py-10 md:py-28 lg:py-36 xl:py-40 2xl:py-44">
+    <section
+      className="py-10 md:py-28 lg:py-36 xl:py-40 2xl:py-44"
+      aria-labelledby="testimonial-heading"
+      data-section="home-testimonials"
+    >
       <div className="main-container mb-10 md:mb-14 lg:mb-17.5">
         <div className="space-y-3 text-center">
           <TextReveal>
             <h2
-              id="empowering-business-heading"
+              id="testimonial-heading"
               className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 mx-auto max-w-[700px] font-normal max-md:leading-[110%]"
             >
-              <span className="font-normal text-white/90"> What our </span>
+              <span className="font-normal text-white/90">What merchants </span>
               <span className="text-white/30">
-                clients <br className="hidden md:block" />
-                are saying.
+                say about <br className="hidden md:block" />
+                our Shopify work
               </span>
             </h2>
           </TextReveal>

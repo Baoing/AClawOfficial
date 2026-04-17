@@ -29,22 +29,22 @@ const EmpoweringBusiness = () => {
                 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 text-background-13/90 mx-auto max-w-[700px] font-normal max-md:leading-[110%]"
                 itemProp="name"
               >
-                Shopify builds,{' '}
+                Themes, apps, and{' '}
                 <span className="text-background-13/50">
-                  optimization & apps <br className="hidden md:block" />
-                  backed by practical AI
+                  storefront optimization <br className="hidden md:block" />
+                  sharpened with practical AI
                 </span>
               </h2>
             </TextReveal>
 
             <TextReveal delay={0.2}>
               <p
-                className="font-inter-tight text-tagline-2 text-background-13/60 mx-auto max-w-[350px] font-normal"
-                aria-label="Description of Shopify technical services"
+                className="font-inter-tight text-tagline-2 text-background-13/60 mx-auto max-w-[440px] font-normal"
+                aria-label="Shopify themes, performance, apps, and AI copilots for merchants"
                 itemProp="description"
               >
-                We ship launch-ready storefronts, harden themes for speed and SEO, and build custom
-                Shopify apps—so your stack scales without the firefighting.
+                Launch-ready Liquid, faster Core Web Vitals, checkout-safe changes, and private apps
+                in admin—paired with AI copilots that remove busywork instead of adding noise.
               </p>
             </TextReveal>
           </div>
