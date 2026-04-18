@@ -10,7 +10,7 @@ interface ServiceDetailsHeroProps {
 
 const ServiceDetailsHero = ({ service }: ServiceDetailsHeroProps) => {
   const ctaHref = service.ctaHref ?? '/contact';
-  const ctaText = service.ctaText ?? 'Get a Demo';
+  const ctaText = service.ctaText ?? 'Discuss scope';
 
   return (
     <section className="bg-background-6 relative overflow-hidden pt-32 pb-18 xl:pt-40 2xl:pt-50">

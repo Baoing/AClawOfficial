@@ -91,14 +91,6 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="#"
-                        className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
-                      >
-                        Career
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
                         href="/projects"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
@@ -107,10 +99,10 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="/contact"
+                        href="/blog"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Contact us
+                        Blogs
                       </Link>
                     </li>
                   </ul>
@@ -132,26 +124,18 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="#"
+                        href="https://shopify.baoea.com/"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Documentation
+                        Shopify Tutorial
                       </Link>
                     </li>
                     <li className="py-2">
                       <Link
-                        href="#"
+                        href="mailto:will@baoea.com"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Tutorial
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="#"
-                        className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
-                      >
-                        Support
+                        will@baoea.com
                       </Link>
                     </li>
                   </ul>
@@ -181,26 +165,10 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="#"
-                        className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
-                      >
-                        Refund Policy
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
                         href="/gdpr"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
                         GDPR Compliance
-                      </Link>
-                    </li>
-                    <li className="py-2">
-                      <Link
-                        href="#"
-                        className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
-                      >
-                        Affiliate Policy
                       </Link>
                     </li>
                   </ul>

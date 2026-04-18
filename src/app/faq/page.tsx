@@ -1,6 +1,7 @@
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import FaqHeader from '@/src/components/faq/faq-header';
 import GeneralFaq from '@/src/components/faq/general-faq';
+import ShopifyCommonFaq from '@/src/components/faq/shopify-common-faq';
 import GettingStartedFaq from '@/src/components/faq/getting-started-faq';
 import PricingAndBillingFaq from '@/src/components/faq/pricing-and-billing-faq';
 import PrivacyAndSecurityFaq from '@/src/components/faq/privacy-and-security-faq';
@@ -12,9 +13,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'FAQ - AI Solutions || AI Clawers',
+  title: 'FAQ | Shopify builds, apps & pricing | AI Clawers',
   description:
-    'Frequently asked questions about AI Clawers AI solutions. Find answers on pricing, security, features, and getting started.',
+    'FAQ for merchants and teams: what Shopify is, pricing and domains, designer/developer needs, plus apps, pricing with AI Clawers, migrations, and how to get started.',
 };
 
 const page = () => {
@@ -24,9 +25,14 @@ const page = () => {
         <div className="main-container">
           <FaqHeader />
           <div className="space-y-18 2xl:space-y-25">
+            <RevealAnimation delay={0.25}>
+              <div>
+                <ShopifyCommonFaq isFirst titleDelay={0} />
+              </div>
+            </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <div>
-                <GeneralFaq isFirst titleDelay={0} />
+                <GeneralFaq isFirst={false} titleDelay={0} />
               </div>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>

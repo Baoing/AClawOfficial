@@ -41,8 +41,7 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
               </div>
             </div>
           </RevealAnimation>
-          {/*  aside sidebar */}
-          <Tool />
+          <Tool tools={service.whatItDoes} />
         </div>
       </div>
     </section>

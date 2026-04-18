@@ -21,7 +21,7 @@ const page = () => {
       {/*<AboutHero />*/}
       <BornInfo />
       <AiBusiness />
-      <WhyUs />
+      <WhyUs sectionId="why-choose-us" />
       <Team />
       <AboutFaq />
       <CTA />

@@ -29,15 +29,16 @@ export const footerData: FooterData = {
       title: 'Company',
       links: [
         { label: 'About Us', href: '/about' },
-        { label: 'Career', href: '#' },
-        { label: 'Case Studies', href: '/use-case' },
+        { label: 'Why Choose Us', href: '/why-us' },
+        { label: 'Use Cases', href: '/use-cases' },
+        { label: 'Case Studies', href: '/projects' },
         { label: 'Contact us', href: '/contact' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { label: 'FAQ', href: '#' },
+        { label: 'FAQ', href: '/faq' },
         { label: 'Documentation', href: '#' },
         { label: 'Shopify tutorial', href: 'https://shopify.baoea.com/' },
       ],

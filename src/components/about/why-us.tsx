@@ -28,24 +28,42 @@ const WHY_US_ITEMS = [
   },
 ];
 
-const WhyUs = () => {
+interface WhyUsProps {
+  /** When set, anchors deep links (e.g. /about#why-choose-us) */
+  sectionId?: string
+  /** When false, only the four pillars render (e.g. dedicated /why-us page already has a hero). */
+  showIntro?: boolean
+}
+
+const WhyUs = ({ sectionId, showIntro = true }: WhyUsProps) => {
+  const headingId = sectionId ? 'why-choose-heading' : 'why-choose-heading-standalone'
+
   return (
-    <section className="py-28 xl:py-34 2xl:py-44">
+    <section id={sectionId} className="py-28 xl:py-34 2xl:py-44" aria-labelledby={headingId}>
       <div className="main-container">
         <div className="space-y-18">
-          <div className="space-y-3 text-center">
-            <TextReveal>
-              <h2 className="font-sora text-sora-heading-4 lg:text-sora-heading-3 xl:text-sora-heading-2 inline-block font-normal text-white/90">
-                Why choose AI Clawers?
-              </h2>
-            </TextReveal>
-            <TextReveal delay={0.2}>
-              <p className="text-tagline-2 mx-auto max-w-xl font-normal text-white/60">
-                Channelwill roots, seven years on Shopify, and a bias for your outcomes—not slide
-                decks.
-              </p>
-            </TextReveal>
-          </div>
+          {showIntro ? (
+            <div className="space-y-3 text-center">
+              <TextReveal>
+                <h2
+                  id={headingId}
+                  className="font-sora text-sora-heading-4 lg:text-sora-heading-3 xl:text-sora-heading-2 inline-block font-normal text-white/90"
+                >
+                  Why choose AI Clawers?
+                </h2>
+              </TextReveal>
+              <TextReveal delay={0.2}>
+                <p className="text-tagline-2 mx-auto max-w-xl font-normal text-white/60">
+                  Channelwill roots, seven years on Shopify, and a bias for your outcomes—not slide
+                  decks.
+                </p>
+              </TextReveal>
+            </div>
+          ) : (
+            <h2 id={headingId} className="sr-only">
+              Why choose AI Clawers?
+            </h2>
+          )}
           <div className="flex flex-col items-stretch gap-y-4 lg:flex-row lg:gap-x-4">
             {WHY_US_ITEMS.map((item, i) => (
               <RevealAnimation key={item.title} delay={0.3 + i * 0.1}>

@@ -11,9 +11,9 @@ const FaqHeader = () => {
         </h1>
       </TextReveal>
       <TextReveal delay={0.2}>
-        <p className="text-tagline-2 mx-auto w-full font-normal text-white/60">
-          Got questions? We&apos;ve got answers! Explore our FAQs to find
-          everything you need to know.
+        <p className="text-tagline-2 mx-auto w-full max-w-[640px] font-normal text-white/60">
+          Practical answers on Shopify builds, custom apps, pricing, co-development, data access, and
+          how we start—so you know what to expect before you contact us.
         </p>
       </TextReveal>
     </div>
