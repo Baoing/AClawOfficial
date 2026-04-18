@@ -1,9 +1,13 @@
 import SmoothScrollProvider from '@/src/components/animation/smooth-scroll';
 import Footer from '@/src/components/shared/layout/footer/footer';
 import Navbar from '@/src/components/shared/layout/navbar/navbar';
+import { defaultMetadata } from '@/src/utils/generateMetaData';
 import { fontVariables } from '@/src/utils/font';
+import type { Metadata } from 'next';
 import { ReactNode, Suspense } from 'react';
 import './globals.css';
+
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,

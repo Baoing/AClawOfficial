@@ -1,19 +1,23 @@
 import type { Metadata } from 'next';
 
-export const DEFAULT_URL = 'https://next-saas-next.vercel.app/';
-export const DEFAULT_TITLE = 'NextSaaS - Software, SaaS & Startup Tailwind Template';
+export const DEFAULT_URL = 'https://www.aiclawers.com/';
+export const DEFAULT_TITLE = 'AIClawers — Shopify engineering & growth';
 export const DEFAULT_DESCRIPTION =
-  'Nextsas - the ultimate collection of 42+ premium Nextjs templates for SaaS businesses and startups. Built with Tailwind CSS, featuring responsive design, authentication flows, pricing pages, and modern UI components. Perfect for web applications and digital products.';
-export const DEFAULT_IMAGE_URL =
-  'https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg';
+  'AIClawers helps brands ship dependable Shopify outcomes—thoughtful storefronts, maintainable themes, custom apps, and integrations that match how you operate. We pair senior engineering with practical, AI-assisted workflows so your team feels guided (not guessing at APIs), launches stay on schedule, and performance holds up when campaigns and traffic spike.';
+/** Absolute OG image on this site (place a 1200×630 asset at this path or update this URL). */
+export const DEFAULT_IMAGE_URL = new URL('/images/Shopify_Flow_workflow_202604091532.jpeg', DEFAULT_URL).toString();
 
 const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),
   title: DEFAULT_TITLE,
   description: DEFAULT_DESCRIPTION,
+  icons: {
+    icon: [{ url: '/images/logo/logo.svg', type: 'image/svg+xml' }],
+    shortcut: '/images/logo/logo.svg',
+  },
   openGraph: {
     type: 'website',
-    siteName: 'NextSaaS',
+    siteName: 'AIClawers',
     url: DEFAULT_URL,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
