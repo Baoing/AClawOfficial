@@ -1,6 +1,6 @@
 'use client';
 
-import loginImage from '@/public/images/opai-img-472.jpg';
+import loginImage from '@/public/images/login-banner.png';
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { TextReveal } from '@/src/components/animation/text-reveal-animation';
 import { ChevronRightIcon, FacebookBrandIcon, GoogleIcon } from '@/src/components/shared/icon';

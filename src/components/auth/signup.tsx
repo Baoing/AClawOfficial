@@ -186,7 +186,7 @@ const Signup = () => {
                 <RevealAnimation delay={0.3} direction="right" offset={100}>
                   <figure className="block h-full overflow-hidden rounded-lg">
                     <Image
-                      src="/images/opai-img-472.jpg"
+                      src="/images/login-banner.png"
                       alt="Sign up"
                       width={460}
                       height={577}

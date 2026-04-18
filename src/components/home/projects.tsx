@@ -3,17 +3,11 @@ import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { TextReveal } from '@/src/components/animation/text-reveal-animation';
 import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button';
 import ProjectCard from '@/src/components/shared/ui/card/project-card';
-import type { ProjectPost } from '@/src/interface';
-import getMarkDownData from '@/src/utils/getMarkDownData';
+import { customerCases, homeFeaturedCustomerCaseCount } from '@/src/data/customer-cases';
 import Image from 'next/image';
 
-const HOME_PROJECTS_LIMIT = 3;
-
-const Projects = async () => {
-  const allProjects = getMarkDownData<ProjectPost>('src/data/projects');
-  const projects = allProjects
-    .filter((p) => p.showHomepage === true)
-    .slice(0, HOME_PROJECTS_LIMIT);
+const Projects = () => {
+  const featuredCases = customerCases.slice(0, homeFeaturedCustomerCaseCount);
 
   return (
     <section
@@ -49,15 +43,16 @@ const Projects = async () => {
           </div>
 
           <div className="grid grid-cols-12 gap-y-8 lg:gap-x-8">
-            {projects.map((project, index) => (
-              <RevealAnimation key={project.slug} delay={0.3 + index * 0.1}>
+            {featuredCases.map((item, index) => (
+              <RevealAnimation key={item.href} delay={0.3 + index * 0.1}>
                 <div className="col-span-12">
                   <ProjectCard
-                    href={`/projects/${project.slug}`}
-                    title={project.title}
-                    description={project.excerpt}
-                    imageSrc={project.heroImage}
-                    imageAlt={project.title}
+                    href={item.href}
+                    title={item.title}
+                    description={item.tags.join(' · ')}
+                    imageSrc={item.imageSrc}
+                    imageAlt={item.imageAlt}
+                    openInNewTab
                   />
                 </div>
               </RevealAnimation>

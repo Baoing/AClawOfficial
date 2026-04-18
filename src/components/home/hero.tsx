@@ -46,7 +46,7 @@ const Hero = () => {
             >
               <RevealAnimation delay={0.4} instant>
                 <div>
-                  <HeroLinkButton href="/pricing">Start for free</HeroLinkButton>
+                  <HeroLinkButton href="/projects">View case studies</HeroLinkButton>
                 </div>
               </RevealAnimation>
             </div>

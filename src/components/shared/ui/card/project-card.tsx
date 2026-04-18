@@ -14,6 +14,8 @@ export interface ProjectCardProps {
   imageSrc: string;
   imageAlt: string;
   className?: string;
+  /** When true, opens in a new tab (e.g. live merchant storefronts). */
+  openInNewTab?: boolean;
 }
 const ProjectCard = ({
   href,
@@ -22,10 +24,15 @@ const ProjectCard = ({
   imageSrc,
   imageAlt,
   className,
+  openInNewTab = false,
 }: Readonly<ProjectCardProps>) => {
   return (
     <div className={cn('border-stroke-1/11 w-full overflow-hidden rounded-lg border', className)}>
-      <Link href={href} className="group relative block">
+      <Link
+        href={href}
+        className="group relative block"
+        {...(openInNewTab ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
         <CardReveal className="h-full w-full overflow-hidden max-lg:h-[280px] xl:h-full xl:max-h-[500px]">
           <figure className="h-full w-full">
             <Image

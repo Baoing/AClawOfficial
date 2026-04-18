@@ -1,30 +1,26 @@
 import type { CustomerCase } from '@/src/interface'
 
 /**
- * Selected Shopify storefront work—thumbnails in `public/images/cases`;
+ * Selected Shopify storefront work—thumbnails in `public/images/cases` or `public/case`;
  * each `href` opens the merchant’s live store.
  */
+/** Number of storefront cards highlighted on the homepage. */
+export const homeFeaturedCustomerCaseCount = 3
+
 export const customerCases: CustomerCase[] = [
   {
-    title: 'Longquan Yijian Cultural — porcelain DTC',
-    href: 'https://www.longquan0.com/',
-    imageSrc: '/images/cases/customer_qingci.png',
-    imageAlt: 'Longquan Yijian Cultural porcelain Shopify storefront',
-    tags: ['Store design', 'Theme development', 'Theme customization'],
+    title: 'Dronecameraus — DJI authorized retail (US)',
+    href: 'https://dronecameraus.com/',
+    imageSrc: '/images/cases/DCU.png',
+    imageAlt: 'Dronecameraus Shopify storefront — DJI drones and cameras',
+    tags: ['Full-site customization', 'Theme build', 'Store UX'],
   },
   {
-    title: 'Haolic — printer DTC store',
-    href: 'https://haolic.com/',
-    imageSrc: '/images/cases/customer_haolic.png',
-    imageAlt: 'Haolic printer supplies Shopify storefront',
-    tags: ['Store design', 'Theme optimization', 'Theme updates'],
-  },
-  {
-    title: 'PowerSmart — electric snow blowers',
-    href: 'https://powersmartusa.com/',
-    imageSrc: '/images/cases/customer_powersmart.png',
-    imageAlt: 'PowerSmart outdoor power equipment Shopify storefront',
-    tags: ['Store optimization', 'Custom functionality', 'Theme updates'],
+    title: 'Judydoll (JOY GROUP) — international makeup flagship',
+    href: 'https://judydoll.com/',
+    imageSrc: '/images/cases/jd.png',
+    imageAlt: 'Judydoll official Shopify storefront — color cosmetics and beauty',
+    tags: ['Store design', 'Theme customization', 'Markets & localization'],
   },
   {
     title: 'Way of Wade — Li-Ning & Dwyane Wade footwear',
@@ -34,17 +30,45 @@ export const customerCases: CustomerCase[] = [
     tags: ['Accessibility', 'Theme optimization', 'Theme updates'],
   },
   {
-    title: 'Birdsnap — smart bird monitoring',
-    href: 'https://birdsnap.com/',
-    imageSrc: '/images/cases/birdsnap.png',
-    imageAlt: 'Birdsnap smart bird feeder Shopify storefront',
-    tags: ['Theme customization', 'Custom functionality', 'Storefront content'],
+    title: 'Haolic — printer DTC store',
+    href: 'https://haolic.com/',
+    imageSrc: '/images/cases/customer_haolic.png',
+    imageAlt: 'Haolic printer supplies Shopify storefront',
+    tags: ['Store design', 'Theme optimization', 'Theme updates'],
   },
   {
     title: 'OSUMAC — Japanese bags & travel goods',
     href: 'https://osumac.com/',
     imageSrc: '/images/cases/osumac.png',
     imageAlt: 'OSUMAC bags and luggage Shopify storefront',
+    tags: ['Theme customization', 'Custom functionality', 'Storefront content'],
+  },
+  {
+    title: 'HengYi Puppy — personalized pet gifts DTC',
+    href: 'https://hengyipuppy.com/',
+    imageSrc: '/images/cases/hengyipuppy.png',
+    imageAlt: 'HengYi Puppy Shopify storefront — custom pet totes, mugs, and portraits',
+    tags: ['Theme customization', 'Custom functionality', 'Markets & localization'],
+  },
+  {
+    title: 'Longquan Yijian Cultural — porcelain DTC',
+    href: 'https://www.longquan0.com/',
+    imageSrc: '/images/cases/customer_qingci.png',
+    imageAlt: 'Longquan Yijian Cultural porcelain Shopify storefront',
+    tags: ['Store design', 'Theme development', 'Theme customization'],
+  },
+  {
+    title: 'PowerSmart — electric snow blowers',
+    href: 'https://powersmartusa.com/',
+    imageSrc: '/images/cases/customer_powersmart.png',
+    imageAlt: 'PowerSmart outdoor power equipment Shopify storefront',
+    tags: ['Store optimization', 'Custom functionality', 'Theme updates'],
+  },
+  {
+    title: 'Birdsnap — smart bird monitoring',
+    href: 'https://birdsnap.com/',
+    imageSrc: '/images/cases/birdsnap.png',
+    imageAlt: 'Birdsnap smart bird feeder Shopify storefront',
     tags: ['Theme customization', 'Custom functionality', 'Storefront content'],
   },
   {
