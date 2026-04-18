@@ -9,8 +9,9 @@ import type { Metadata } from 'next';
 const PROJECTS_PER_PAGE = 8;
 
 export const metadata: Metadata = {
-  title: 'Projects - AI Solutions || AI Clawers',
-  description: 'See how our AI solutions have helped businesses succeed.',
+  title: 'Shopify case studies | AI Clawers',
+  description:
+    'Selected Shopify work—themes, apps, migrations, integrations, and performance passes—with clear before/after outcomes for merchants.',
 };
 
 interface ProjectsPageProps {

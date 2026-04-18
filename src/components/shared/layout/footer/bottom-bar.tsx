@@ -9,7 +9,7 @@ const BottomBar = () => {
       <ul className="flex items-center gap-6">
         <li>
           <Link
-            href="#"
+            href="/privacy"
             className="footer-link font-inter-tight text-tagline-4 font-normal text-white/50 transition-colors duration-200 hover:text-white"
           >
             Privacy Policy
@@ -17,7 +17,7 @@ const BottomBar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/terms"
             className="footer-link font-inter-tight text-tagline-4 font-normal text-white/50 transition-colors duration-200 hover:text-white"
           >
             Terms of Service
@@ -25,7 +25,7 @@ const BottomBar = () => {
         </li>
         <li>
           <Link
-            href="#"
+            href="/privacy#cookies"
             className="footer-link font-inter-tight text-tagline-4 font-normal text-white/50 transition-colors duration-200 hover:text-white"
           >
             Cookie Settings

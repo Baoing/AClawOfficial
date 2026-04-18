@@ -1,69 +1,60 @@
 ---
-title: "Smart City Traffic Management"
-titleItalic: ""
-excerpt: "Predicting congestion and optimizing routes using high-accuracy AI algorithms."
-heroImage: "/images/opai-img-486.jpg"
+title: 'International rollout'
+titleItalic: 'with Shopify Markets'
+excerpt: 'Localized storefronts, duties clarity, and market-aware pricing so the brand could expand regions without cloning separate Shopify stores per country.'
+heroImage: '/images/opai-img-486.jpg'
 details:
-  client: "City of Metro"
-  year: "2025"
-  services: "AI, Smart City"
-  location: "Denver"
-  duration: "6 Months"
+  client: 'Confidential lifestyle brand'
+  year: '2023'
+  services: 'Markets, theme, SEO, payments'
+  location: 'EU / UK / US'
+  duration: '8 weeks'
 before:
-  - "Fixed signal timings that did not adapt to real traffic."
-  - "Congestion and incidents discovered only after they occurred."
-  - "Limited data sharing between traffic, transit, and emergency services."
-  - "No citywide view of flow and bottlenecks."
-  - "Public and first responders often stuck in avoidable delays."
+  - 'Separate legacy storefronts drifted on promotions and content.'
+  - 'Duties messaging was inconsistent; carts abandoned at disclosure steps.'
+  - 'Hreflang and canonical tags conflicted across duplicated sites.'
+  - 'Ops maintained multiple product catalogs with slightly different SKUs.'
+  - 'Payments and fraud tooling differed per region, complicating support.'
 after:
-  - "Adaptive signals that respond to live traffic and events."
-  - "Congestion and incident prediction with lead time to act."
-  - "Unified traffic and transit data for coordinated response."
-  - "Citywide dashboards for planning and operations."
-  - "Faster response and smoother flow for everyone on the road."
+  - 'Single Shopify store with Markets for currency, domains, and price lists where needed.'
+  - 'Theme patterns for duties-inclusive vs duties-at-checkout messaging per market policy.'
+  - 'SEO consolidation with clean alternates and market-specific sitemaps where applicable.'
+  - 'One admin workflow for launches; localized content uses metaobjects and translations.'
+  - 'Support scripts reference market context visible on the customer record.'
 testimonial:
-  quote: "We went from reacting to traffic to shaping it. Citizens and first responders both benefit."
-  authorName: "Maria Santos"
-  authorRole: "Director of Mobility"
-  authorCompany: "City of Metro"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "Cities can now treat traffic as a system. AI ingests sensors, cameras, and events to predict congestion and optimize signals and routes—improving flow for commuters, transit, and emergency services alike."
+  quote: 'We stopped asking which site was “canonical.” Merchandising ships once; regional teams adapt in the same admin.'
+  authorName: 'Global E-commerce Lead'
+  authorRole: 'Digital growth'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-03.png'
+closingParagraph: 'Markets work when localization is treated as data and policy—not a one-off theme fork for every new country.'
+showHomepage: false
 ---
 
-We design AI systems that help cities manage traffic more intelligently. By combining sensor data, cameras, and events, our models predict congestion and incidents and optimize signals and routing in near real time.
+The brand operated regional sites that diverged in pricing, content, and compliance copy. We consolidated into one Shopify instance with Markets, then walked legal and finance through duties presentation rules.
 
-The result is better flow, faster emergency response, and a clearer picture for planners and operators.
+We sequenced DNS, payments, and hreflang carefully to avoid SEO regressions during cutover.
 
 ### Challenge
 
-#### To predict and manage traffic at city scale
+#### Grow regions without multiplying stores
 
-Our client, a major city, faced:
-
-- **Static signals:** Timing was fixed and did not reflect current conditions.
-- **Reactive management:** Congestion and incidents were addressed after they happened.
-- **Siloed data:** Traffic, transit, and emergency services had separate systems.
-- **No single view:** Hard to see citywide patterns or prioritize interventions.
-- **Delays for critical services:** First responders and transit were often caught in congestion.
-
-They wanted a system that could predict, optimize, and coordinate across agencies.
+- **Content drift:** Regional teams needed autonomy without breaking global IA.
+- **Compliance:** Duties and refund policies varied by corridor.
+- **SEO risk:** Migrating URLs required disciplined redirects and alternates.
 
 ### Our Solution
 
-#### High-accuracy prediction and optimization
+#### Markets-first architecture
 
-We delivered:
-
-- **Adaptive Signal Control —** Timings that respond to live traffic and special events.
-- **Congestion & Incident Prediction —** Models that forecast trouble spots with lead time.
-- **Unified Data Platform —** Traffic, transit, and event data in one place for analysis and control.
-- **Citywide Dashboards —** Real-time and historical views for operations and planning.
-- **Priority Routing —** Support for emergency and transit priority when needed.
+- **Market definitions** aligned to domains, currencies, and price lists.
+- **Theme components** that read market context for disclosure modules.
+- **Launch checklist** covering payments, fraud, shipping, and analytics continuity.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **ML & Optimization:** Python, time-series and spatial models, reinforcement learning
-- **IoT & Data:** Sensor and camera feeds, traffic management systems, GIS
-- **Integration:** APIs, event streams, cloud and edge deployment
+- **Shopify:** Markets, Hydrogen not required—Online Store 2.0 Liquid + metaobjects
+- **SEO:** hreflang, canonical strategy, Search Console monitoring
+- **Payments:** Region-appropriate gateways and Shop Pay availability checks

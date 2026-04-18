@@ -39,26 +39,23 @@ export const footerData: FooterData = {
       links: [
         { label: 'FAQ', href: '#' },
         { label: 'Documentation', href: '#' },
-        { label: 'Tutorial', href: '#' },
-        { label: 'Support', href: '#' },
+        { label: 'Shopify tutorial', href: 'https://shopify.baoea.com/' },
       ],
     },
     {
       title: 'Legal Policies',
       links: [
-        { label: 'Terms & Conditions', href: '#' },
-        { label: 'Privacy Policy', href: '#' },
-        { label: 'Refund Policy', href: '#' },
-        { label: 'GDPR Compliance', href: '#' },
-        { label: 'Affiliate Policy', href: '#' },
+        { label: 'Terms & Conditions', href: '/terms' },
+        { label: 'Privacy Policy', href: '/privacy' },
+        { label: 'GDPR Compliance', href: '/gdpr' },
       ],
     },
   ],
   bottomBar: {
     links: [
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'Terms of Service', href: '#' },
-      { label: 'Cookie Settings', href: '#' },
+      { label: 'Privacy Policy', href: '/privacy' },
+      { label: 'Terms of Service', href: '/terms' },
+      { label: 'Cookie Settings', href: '/privacy#cookies' },
     ],
   },
 };

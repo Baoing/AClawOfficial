@@ -9,18 +9,18 @@ const ProjectsHero = () => {
         <div className="mb-10 text-center lg:mb-20 xl:mb-28">
           <TextReveal>
             <h2 className="xl:text-sora-heading-2 lg:text-sora-heading-3 text-sora-heading-4 inline-block font-normal text-white/90">
-              Innovating with <span className="text-white/30">AI across industries</span>
+              Shopify work <span className="text-white/30">you can inspect</span>
             </h2>
           </TextReveal>
           <TextReveal delay={0.2}>
             <p className="text-tagline-2 mx-auto mt-3 mb-14 max-w-xl font-normal text-white/60">
-              At AIClawers, we build AI solutions that drive results. See how our projects have helped
-              businesses succeed.
+              Themes, custom apps, migrations, and integrations—documented with constraints, trade-offs,
+              and what changed for the merchant after launch.
             </p>
           </TextReveal>
           <RevealAnimation delay={0.3}>
             <div className="text-center">
-              <PrimaryLinkButton href="/projects">Start your project</PrimaryLinkButton>
+              <PrimaryLinkButton href="/contact">Discuss your Shopify build</PrimaryLinkButton>
             </div>
           </RevealAnimation>
         </div>

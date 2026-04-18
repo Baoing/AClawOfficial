@@ -1,69 +1,60 @@
 ---
-title: "Smart Healthcare Diagnostics"
-titleItalic: ""
-excerpt: "Leveraging machine learning to detect health risks faster and more accurately."
-heroImage: "/images/opai-img-481.jpg"
+title: 'Wellness compliance'
+titleItalic: 'content & checkout gates'
+excerpt: 'Region-aware disclaimers, age-collection patterns, and PDP modules so a supplements brand could sell responsibly on Shopify without burying customers in legal walls.'
+heroImage: '/images/opai-img-481.jpg'
 details:
-  client: "MedTech Partners"
-  year: "2025"
-  services: "AI, Healthcare"
-  location: "Boston"
-  duration: "4 Months"
-showHomepage: true
+  client: 'Confidential wellness brand'
+  year: '2023'
+  services: 'Theme, checkout extensions, content model'
+  location: 'United States'
+  duration: '5 weeks'
 before:
-  - "Manual review of scans and tests led to delays and variability."
-  - "Early risk indicators often missed until symptoms appeared."
-  - "Limited capacity to triage high-risk patients quickly."
-  - "Inconsistent interpretation across clinicians and sites."
-  - "Reactive care instead of proactive risk detection."
+  - 'Disclaimers were inconsistent between PDP, cart, and checkout.'
+  - 'Age requirements differed by SKU and state but were enforced informally.'
+  - 'Marketing wanted modular claims modules without risking unreviewed copy.'
+  - 'Bundles mixed restricted and unrestricted items with unclear messaging.'
+  - 'Support could not quickly see which rules applied to a given order.'
 after:
-  - "AI-assisted screening flags anomalies and risk patterns in real time."
-  - "Earlier detection of conditions before they become critical."
-  - "Automated triage so the right patients get attention first."
-  - "Standardized, evidence-based decision support for clinicians."
-  - "Proactive risk scoring to support preventive care plans."
+  - 'Metaobject-driven disclaimer blocks with version history and owner roles.'
+  - 'Checkout UI extensions collect attestations where policy required them.'
+  - 'Cart rules surface conflicts before payment—not only in post-purchase email.'
+  - 'Product families share compliance snippets to reduce drift.'
+  - 'Internal runbooks map SKU classes to the rendered customer journey.'
 testimonial:
-  quote: "Our clinicians trust the system. It catches what humans sometimes miss and speeds up every workflow."
-  authorName: "Dr. Sarah Kim"
-  authorRole: "Chief Medical Officer"
-  authorCompany: "MedTech Partners"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "Healthcare organizations can now combine imaging, labs, and clinical notes into a single AI-powered view. Risks are identified earlier, triage is smarter, and clinicians are supported—not replaced—by consistent, explainable AI recommendations."
+  quote: 'Legal finally trusted that what shoppers see at checkout matches what merchandising approved on the PDP—same source, fewer fire drills.'
+  authorName: 'General Counsel'
+  authorRole: 'Compliance partner'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-06.png'
+closingParagraph: 'Regulated-adjacent categories need boring, repeatable content plumbing—metaobjects, extensions, and audits—not one-off hard-coded warnings per SKU.'
+showHomepage: false
 ---
 
-We build AI systems that help healthcare providers detect risks faster and with greater accuracy. By combining imaging, lab results, and clinical context, our models support—not replace—clinical judgment.
+We are not a law firm; this engagement was engineering and information architecture. Counsel defined what had to be shown where; we implemented reusable modules and checkout attestations that matched those rules.
 
-The goal is earlier detection, fewer missed signals, and more consistent care across sites and populations.
+We avoided medical claims in copy—focus stayed on transparent disclosures, age gates where required, and consistent presentation paths.
 
 ### Challenge
 
-#### To detect health risks faster and more reliably
+#### Consistent disclosures without blocking conversion
 
-Our client, a healthcare network, faced:
-
-- **Backlogs and delays:** Manual review of scans and tests created bottlenecks.
-- **Missed early signals:** Subtle risk indicators were often caught too late.
-- **Uneven quality:** Interpretation varied by clinician and location.
-- **Reactive care:** Focus was on treating illness rather than preventing it.
-- **Capacity limits:** Staff could not scale to screen every at-risk patient.
-
-They needed ML-powered tools that could triage, flag anomalies, and support consistent decisions.
+- **Varianting:** Different SKUs triggered different regional rules.
+- **Editorial risk:** Marketing needed flexibility without bypassing review.
+- **Checkout timing:** Last-mile validation had to be clear and fast.
 
 ### Our Solution
 
-#### AI that augments clinical judgment
+#### Reusable compliance modules
 
-We implemented:
-
-- **Risk Detection Models —** Trained on validated data to flag anomalies and risk patterns.
-- **Triage Automation —** Prioritization of cases by urgency and likelihood.
-- **Explainable Outputs —** Clear reasoning so clinicians can validate and act.
-- **Integration with Workflows —** Fits into existing PACS, EMR, and lab systems.
+- **Metaobjects** for approved copy blocks with ownership and versioning notes in admin.
+- **Theme sections** that pull the correct block per product family and market.
+- **Checkout extensions** for attestations aligned to Shopify’s extensibility model.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **ML & AI:** TensorFlow, PyTorch, medical imaging libraries
-- **Healthcare:** HL7/FHIR integrations, DICOM support
-- **Infrastructure:** HIPAA-compliant cloud, secure APIs
+- **Shopify:** Checkout UI extensions, Functions where applicable, metaobjects, Liquid
+- **Governance:** Editorial checklist, preview flows for legal sign-off
+- **QA:** Matrix testing across SKU classes and representative regions

@@ -1,68 +1,60 @@
 ---
-title: "Autonomous Manufacturing Workflow"
-titleItalic: ""
-excerpt: "Streamlining production lines with computer vision and robotic automation."
-heroImage: "/images/opai-img-485.jpg"
+title: 'B2B ordering'
+titleItalic: 'on Shopify Plus'
+excerpt: 'Company profiles, catalog rules, and draft-order flows so manufacturing customers could reorder components without breaking the D2C storefront.'
+heroImage: '/images/opai-img-485.jpg'
 details:
-  client: "Precision Manufacturing Co"
-  year: "2025"
-  services: "AI, Industrial Automation"
-  location: "Detroit"
-  duration: "5 Months"
+  client: 'Confidential industrial supplier'
+  year: '2024'
+  services: 'Shopify Plus B2B, Liquid, checkout rules'
+  location: 'Europe'
+  duration: '12 weeks'
 before:
-  - "Manual inspection and quality checks created bottlenecks."
-  - "Downtime and defects discovered only after the fact."
-  - "Fixed production schedules with little flexibility."
-  - "Limited traceability from raw material to finished good."
-  - "High scrap and rework due to late defect detection."
+  - 'Mixed B2B and D2C expectations on one theme confused pricing and availability.'
+  - 'Sales reps created draft orders manually for every repeat purchase.'
+  - 'Net terms and PO references were handled in email outside Shopify.'
+  - 'Catalog visibility differed by customer but rules lived in spreadsheets.'
+  - 'International tax and shipping logic was fragile for pallet-sized orders.'
 after:
-  - "Computer vision inspects products in line in real time."
-  - "Predictive maintenance reduces unplanned downtime."
-  - "Schedules that adapt to orders, materials, and machine status."
-  - "Full traceability and digital twin of the production line."
-  - "Fewer defects and less waste through early detection."
+  - 'Separate B2B storefront context with catalog and price lists per company.'
+  - 'Self-serve reorder paths for approved buyers with guardrails on SKUs.'
+  - 'Draft-order templates and notes surfaced to finance for fewer back-and-forth emails.'
+  - 'Liquid and customer metafields encode eligibility without hard-coding in apps.'
+  - 'Checkout extensions validate PO numbers and references before payment capture.'
 testimonial:
-  quote: "Our line runs smoother and our quality is the best it's ever been. The AI is like having an extra set of eyes everywhere."
-  authorName: "David Walsh"
-  authorRole: "VP Operations"
-  authorCompany: "Precision Manufacturing Co"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "Manufacturing gains a nervous system: vision systems that see defects, models that predict failures, and workflows that adjust in real time. The result is higher throughput, better quality, and less waste."
+  quote: 'Our reps spend time on exceptions now, not every line item. Shopify Plus B2B matched how our customers already buy.'
+  authorName: 'Head of Digital Sales'
+  authorRole: 'Commercial lead'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-10.png'
+closingParagraph: 'B2B on Shopify succeeds when catalog rules, permissions, and checkout validation are boring and explicit. We optimized for fewer exceptions per thousand orders—not flashy storefront chrome.'
+showHomepage: false
 ---
 
-We help manufacturers combine computer vision and automation to improve quality, throughput, and flexibility. Our systems monitor production in real time, detect defects early, and support predictive maintenance and adaptive scheduling.
+An industrial supplier sold both direct and through long-term manufacturing partners. They needed Shopify Plus B2B primitives—companies, locations, and catalogs—without confusing consumers who still shopped the same brand.
 
-The goal is a production floor that sees more, fails less, and adapts faster.
+We separated theme entry points, clarified which price lists applied where, and documented edge cases (partial shipments, backorders) so support could answer tickets with predictable behavior.
 
 ### Challenge
 
-#### To streamline production with vision and automation
+#### One brand, two buying motions
 
-Our client, a precision manufacturer, dealt with:
-
-- **Manual inspection:** Quality checks were slow and subjective.
-- **Reactive maintenance:** Equipment failed before teams could act.
-- **Rigid schedules:** Production plans could not easily adapt to changes.
-- **Weak traceability:** Hard to link defects or delays to specific batches or machines.
-- **Scrap and rework:** Defects often found late in the process.
-
-They needed vision, prediction, and automation that fit into existing lines and systems.
+- **Split audiences:** Consumers expected promotions; B2B buyers expected contract pricing.
+- **Operational load:** Every reorder touched a rep even when SKUs were unchanged.
+- **Compliance:** PO and tax evidence had to survive audits months later.
 
 ### Our Solution
 
-#### Computer vision and intelligent automation
+#### Plus-native flows with explicit rules
 
-We implemented:
-
-- **In-Line Vision —** Cameras and models that inspect parts and assemblies in real time.
-- **Predictive Maintenance —** Sensor and log data used to forecast failures and plan maintenance.
-- **Adaptive Scheduling —** Optimization that considers orders, materials, and machine status.
-- **Traceability & Digital Twin —** End-to-end lineage and a digital model of the line for simulation.
+- **B2B storefront configuration** with catalog assignments per company location.
+- **Theme and routing updates** so B2B buyers land in the correct context.
+- **Draft-order playbooks** for negotiated lines that still close in Shopify.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **Vision & ML:** PyTorch, OpenCV, custom defect and anomaly models
-- **Industrial:** PLC and SCADA integrations, OPC-UA, MQTT
-- **Platform:** Edge and cloud deployment, real-time data pipelines
+- **Shopify:** Shopify Plus B2B, Liquid, Checkout UI extensions, Functions where applicable
+- **Integrations:** ERP line-item hooks (webhooks + idempotent workers)
+- **Observability:** Structured logs for order and fulfillment mismatches

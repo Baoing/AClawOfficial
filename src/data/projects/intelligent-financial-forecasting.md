@@ -1,68 +1,60 @@
 ---
-title: "Intelligent Financial Forecasting"
-titleItalic: ""
-excerpt: "Automating revenue predictions and risk analysis with precision-driven AI models."
-heroImage: "/images/opai-img-482.jpg"
+title: 'Finance visibility'
+titleItalic: 'inside Shopify admin'
+excerpt: 'A custom admin app surfacing payout timing, fee estimates, and order-level margin notes—so finance stopped exporting orders nightly for reconciliation.'
+heroImage: '/images/opai-img-482.jpg'
 details:
-  client: "Summit Finance"
-  year: "2025"
-  services: "AI, Financial Analytics"
-  location: "Chicago"
-  duration: "8 Weeks"
+  client: 'Confidential omnichannel brand'
+  year: '2024'
+  services: 'Embedded app, GraphQL, reporting'
+  location: 'United Kingdom'
+  duration: '7 weeks'
 before:
-  - "Revenue forecasts built in spreadsheets with heavy manual input."
-  - "Limited ability to model scenarios and stress tests."
-  - "Risk analysis lagged behind market and portfolio changes."
-  - "Inconsistent assumptions across business units."
-  - "Slow turnaround when leadership asked for new scenarios."
+  - 'Finance exported orders to spreadsheets to align payouts and refunds.'
+  - 'Gift cards and split fulfillments broke naive revenue rollups.'
+  - 'Marketing promos made net revenue opaque until month-end close.'
+  - 'No shared place to attach margin assumptions to campaigns or SKUs.'
+  - 'Auditors asked for trails that lived outside Shopify.'
 after:
-  - "Automated revenue and demand forecasts updated weekly."
-  - "Scenario and stress-testing at the click of a button."
-  - "Near real-time risk metrics aligned with portfolio and market data."
-  - "Single set of assumptions and models across the organization."
-  - "Self-serve forecasting for finance and business teams."
+  - 'Embedded views roll up orders, refunds, and adjustments with filters finance expects.'
+  - 'Line-level notes attach assumptions without mutating historical orders.'
+  - 'Role separation keeps buyer-facing data out of finance-only screens.'
+  - 'Exports are optional checkpoints, not the default workflow.'
+  - 'Month-end close shortened because source data stayed in Shopify.'
 testimonial:
-  quote: "We went from spending days on forecasts to having them in minutes. The accuracy is better than our old process."
-  authorName: "Michael Torres"
-  authorRole: "CFO"
-  authorCompany: "Summit Finance"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "Finance teams can now run forecasts and risk analyses on demand. AI handles the heavy lifting on data and modeling, while humans focus on strategy, assumptions, and communication to stakeholders."
+  quote: 'We still use our ERP for the ledger—but Shopify finally shows what actually happened in the store before we journal it.'
+  authorName: 'Financial Controller'
+  authorRole: 'Finance operations'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-12.png'
+closingParagraph: 'Finance tooling on Shopify should respect accounting boundaries: read-heavy, append-only commentary, and no silent rewrites of historical orders.'
+showHomepage: false
 ---
 
-We help finance teams automate revenue forecasting and risk analysis without sacrificing control. Our models ingest internal and external data, run scenarios, and produce clear outputs that integrate into planning and reporting.
+The merchant’s finance team trusted Shopify for cash collection but not for reporting. We interviewed how they reconciled payouts, mapped edge cases (partial refunds, duties), and built read-first admin surfaces.
 
-The result is faster, more consistent forecasts and risk views that keep pace with the business.
+We avoided duplicating ERP logic; instead we made Shopify events legible with the filters and exports finance already used.
 
 ### Challenge
 
-#### To forecast and analyze risk at the speed of business
+#### Reconciliation without shadow systems
 
-Our client, a financial services firm, dealt with:
-
-- **Manual forecasting:** Revenue and demand models lived in spreadsheets.
-- **Slow scenarios:** New assumptions or stress tests took days to run.
-- **Stale risk views:** Risk metrics were not updated with market and portfolio changes.
-- **Siloed assumptions:** Different teams used different drivers and methods.
-- **Bottlenecks:** Central FP&A could not keep up with ad hoc requests.
-
-They needed automated, repeatable forecasting and risk analysis that stayed current and aligned.
+- **Volume:** Thousands of orders per week across markets.
+- **Noise:** Promotions, returns, and exchanges obscured “true” net sales in naive dashboards.
+- **Trust:** Any number in admin had to match what GraphQL could reproduce.
 
 ### Our Solution
 
-#### Precision-driven models and workflows
+#### Transparent rollups and annotations
 
-We delivered:
-
-- **Automated Forecasting —** Pipelines that pull data, run models, and publish forecasts.
-- **Scenario & Stress Testing —** Flexible what-if and stress scenarios on demand.
-- **Risk Dashboards —** Real-time risk metrics tied to positions and markets.
-- **Governance & Explainability —** Clear assumptions and audit trails for compliance.
+- **GraphQL-backed tables** with saved filters and CSV export for exceptions only.
+- **Metafields for finance notes** tied to orders and campaigns where policy allowed.
+- **Caching strategy** so heavy queries did not slow buyers during flash events.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **ML & Analytics:** Python, XGBoost, Prophet, custom time-series models
-- **Data:** Snowflake, Databricks, internal data lakes
-- **Reporting:** Power BI, Tableau, internal APIs
+- **Shopify:** GraphQL Admin API, embedded app, bulk operations for backfills
+- **Frontend:** React, Polaris
+- **Infra:** Worker queue for scheduled rollups, idempotent writes

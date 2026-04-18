@@ -180,7 +180,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
                   <div className={navItemGradientClasses} />
                 </div>
                 <Link href="#" className="relative z-5 flex items-center gap-1.5">
-                  <span className={navLinkTextClasses}>Plans & Support</span>
+                  <span className={navLinkTextClasses}>Support</span>
                   <span className="block origin-center translate-y-px transition-all duration-500 group-hover/nav-item:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

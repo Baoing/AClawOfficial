@@ -1,68 +1,60 @@
 ---
-title: 'Transforming e-Commerce'
-titleItalic: 'with AI precision'
-excerpt: "AI Clawers boosted a top online retailer's conversions by 40% with AI-powered recommendations, enhancing shopping experiences and driving revenue growth."
+title: 'Online Store 2.0'
+titleItalic: 'rebuild & performance'
+excerpt: 'JSON templates, section architecture, and image discipline that cut LCP on collection pages and made merchandising updates safe without developer deploys for every tweak.'
 heroImage: '/images/opai-img-488.jpg'
 details:
-  client: 'Alex Jonson'
-  year: '2025'
-  services: 'AI Solutions, E-commerce'
-  location: 'Miami'
-  duration: '3 Weeks'
+  client: 'Confidential fashion retailer'
+  year: '2024'
+  services: 'Theme development, CWV, technical SEO'
+  location: 'Global'
+  duration: '8 weeks'
 before:
-  - 'Manual product recommendations with limited personalization.'
-  - 'Generic marketing campaigns lacking customer insights.'
-  - 'Slow response to market trends and customer behavior changes.'
-  - 'High cart abandonment rates due to poor user experience.'
-  - 'Inventory and pricing decisions made from guesswork, not data.'
+  - 'Legacy monolithic templates slowed every merchandising experiment.'
+  - 'Large hero assets and unbounded apps hurt mobile LCP on collections.'
+  - 'Metafields existed but the theme could not render them consistently.'
+  - 'SEO templates duplicated titles when variants exploded URL permutations.'
+  - 'Developers became a bottleneck for layout changes marketing needed weekly.'
 after:
-  - 'Hyper-personalized product recommendations that boost conversions.'
-  - 'Data-driven marketing powered by predictive analytics.'
-  - 'Real-time adaptation to customer preferences and buying patterns.'
-  - 'Smarter checkout flows reducing cart abandonment.'
-  - 'AI-optimized inventory, pricing, and supply chain efficiency.'
+  - 'Modular JSON templates with documented sections and guardrailed settings.'
+  - 'Responsive images, lazy boundaries, and fewer render-blocking scripts on critical paths.'
+  - 'Merchandising owns metaobjects for editorial rails; devs own schema and performance budgets.'
+  - 'Canonical and pagination patterns aligned to Shopify best practices.'
+  - 'Core Web Vitals improved on the URLs that mattered most to paid traffic.'
 testimonial:
-  quote: "The AI solutions from AI Clawers transformed our operations. We've never seen such fast, impressive growth!"
-  authorName: 'Emma Taylor'
-  authorRole: 'CMO'
-  authorCompany: 'Sarah Mitchell, VP of E-commerce, NovaRetail'
-  avatar: '/images/opai-avatar-img-02.png'
-closingParagraph: "With AI precision, e-commerce platforms now understand every customer's intent and behavior. Product recommendations adapt in real time, marketing campaigns auto-optimize for maximum ROI, and customer interactions feel personal at every touchpoint. The result—higher engagement, stronger conversions, and a seamless shopping experience powered by intelligent automation."
+  quote: 'We ship campaigns without opening tickets for every banner swap—and performance did not regress when marketing moved faster.'
+  authorName: 'Director of E-commerce'
+  authorRole: 'Digital lead'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-05.png'
+closingParagraph: 'A strong OS 2.0 theme is part design system, part performance budget: predictable sections, measured assets, and metafields the business can actually use.'
 showHomepage: true
 ---
 
-We're redefining the online shopping experience through the power of artificial intelligence. By combining data-driven insights with creative strategy, we help brands understand their customers, personalize every interaction, and optimize performance at scale.
+The merchant outgrew a brittle legacy theme. We rebuilt on Online Store 2.0 with explicit performance budgets, schema for metaobjects, and a rollout plan that avoided SEO surprises.
 
-From predictive analytics to smart recommendations, our AI-powered solutions enable e-commerce businesses to make sharper decisions, drive conversions, and deliver seamless user experiences that keep shoppers coming back.
-
-Innovation meets precision — where every click, every journey, and every purchase is guided by intelligent design.
+We co-defined which experiences were “section-owned” versus “developer-owned” so autonomy did not become chaos.
 
 ### Challenge
 
-#### To create a smarter shopping experience
+#### Speed to market without fragile pages
 
-Our client, a top-tier e-commerce brand, faced critical challenges:
-
-- **Low conversion rates:** Despite high traffic, the website struggled to convert visitors into customers.
-- **Static pricing models:** Limited flexibility in adapting to market trends and customer demand.
-- **Lack of insights:** Difficulty in predicting customer behavior to optimize offerings.
-
-Implement intelligent solutions that adapt in real time to customer needs and market changes.
+- **Editorial velocity:** Marketing needed frequent layout changes.
+- **Mobile-first traffic:** Collection LCP was the main regression vector.
+- **App debt:** Legacy scripts duplicated analytics and widgets.
 
 ### Our Solution
 
-#### Harnessing AI to drive results
+#### Structured theme + measured assets
 
-To address these challenges, we implemented:
-
-- **Personalized Suggestions —** AI analyzed behavior to recommend relevant products.
-- **Dynamic Pricing —** Real-time price adjustments boosted profitability.
-- **Predictive Insights —** Analytics guided smarter marketing and inventory decisions.
+- **Section library** with presets, spacing tokens, and image aspect constraints.
+- **App audit** removing or deferring non-critical third parties on collection templates.
+- **Technical SEO** cleanup for pagination, facets, and canonical behavior.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **AI Frameworks:** TensorFlow, PyTorch
-- **E-commerce Tools:** Shopify, WooCommerce integrations
-- **Analytics Platforms:** Google Analytics, Power BI
+- **Shopify:** Online Store 2.0, Liquid, JSON templates, metaobjects, Theme Check
+- **Performance:** Lighthouse CI in staging, image CDN settings, font loading strategy
+- **Analytics:** GA4 + Shopify pixels where appropriate, documented event map

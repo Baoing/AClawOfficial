@@ -7,13 +7,13 @@ const cards = [
     shapeClass: 'ns-shape-15',
     title: 'Vision',
     description:
-      'Our mission is to empower every business by providing innovative AI tools that enable them to reach their full potential. We believe that with the right technology, companies can achieve remarkable results and drive growth like never before.',
+      'Merchants win when Shopify implementations are fast, maintainable, and honest about trade-offs. We want every launch and iteration to compound—clean architecture today, easier growth tomorrow—with AI used where it clearly saves time or improves decisions, not as a gimmick.',
   },
   {
     shapeClass: 'ns-shape-16',
     title: 'Mission',
     description:
-      'Our goal is to develop artificial intelligence solutions that are not only intuitive and powerful but also specifically designed to address real-world challenges. We aim to harness the latest advancements in technology to create tools.',
+      'Ship pragmatic Shopify work: new stores and migrations, Online Store 2.0 themes, apps and admin extensions, integrations, technical SEO, and performance. Stay close to stakeholders, document assumptions, and measure success by your outcomes—not our buzzwords.',
   },
 ];
 
@@ -25,15 +25,15 @@ const AiBusiness = () => {
           <div className="space-y-3 text-center">
             <TextReveal>
               <h2 className="font-sora text-sora-heading-4 lg:text-sora-heading-3 xl:text-sora-heading-2 inline-block font-normal text-white/90">
-                Shaping the future of <br className="hidden lg:block" />
-                AI in business
+                Shopify delivery <br className="hidden lg:block" />
+                <span className="text-white/30">with a client-win mindset</span>
               </h2>
             </TextReveal>
 
             <TextReveal delay={0.2}>
               <p className="text-tagline-2 mx-auto max-w-xl font-normal text-white/60">
-                At our company, we are not just dedicated to fostering a culture of innovation; we
-                also strive to create a lasting and meaningful impact in the community.
+                We combine Channelwill-grade product experience with boutique attention: fewer layers,
+                clearer ownership, and work that maps to revenue, reliability, and roadmap speed.
               </p>
             </TextReveal>
           </div>

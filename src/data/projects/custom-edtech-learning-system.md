@@ -1,69 +1,60 @@
 ---
-title: "Custom EdTech Learning System"
-titleItalic: ""
-excerpt: "Tailoring lessons and progress tracking based on individual learning patterns."
-heroImage: "/images/opai-img-484.jpg"
+title: 'Digital products'
+titleItalic: 'and member access'
+excerpt: 'Subscriptions, gated content, and customer accounts so a training brand could sell cohorts and libraries without bolting on a separate LMS for checkout.'
+heroImage: '/images/opai-img-484.jpg'
 details:
-  client: "LearnForward Academy"
-  year: "2025"
-  services: "AI, EdTech"
-  location: "San Francisco"
-  duration: "3 Months"
+  client: 'Confidential education brand'
+  year: '2023'
+  services: 'Theme, apps, subscriptions, access control'
+  location: 'Remote / APAC'
+  duration: '9 weeks'
 before:
-  - "One-size-fits-all curricula with little adaptation to the learner."
-  - "Progress tracked only by completion, not mastery."
-  - "Instructors could not easily see who was struggling or ahead."
-  - "No clear path from assessment to recommended next steps."
-  - "Engagement and retention varied widely across learners."
+  - 'Checkout lived on Shopify but course access was managed manually each cohort.'
+  - 'Customers received multiple emails with conflicting links after purchase.'
+  - 'Bundles mixed physical kits and digital seats with no single fulfillment story.'
+  - 'Support could not see which modules a learner had unlocked without a database export.'
+  - 'SEO pages competed with logged-in lesson URLs, hurting crawl clarity.'
 after:
-  - "Personalized learning paths that adapt to pace and style."
-  - "Mastery-based progress and clear skill milestones."
-  - "Instructor dashboards with real-time insight into each learner."
-  - "Automated recommendations for next lessons and practice."
-  - "Higher completion rates and more consistent outcomes."
+  - 'Line-item properties and metafields map purchases to access groups automatically.'
+  - 'Account area in the theme lists active programs with deep links to the LMS.'
+  - 'Subscription APIs handle renewals; dunning uses merchant-branded templates.'
+  - 'Support staff verify entitlements from Shopify customer records.'
+  - 'Public marketing pages stay indexable while lessons stay authenticated.'
 testimonial:
-  quote: "Our learners feel seen. The system meets them where they are and keeps them moving."
-  authorName: "Dr. Rachel Foster"
-  authorRole: "Chief Learning Officer"
-  authorCompany: "LearnForward Academy"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "EdTech platforms can now offer truly adaptive learning. AI analyzes behavior and performance to tailor content, pace, and support—so every learner gets a path that fits, and educators get the insights they need to intervene and celebrate progress."
+  quote: 'Buyers get one receipt, one login path, and support sees the same truth we do in admin. That alone cut our ticket volume.'
+  authorName: 'Head of Customer Success'
+  authorRole: 'Programs lead'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-11.png'
+closingParagraph: 'Digital goods on Shopify work when entitlements are modeled as boring data tied to orders and customers—then the theme and LMS only render what those records allow.'
+showHomepage: false
 ---
 
-We build learning systems that adapt to each learner. By analyzing engagement, performance, and preferences, our AI recommends the right content at the right time and surfaces progress in a way that motivates learners and informs instructors.
+The brand sold cohort-based training plus evergreen libraries. They wanted Shopify to own money movement and identity while a partner LMS hosted video.
 
-The focus is on mastery and growth, not just completion.
+We defined how each product type wrote access records, how renewals extended dates, and how refunds revoked access without orphan accounts.
 
 ### Challenge
 
-#### To tailor learning to the individual
+#### Unify money, identity, and access
 
-Our client, an online education provider, faced:
-
-- **Static content:** Everyone saw the same sequence regardless of level or need.
-- **Completion over mastery:** Progress was measured by finishing modules, not by understanding.
-- **Limited visibility:** Instructors had little insight into who was stuck or bored.
-- **Generic recommendations:** No systematic way to suggest what to study next.
-- **Uneven outcomes:** Engagement and completion varied widely across learners.
-
-They wanted a platform that could personalize at scale and track real mastery.
+- **Fragmented onboarding:** Learners bounced between payment confirmation and LMS invites.
+- **Mixed carts:** Physical workbooks and digital seats needed different fulfillment signals.
+- **Renewal risk:** Annual passes could lapse without a clear grace policy.
 
 ### Our Solution
 
-#### Adaptive learning powered by AI
+#### Orders as the source of truth
 
-We delivered:
-
-- **Personalized Paths —** Content and sequence adapt to each learner’s level and goals.
-- **Mastery Tracking —** Progress tied to skills and competencies, not just clicks.
-- **Instructor Dashboards —** Real-time views of progress, struggle, and engagement.
-- **Smart Recommendations —** Next best lesson or practice based on performance and gaps.
-- **Engagement Signals —** Alerts when learners disengage or need support.
+- **Metafields and tags** representing programs, seats, and renewal windows.
+- **Theme account templates** that read only what GraphQL returns for the logged-in customer.
+- **Webhook-driven provisioning** to the LMS with retries and dead-letter handling.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **ML & NLP:** Python, TensorFlow, recommendation and sequence models
-- **EdTech:** LMS integrations, SCORM, xAPI
-- **Analytics:** Learning analytics pipelines, dashboards, and reporting
+- **Shopify:** Subscriptions APIs, Customer Account API considerations, Liquid storefront
+- **Apps:** Thin custom app for provisioning callbacks and admin overrides
+- **Integrations:** LMS REST hooks, HMAC-verified payloads

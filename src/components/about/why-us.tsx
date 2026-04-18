@@ -4,23 +4,27 @@ import { TextReveal } from '@/src/components/animation/text-reveal-animation';
 const WHY_US_ITEMS = [
   {
     shapeClass: 'ns-shape-17',
-    title: 'Scalability',
-    description: 'Solutions that grow with your business needs.',
+    title: 'Proven Shopify depth',
+    description:
+      'Seven years across storefronts, themes, apps, and SEO—shaped inside a leading Shopify SaaS company.',
   },
   {
     shapeClass: 'ns-shape-18',
-    title: 'Innovation',
-    description: 'Always at the forefront of AI technology.',
+    title: 'Full-stack coverage',
+    description:
+      'From migrations and theme systems to custom apps, integrations, and performance—one coherent delivery loop.',
   },
   {
     shapeClass: 'ns-shape-19',
-    title: 'Support',
-    description: 'A dedicated team committed to your success.',
+    title: 'Scale-tested judgment',
+    description:
+      'Experience supporting tens of thousands of merchants informs what we automate, what we harden, and what we simplify.',
   },
   {
     shapeClass: 'ns-shape-20',
-    title: 'Simplicity',
-    description: 'Easy-to-use tools with powerful capabilities.',
+    title: 'Client-win partnerships',
+    description:
+      'We align on your metrics first—conversion, stability, time-to-ship—and communicate trade-offs in plain language.',
   },
 ];
 
@@ -37,7 +41,8 @@ const WhyUs = () => {
             </TextReveal>
             <TextReveal delay={0.2}>
               <p className="text-tagline-2 mx-auto max-w-xl font-normal text-white/60">
-                Unparalleled expertise and innovation.
+                Channelwill roots, seven years on Shopify, and a bias for your outcomes—not slide
+                decks.
               </p>
             </TextReveal>
           </div>

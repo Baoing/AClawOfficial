@@ -1,68 +1,60 @@
 ---
-title: 'AI-Powered Retail Insights'
-titleItalic: ''
-excerpt: 'Transforming customer behavior data into smart merchandising decisions.'
+title: 'Merchandising clarity'
+titleItalic: 'for a high-SKU catalog'
+excerpt: 'Shopify admin extensions and reporting views so merchandisers could retire spreadsheets and act on inventory, price, and collection health in one place.'
 heroImage: '/images/opai-img-480.jpg'
 details:
-  client: 'Retail Corp'
-  year: '2025'
-  services: 'AI Analytics, Retail'
-  location: 'New York'
-  duration: '6 Weeks'
-showHomepage: true
+  client: 'Confidential multi-category retailer'
+  year: '2024'
+  services: 'Shopify App, Admin UI, data modeling'
+  location: 'United States'
+  duration: '10 weeks'
 before:
-  - 'Scattered data across systems with no unified view of customer behavior.'
-  - 'Manual reporting delayed decision-making by weeks.'
-  - 'Merchandising choices based on intuition rather than data.'
-  - 'Difficulty identifying which products to promote or restock.'
-  - 'No clear link between campaigns and in-store performance.'
+  - 'Merchandising decisions spread across spreadsheets and ad-hoc exports.'
+  - 'Slow feedback on which collections were stale or mis-tagged.'
+  - 'Limited visibility into margin-sensitive price tests at variant level.'
+  - 'Ops teams duplicated work between Shopify and internal planning tools.'
+  - 'Launch calendars slipped when data owners could not agree on a single source of truth.'
 after:
-  - 'Unified customer behavior dashboards updated in real time.'
-  - 'Automated insights delivered daily to category managers.'
-  - 'Data-driven assortment and placement recommendations.'
-  - 'Demand forecasting that optimizes stock and promotions.'
-  - 'Clear attribution from marketing to shelf performance.'
+  - 'Embedded admin surfaces aligned to Shopify products, variants, and metafields.'
+  - 'Saved views for collection health, sell-through, and price exceptions.'
+  - 'Role-based access so buying and ops see the same numbers without exporting.'
+  - 'Fewer manual CSV round-trips; approvals happen where merchants already work.'
+  - 'Faster seasonal turns because signals surfaced before collections went live.'
 testimonial:
-  quote: 'AI Clawers turned our data into a strategic asset. We finally know what moves the needle.'
-  authorName: 'James Chen'
-  authorRole: 'Head of Merchandising'
-  authorCompany: 'Retail Corp'
-  avatar: '/images/opai-avatar-img-02.png'
-closingParagraph: 'Retailers now have a single source of truth for customer behavior. Merchandising, marketing, and operations teams align on the same metrics, and every decision is backed by AI-driven insights that improve margins and customer satisfaction.'
+  quote: 'We finally merchandised inside Shopify instead of around it. The team shipped pragmatic UI—not another dashboard nobody opens.'
+  authorName: 'VP Merchandising'
+  authorRole: 'Retail operations lead'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-09.png'
+closingParagraph: 'When catalogs grow faster than headcount, the win is operational: fewer exports, clearer ownership, and decisions anchored to live catalog data inside Shopify admin.'
+showHomepage: false
 ---
 
-We help retailers turn raw behavioral data into clear, actionable merchandising decisions. By unifying browsing, purchase, and loyalty data, our AI models surface patterns that human analysts would miss.
+A multi-category merchant needed merchandising workflows to live next to the catalog—not in parallel spreadsheets. We scoped metafields, permissions, and performance budgets before writing UI so the app stayed usable during peak trading windows.
 
-From shelf placement to promotion timing, every recommendation is grounded in real behavior—not guesswork. The result is smarter assortments, fewer stockouts, and stronger margins.
+We partnered with their ops lead to map how buyers already worked, then mirrored those steps in embedded admin routes. The goal was not novelty; it was fewer clicks between question and action.
 
 ### Challenge
 
-#### To make merchandising decisions data-driven
+#### Make Shopify the planning surface
 
-Our client, a national retail chain, struggled with:
-
-- **Fragmented data:** Customer signals lived in separate systems and were hard to combine.
-- **Slow reporting:** By the time reports were ready, the opportunity had often passed.
-- **Intuition-led decisions:** Buyers and planners relied on experience rather than evidence.
-- **Poor promotion ROI:** Difficulty measuring which campaigns actually drove sales.
-
-They needed a single, AI-powered view of customer behavior to guide merchandising at scale.
+- **Fragmented data:** Buyers exported nightly to reconcile tags, prices, and inventory.
+- **Risk on launch days:** Last-minute collection edits were hard to audit.
+- **Thin guardrails:** Junior merchandisers could unintentionally publish wide price swings.
 
 ### Our Solution
 
-#### From data chaos to clear recommendations
+#### Admin-native tooling with guardrails
 
-We delivered:
-
-- **Unified Data Platform —** Ingested and normalized behavior data from all touchpoints.
-- **Predictive Merchandising —** AI recommended which products to feature and where.
-- **Demand Forecasting —** Models predicted demand by store and category.
-- **Attribution & Reporting —** Automated dashboards linked campaigns to outcomes.
+- **Embedded app + Polaris** for list, filter, and bulk actions on variants tied to metafields.
+- **Saved segments** mirroring how the merchant thinks about seasons and regions.
+- **Approval-friendly flows** with audit notes stored on the catalog record.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **Data & ML:** Python, scikit-learn, TensorFlow
-- **Analytics:** BigQuery, Looker, custom dashboards
-- **Retail Tools:** Integration with POS and e-commerce platforms
+- **Shopify:** Admin extensions, App Bridge, GraphQL Admin API, metafields
+- **Frontend:** React, Polaris
+- **Data:** ShopifyQL where applicable, scheduled sync jobs for heavy aggregates

@@ -1,68 +1,60 @@
 ---
-title: "AI-Driven Supply Chain Efficiency"
-titleItalic: ""
-excerpt: "Reducing delays and improving logistics through real-time predictive analytics."
-heroImage: "/images/opai-img-483.jpg"
+title: 'Inventory truth'
+titleItalic: 'across 3PL and Shopify'
+excerpt: 'Webhooks, idempotent sync workers, and reconciliation views so available-to-promise matched what warehouses actually picked—without overselling during peaks.'
+heroImage: '/images/opai-img-483.jpg'
 details:
-  client: "Global Logistics Inc"
-  year: "2025"
-  services: "AI, Supply Chain"
-  location: "Houston"
-  duration: "10 Weeks"
+  client: 'Confidential consumer brand'
+  year: '2024'
+  services: 'Integrations, inventory sync, monitoring'
+  location: 'North America'
+  duration: '11 weeks'
 before:
-  - "Reactive response to disruptions and demand spikes."
-  - "Inventory levels set by rules of thumb, not demand signals."
-  - "Limited visibility into supplier and carrier performance."
-  - "Routing and scheduling decided without real-time optimization."
-  - "High costs from expedited shipping and excess inventory."
+  - 'Multiple warehouses updated inventory on different cadences.'
+  - 'Oversells during launches triggered costly cancellations and support load.'
+  - 'Ops toggled manual safety stock buffers that drifted from reality.'
+  - 'No single queue health view when webhook retries piled up.'
+  - 'Finance could not tie inventory adjustments to root causes quickly.'
 after:
-  - "Predictive alerts on disruptions and demand shifts before they peak."
-  - "Inventory optimized by location and demand forecasts."
-  - "Supplier and carrier scorecards updated in real time."
-  - "Dynamic routing and scheduling that adapts to conditions."
-  - "Lower expedite spend and better service levels."
+  - 'Idempotent workers normalize 3PL events into Shopify inventory adjustments.'
+  - 'Dead-letter and replay tooling for poison payloads without double-counting.'
+  - 'Admin dashboard shows lag, backlog depth, and last successful sync per location.'
+  - 'Launch playbooks include staged inventory releases and circuit breakers.'
+  - 'Support macros reference the same reconciliation IDs ops sees.'
 testimonial:
-  quote: "We see problems before they become crises. Our supply chain finally feels under control."
-  authorName: "Lisa Park"
-  authorRole: "VP Supply Chain"
-  authorCompany: "Global Logistics Inc"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "Supply chains become resilient when data and AI work together. Predictive analytics surface risks early, while optimization keeps inventory, routing, and capacity aligned with demand—reducing cost and improving delivery."
+  quote: 'Peaks stopped feeling like roulette. We still move fast—but Shopify inventory and the warehouse finally agree more often than not.'
+  authorName: 'Director of Operations'
+  authorRole: 'Supply chain lead'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-02.png'
+closingParagraph: 'Inventory integrations are reliability work: retries, ordering guarantees, and human-readable diffs when systems disagree.'
+showHomepage: true
 ---
 
-We design AI systems that make supply chains more predictable and efficient. By combining demand signals, supplier data, and logistics events, our models help teams anticipate issues and optimize inventory, routing, and capacity.
+Peaks broke trust between Shopify and a 3PL’s event stream. We mapped every inventory mutation path, added idempotency keys, and built observability so ops could see lag before customers did.
 
-The outcome is fewer surprises, lower cost, and better service for customers.
+We prioritized correctness over naive “real-time” claims—bounded staleness with explicit SLAs per location.
 
 ### Challenge
 
-#### To reduce delays and waste in the supply chain
+#### Keep ATP honest under load
 
-Our client, a global logistics provider, struggled with:
-
-- **Reactive operations:** Teams responded to issues after they occurred.
-- **Static inventory:** Stock levels were not tied to real demand or lead times.
-- **Blind spots:** Limited view of supplier reliability and carrier performance.
-- **Fixed routing:** Schedules and routes did not adapt to traffic or demand.
-- **Cost and waste:** Expedited shipping and excess inventory hurt margins.
-
-They wanted real-time visibility and predictive tools to get ahead of problems.
+- **Race conditions:** Concurrent sells and receipts during flash windows.
+- **Partial failures:** Half-applied batches that silently skewed on-hand counts.
+- **Operator load:** On-call rotations burned out replaying failed jobs by hand.
 
 ### Our Solution
 
-#### Predictive analytics and optimization at scale
+#### Boring pipes, loud dashboards
 
-We implemented:
-
-- **Demand & Disruption Prediction —** Models that forecast demand and flag supply risks early.
-- **Inventory Optimization —** Right-sized stock by node and product.
-- **Performance Analytics —** Live scorecards for suppliers and carriers.
-- **Dynamic Routing & Scheduling —** Optimization that updates with new data and constraints.
+- **Webhook ingestion** with dedupe keys and version checks per SKU-location.
+- **Reconciliation jobs** comparing Shopify snapshots to 3PL truth with diff output.
+- **Runbooks** for support tied to the same screens engineering uses.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **ML & Optimization:** Python, OR-Tools, reinforcement learning
-- **Data:** ERP, TMS, WMS, and external data feeds
-- **Integration:** APIs, event streams, cloud data warehouses
+- **Shopify:** Inventory API, locations, fulfillment orders, webhooks
+- **Backend:** Node workers, queue, structured logging, metrics
+- **3PL:** Partner REST events (adapter pattern per facility)

@@ -62,10 +62,10 @@ const ContactHero = () => {
                   <div className="mt-6 mb-5 space-y-1">
                     <h2 className="text-sora-heading-6 font-normal text-white/90">Phone</h2>
                     <a
-                      href="tel:+18001234567"
+                      href="tel:+8618779656217"
                       className="text-tagline-2 inline-block font-normal text-white/60 transition-all duration-300 ease-in-out hover:text-white"
                     >
-                      +1 800 123 4567
+                      +86 133 6076 9734
                     </a>
                   </div>
                   <p className="text-tagline-2 font-normal text-white/50 underline underline-offset-2">

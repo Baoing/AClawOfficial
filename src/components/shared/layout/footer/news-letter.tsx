@@ -66,7 +66,7 @@ const Newsletter = () => {
         <RevealAnimation delay={0.2}>
           <p className="text-tagline-4 font-normal text-white/60">
             By subscribing you agree to with our{' '}
-            <Link href="#" className="font-medium text-white hover:underline">
+            <Link href="/privacy" className="font-medium text-white hover:underline">
               Privacy Policy
             </Link>
           </p>

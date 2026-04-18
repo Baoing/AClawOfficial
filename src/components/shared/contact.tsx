@@ -38,7 +38,7 @@ const Contact = () => {
             {/* Contact Method Section */}
             <div className="flex w-full flex-col gap-6 lg:w-[510px]">
               <RevealAnimation delay={0.4} direction="left">
-                <div className="bg-background-5 flex flex-col gap-[10px] rounded-lg p-8">
+                <div className="bg-background-5 flex flex-col gap-[10px] rounded-lg p-8 py-16">
                   <div className="flex flex-col gap-6">
                     <div className="flex size-9 items-center justify-center">
                       <ContactEmailIcon />
@@ -57,7 +57,7 @@ const Contact = () => {
               </RevealAnimation>
 
               <RevealAnimation delay={0.5} direction="left">
-                <div className="bg-background-5 flex flex-col gap-[10px] rounded-lg p-8">
+                <div className="bg-background-5 flex flex-col gap-[10px] rounded-lg p-8 py-16">
                   <div className="flex flex-col gap-6">
                     <div className="flex size-9 items-center justify-center">
                       <ContactPhoneIcon />
@@ -65,36 +65,36 @@ const Contact = () => {
                     <div className="flex flex-col gap-1">
                       <p className="text-it-heading-6 text-white/90">Phone</p>
                       <a
-                        href="tel:+18001234567"
+                        href="tel:+8618779656217"
                         className="text-tagline-2 font-inter-tight text-white/60"
                       >
-                        +1 800 123 4567
+                        +86 133 6076 9734
                       </a>
                     </div>
                   </div>
                 </div>
               </RevealAnimation>
 
-              <RevealAnimation delay={0.6} direction="left">
-                <div className="bg-background-5 flex flex-col gap-[10px] rounded-lg p-8">
-                  <div className="flex flex-col gap-6">
-                    <div className="flex size-9 items-center justify-center">
-                      <ContactAddressIcon />
-                    </div>
-                    <div className="flex flex-col gap-1">
-                      <p className="text-it-heading-6 text-white/90">Address</p>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.google.com/maps"
-                        className="text-tagline-2 font-inter-tight text-white/60"
-                      >
-                        123 Innovation Street, TechCity, CA 94043
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </RevealAnimation>
+              {/*<RevealAnimation delay={0.6} direction="left">*/}
+              {/*  <div className="bg-background-5 flex flex-col gap-[10px] rounded-lg p-8">*/}
+              {/*    <div className="flex flex-col gap-6">*/}
+              {/*      <div className="flex size-9 items-center justify-center">*/}
+              {/*        <ContactAddressIcon />*/}
+              {/*      </div>*/}
+              {/*      <div className="flex flex-col gap-1">*/}
+              {/*        <p className="text-it-heading-6 text-white/90">Address</p>*/}
+              {/*        <a*/}
+              {/*          target="_blank"*/}
+              {/*          rel="noopener noreferrer"*/}
+              {/*          href="https://www.google.com/maps"*/}
+              {/*          className="text-tagline-2 font-inter-tight text-white/60"*/}
+              {/*        >*/}
+              {/*          123 Innovation Street, TechCity, CA 94043*/}
+              {/*        </a>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</RevealAnimation>*/}
             </div>
 
             {/* Form Section */}

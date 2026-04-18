@@ -4,12 +4,10 @@ import nsImg422 from '@/public/images/ns-img-422.jpg';
 import { ChevronRightIcon } from '@/src/components/shared/icon';
 import {
   AboutIcon,
-  CareerIcon,
   CaseStudyICon,
   CustomersIcon,
   ManifestoIcon,
   ServiceIcon,
-  TeamIcon,
   TestimonialIcon,
   UseCaseIcon,
   WhyChooseUsIcon,
@@ -24,25 +22,26 @@ type CompanyLink = Omit<CompanyMenuLinkProps, 'onClose'>;
 const aboutLinks: CompanyLink[] = [
   {
     title: 'About Us',
-    description: 'See how others are using NextSaaS',
+    description: 'Who we are and how we support Shopify brands',
     href: '/about',
     icon: AboutIcon,
   },
-  {
-    title: 'Our Team',
-    description: 'Dynamic content solutions',
-    href: '#',
-    icon: TeamIcon,
-  },
-  {
-    title: 'Career',
-    description: 'Join our team',
-    href: '#',
-    icon: CareerIcon,
-  },
+  // Early-stage studio: team page and hiring not public yet.
+  // {
+  //   title: 'Our Team',
+  //   description: 'Meet the people behind the work',
+  //   href: '#',
+  //   icon: TeamIcon,
+  // },
+  // {
+  //   title: 'Career',
+  //   description: 'Open roles and how we hire',
+  //   href: '#',
+  //   icon: CareerIcon,
+  // },
   {
     title: 'Why Choose Us',
-    description: 'Our unique selling points and competitive advantages',
+    description: 'Practical Shopify delivery with clear outcomes',
     href: '#',
     icon: WhyChooseUsIcon,
   },
@@ -51,25 +50,25 @@ const aboutLinks: CompanyLink[] = [
 const cultureLinks: CompanyLink[] = [
   {
     title: 'Our Manifesto',
-    description: 'Our values and principles',
+    description: 'How we work with merchants and partners',
     href: '#',
     icon: ManifestoIcon,
   },
   {
     title: 'Customers',
-    description: 'Success stories and testimonials',
+    description: 'Brands we collaborate with on Shopify',
     href: '#',
     icon: CustomersIcon,
   },
   {
     title: 'Testimonials',
-    description: 'What our customers say about us',
+    description: 'Feedback from merchants and stakeholders',
     href: '#',
     icon: TestimonialIcon,
   },
   {
     title: 'Case Studies',
-    description: 'Real-world examples of our solutions',
+    description: 'Store builds, apps, and integrations we shipped',
     href: '/projects',
     icon: CaseStudyICon,
   },
@@ -78,13 +77,13 @@ const cultureLinks: CompanyLink[] = [
 const solutionLinks: CompanyLink[] = [
   {
     title: 'Services',
-    description: 'Our services and offerings',
+    description: 'Themes, apps, migrations, and integrations',
     href: '/services',
     icon: ServiceIcon,
   },
   {
     title: 'Use Cases',
-    description: 'Real-world examples of our solutions',
+    description: 'Typical problems we solve on Shopify',
     href: '#',
     icon: UseCaseIcon,
   },
@@ -147,9 +146,9 @@ const CompanyMenu = ({ menuDropdownId, setMenuDropdownId }: CompanyMenuProps) =>
               />
               <div className="absolute top-3 bottom-3 left-3 w-full space-y-5 p-2">
                 <div>
-                  <p className="text-tagline-1 text-background-13 font-normal">Product updates</p>
+                  <p className="text-tagline-1 text-background-13 font-normal">Studio updates</p>
                   <p className="text-tagline-2 text-background-13/60 w-full max-w-[169px] font-normal">
-                    Stay updated with latest features.
+                    Shopify launches, and experiments.
                   </p>
                 </div>
                 {/* link button  */}

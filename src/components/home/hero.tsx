@@ -7,9 +7,6 @@ import HeroVideo from '@/src/components/home/hero-video';
 import { HeroLinkButton } from '@/src/components/shared/ui/button/hero-link-button';
 import Image from 'next/image';
 
-/** Temporarily hide hero background video; set to true to restore. */
-const IS_HERO_VIDEO_VISIBLE = true;
-
 const Hero = () => {
   return (
     <section
@@ -72,8 +69,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Hero background video (toggle IS_HERO_VIDEO_VISIBLE) */}
-      {IS_HERO_VIDEO_VISIBLE ? <HeroVideo /> : null}
+      <HeroVideo />
 
       {/* overlays */}
       <div

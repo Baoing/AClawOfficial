@@ -26,7 +26,7 @@ const ProjectDetailsHero = ({ project }: ProjectDetailsHeroProps) => {
           </TextReveal>
           <RevealAnimation delay={0.3}>
             <div className="text-center">
-              <PrimaryLinkButton href="/pricing">Start your project</PrimaryLinkButton>
+              <PrimaryLinkButton href="/contact">Discuss a similar build</PrimaryLinkButton>
             </div>
           </RevealAnimation>
         </div>
@@ -34,7 +34,7 @@ const ProjectDetailsHero = ({ project }: ProjectDetailsHeroProps) => {
           <figure className="mt-24 h-[380px] overflow-hidden rounded-[10px] md:h-[450px] lg:h-[650px] 2xl:mt-39">
             <Image
               src={project.heroImage}
-              alt="Project Details Hero"
+              alt={project.title}
               width={1200}
               height={600}
               className="size-full object-center"

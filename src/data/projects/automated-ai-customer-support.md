@@ -1,69 +1,60 @@
 ---
-title: "Automated AI Customer Support"
-titleItalic: ""
-excerpt: "Delivering faster, context-aware responses through intelligent virtual agents."
-heroImage: "/images/opai-img-487.jpg"
+title: 'Support workflows'
+titleItalic: 'tied to orders'
+excerpt: 'Macros, order timelines, and assistive drafting—grounded in Shopify data—so agents resolved WISMO and return tickets faster without inventing policy in chat.'
+heroImage: '/images/opai-img-487.jpg'
 details:
-  client: "ServiceFirst Global"
-  year: "2025"
-  services: "AI, Customer Experience"
-  location: "Austin"
-  duration: "4 Weeks"
+  client: 'Confidential DTC brand'
+  year: '2024'
+  services: 'Helpdesk integration, Shopify APIs, prompts'
+  location: 'North America'
+  duration: '6 weeks'
 before:
-  - "Long wait times and repetitive questions overwhelming agents."
-  - "Generic scripts that did not use customer history or context."
-  - "After-hours and peak demand left understaffed."
-  - "Knowledge scattered across docs and people, hard to search."
-  - "Low first-contact resolution and high escalation rates."
+  - 'Agents pasted order numbers into admin manually for every ticket.'
+  - 'Suggested replies were generic and sometimes contradicted return windows.'
+  - 'Escalations lacked a shared view of fulfillment status across carriers.'
+  - 'New hires needed weeks to memorize where each answer lived.'
+  - 'Quality audits could not sample whether advice matched policy.'
 after:
-  - "Virtual agents handle common questions 24/7 with short resolution times."
-  - "Context-aware responses that reference account and past interactions."
-  - "Smooth handoff to humans when the bot cannot resolve the issue."
-  - "Single knowledge base that powers both bots and agents."
-  - "Higher resolution rates and lower cost per contact."
+  - 'Helpdesk sidebar pulls fulfillment, tags, and return eligibility via GraphQL.'
+  - 'Draft replies cite line-level facts; agents edit before send.'
+  - 'Macros encode policy boundaries so discounts or exceptions need explicit steps.'
+  - 'QA samples tickets with redacted PII for coaching loops.'
+  - 'First-response time improved because context loaded with the ticket.'
 testimonial:
-  quote: "Our customers get answers in seconds, and our team focuses on the cases that need a human touch."
-  authorName: "Jennifer Lee"
-  authorRole: "VP Customer Success"
-  authorCompany: "ServiceFirst Global"
-  avatar: "/images/opai-avatar-img-02.png"
-closingParagraph: "Support organizations can now scale without proportionally scaling headcount. AI handles routine, context-aware conversations and escalates intelligently—improving speed, consistency, and satisfaction while freeing agents for complex and high-value interactions."
+  quote: 'Assistive text is fine when it quotes our policies and live order facts—not when it freelances refunds we would never approve.'
+  authorName: 'CX Manager'
+  authorRole: 'Support operations'
+  authorCompany: 'Confidential client'
+  avatar: '/images/opai-avatar-img-04.png'
+closingParagraph: 'AI in support works when outputs are constrained to verified Shopify fields and published policy snippets—speed without silent entitlement changes.'
+showHomepage: true
 ---
 
-We build intelligent virtual agents that understand context and deliver fast, accurate answers. By connecting to your knowledge base and systems, our AI handles common questions around the clock and hands off to humans when needed.
+Support volume scaled faster than hiring. Instead of a brittle chatbot, we anchored assistive features to order timelines and return rules already encoded in Shopify and the helpdesk.
 
-The outcome is faster resolution, happier customers, and agents focused on work that matters most.
+We designed prompts and UI so agents remained accountable for sends—models suggested, humans approved.
 
 ### Challenge
 
-#### To deliver faster, context-aware support at scale
+#### Faster answers without policy drift
 
-Our client, a global support organization, dealt with:
-
-- **Volume and wait times:** Peak and after-hours demand overwhelmed available agents.
-- **Generic answers:** Scripts did not use account or interaction history.
-- **Knowledge gaps:** Information lived in many places and was hard to find.
-- **Low first-contact resolution:** Many cases required multiple contacts or escalations.
-- **Rising cost per contact:** Adding agents was not sustainable.
-
-They needed AI that could answer in context and escalate smartly.
+- **Tool hopping:** Agents switched between desk, admin, and carrier tabs.
+- **Inconsistent tone:** Macros aged quickly as promotions changed weekly.
+- **Risk:** Over-confident generated replies could promise refunds outside policy.
 
 ### Our Solution
 
-#### Intelligent virtual agents and unified knowledge
+#### Grounded assistive drafting
 
-We implemented:
-
-- **Context-Aware Virtual Agents —** Bots that use account data and conversation history to personalize replies.
-- **24/7 Availability —** Automated handling for common questions and simple tasks.
-- **Smart Escalation —** Clear handoff to humans with full context when the bot cannot resolve.
-- **Unified Knowledge Base —** One source of truth for both AI and human agents.
-- **Analytics & Tuning —** Dashboards to improve answers and spot gaps.
+- **Embedded order context** in the helpdesk via signed Shopify session tokens.
+- **Template library** versioned with policy owners.
+- **Guardrails** blocking sends when mandatory fields (RMA window, region) were missing.
 
 ### Technologies Used
 
-#### Driving Innovation with Advanced Tools
+#### Stack
 
-- **NLP & AI:** Large language models, intent and entity recognition, dialog management
-- **Integration:** CRM, ticketing, and internal APIs
-- **Platform:** Secure, scalable deployment with audit and compliance support
+- **Shopify:** GraphQL Admin API, fulfillment and return objects
+- **Helpdesk:** Partner APIs (sidebar app + webhooks)
+- **AI:** Retrieval over approved macro snippets; human-in-the-loop send

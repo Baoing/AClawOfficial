@@ -1,6 +1,6 @@
 import AiBusiness from '@/src/components/about/ai-business';
 import BornInfo from '@/src/components/about/born-info';
-import AboutHero from '@/src/components/about/hero';
+// import AboutHero from '@/src/components/about/hero';
 import Team from '@/src/components/about/team';
 import WhyUs from '@/src/components/about/why-us';
 import AboutFaq from '@/src/components/home/faq';
@@ -10,15 +10,15 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'About us - AI Solutions || AI Clawers',
+  title: 'About AI Clawers | Shopify experts from Channelwill',
   description:
-    'Learn how AI Clawers revolutionizes workflows with AI. Our vision, mission, and team dedicated to empowering businesses with cutting-edge AI solutions.',
+    'AI Clawers is a Shopify-focused studio founded by practitioners from Channelwill, with seven years of experience across storefronts, themes, apps, SEO, and integrations. We prioritize merchant outcomes and long-term maintainability.',
 };
 
 const page = () => {
   return (
     <>
-      <AboutHero />
+      {/*<AboutHero />*/}
       <BornInfo />
       <AiBusiness />
       <WhyUs />

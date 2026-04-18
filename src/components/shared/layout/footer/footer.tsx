@@ -165,7 +165,7 @@ const Footer = () => {
                   <ul>
                     <li className="py-2">
                       <Link
-                        href="#"
+                        href="/terms"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
                         Terms & Conditions
@@ -173,7 +173,7 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="#"
+                        href="/privacy"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
                         Privacy Policy
@@ -189,7 +189,7 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="#"
+                        href="/gdpr"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
                         GDPR Compliance

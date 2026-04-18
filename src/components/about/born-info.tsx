@@ -2,16 +2,7 @@ import bornInfoImage from '@/public/images/opai-img-474.jpg';
 import NumberAnimation from '@/src/components/animation/number-animation';
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import AvatarItem from '@/src/components/shared/ui/avatar-reveal/avatar-item';
-import AvatarReveal from '@/src/components/shared/ui/avatar-reveal/avatar-reveal';
 import Image from 'next/image';
-
-const AVATARS = [
-  { src: '/images/opai-avatar-img-09.png', alt: 'Avatar' },
-  { src: '/images/opai-avatar-img-10.png', alt: 'Avatar' },
-  { src: '/images/opai-avatar-img-11.png', alt: 'Avatar' },
-  { src: '/images/opai-avatar-img-12.png', alt: 'Avatar' },
-];
 
 const BornInfo = () => {
   return (
@@ -22,13 +13,15 @@ const BornInfo = () => {
             <div className="space-y-3">
               <TextReveal>
                 <h2 className="font-sora text-sora-heading-4 lg:text-sora-heading-3 xl:text-sora-heading-2 inline-block font-normal text-white/90">
-                  How AI Clawers <span className="text-white/30">was born</span>
+                  Rooted in <span className="text-white/30">leading Shopify SaaS</span>
                 </h2>
               </TextReveal>
               <TextReveal delay={0.2}>
                 <p className="text-tagline-2 max-w-xl font-normal text-white/60">
-                  AI Clawers was founded to make AI accessible for businesses. Our tools are trusted
-                  globally for their simplicity, power, and real-world impact.
+                  Our team formed around practitioners from Channelwill—seven years in the Shopify
+                  ecosystem across storefront delivery, Liquid themes, apps, SEO, and performance. We
+                  carry that product and services scale into focused work for brands that need
+                  shipping, clarity, and outcomes.
                 </p>
               </TextReveal>
             </div>
@@ -38,16 +31,16 @@ const BornInfo = () => {
                   <div className="border-stroke-1/11 bg-background-6 h-full rounded-lg border p-8 text-left">
                     <h3 className="font-sora text-sora-heading-3 flex items-center font-normal text-white/90">
                       <NumberAnimation
-                        number={95}
+                        number={7}
                         speed={2000}
                         interval={200}
-                        rooms={2}
+                        rooms={1}
                         heightSpaceRatio={1.9}
-                        showPercentage
+                        showPercentage={false}
                       />
                     </h3>
                     <p className="text-tagline-2 font-normal text-white/90">
-                      Customer satisfaction rate
+                      Years of hands-on Shopify delivery
                     </p>
                   </div>
                 </div>
@@ -57,10 +50,11 @@ const BornInfo = () => {
                 <div className="col-span-12 md:col-span-6">
                   <div className="border-stroke-1/11 bg-background-6 h-full rounded-lg border p-8 text-left">
                     <h3 className="font-sora text-sora-heading-5 font-normal text-white/90">
-                      Website design
+                      Full-stack Shopify craft
                     </h3>
                     <p className="text-tagline-2 font-normal text-white/90">
-                      Lorem ipsum dolor sit amet consectetur porta vel tempus molestie justo.
+                      Store builds and migrations, Online Store 2.0 themes, public and custom apps,
+                      checkout extensions where applicable, technical SEO, and performance tuning.
                     </p>
                   </div>
                 </div>
@@ -137,10 +131,11 @@ const BornInfo = () => {
                       </figure>
                     </RevealAnimation>
                     <h3 className="font-sora text-sora-heading-5 relative z-10 font-normal text-white/90">
-                      Branding & identity
+                      Channelwill pedigree
                     </h3>
                     <p className="text-tagline-2 relative z-10 font-normal text-white/90">
-                      We build distinctive, memorable brands that resonate with your audience
+                      We come from a top-tier Shopify SaaS environment—used to product rigor, merchant
+                      support volume, and shipping under real constraints.
                     </p>
                   </div>
                 </div>
@@ -148,29 +143,14 @@ const BornInfo = () => {
 
               <RevealAnimation delay={0.6}>
                 <div className="col-span-12 md:col-span-6">
-                  <div className="border-stroke-1/11 bg-background-6 flex h-full items-center gap-x-14 rounded-lg border p-8 text-left">
-                    <div className="">
-                      <AvatarReveal className="flex -space-x-3">
-                        {AVATARS.map((a, i) => (
-                          <AvatarItem key={i + 1} className="shrink-0">
-                            <Image
-                              src={a.src}
-                              alt={a.alt}
-                              width={36}
-                              height={36}
-                              className="z-1 inline-block size-9 rounded-full ring-2 ring-white"
-                            />
-                          </AvatarItem>
-                        ))}
-                        <AvatarItem>
-                          <div className="bg-background-13/50 z-5 flex size-9 shrink-0 items-center justify-center rounded-full ring-2 ring-white backdrop-blur-[5.5px]">
-                            <p className="text-tagline-4 font-normal text-white/80">99+</p>
-                          </div>
-                        </AvatarItem>
-                      </AvatarReveal>
-                    </div>
+                  <div className="border-stroke-1/11 bg-background-6 flex h-full flex-col justify-center gap-y-3 rounded-lg border p-8 text-left">
+                    <p className="font-sora text-sora-heading-5 font-normal text-white/90">
+                      Client-win, end to end
+                    </p>
                     <p className="text-tagline-2 font-normal text-white/90">
-                      Timeless, sustainable creativity.
+                      We have supported tens of thousands of merchants in aggregate through SaaS-scale
+                      products and implementation work—and we bring that same bias for your revenue,
+                      stability, and velocity into every engagement.
                     </p>
                   </div>
                 </div>
@@ -179,7 +159,11 @@ const BornInfo = () => {
           </div>
           <RevealAnimation delay={0.7}>
             <figure className="size-full max-h-[495px] max-w-full overflow-hidden rounded-lg xl:max-w-[495px]">
-              <Image src={bornInfoImage} alt="Born info" className="size-full object-cover" />
+              <Image
+                src={bornInfoImage}
+                alt="Shopify storefront and theme work"
+                className="size-full object-cover"
+              />
             </figure>
           </RevealAnimation>
         </div>
