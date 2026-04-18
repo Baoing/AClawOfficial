@@ -34,13 +34,13 @@ const BlogCard: FC<BlogCardProps> = ({
   return (
     <article className={cn('group underline-hover-effect', className)}>
       <Link href={href} className="block">
-        <figure className="max-w-full overflow-hidden rounded-lg xl:min-h-[430px]">
+        <figure className="relative aspect-[540/430] w-full max-w-full overflow-hidden rounded-lg">
           <Image
             src={imageSrc}
             alt={imageAlt}
-            width={600}
-            height={430}
-            className="h-full w-full object-cover transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:rotate-1"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-all duration-500 ease-in-out group-hover:scale-105 group-hover:rotate-1"
           />
         </figure>
         <div className="pt-4 pl-3">

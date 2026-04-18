@@ -40,7 +40,7 @@ const page = async () => {
     <>
       <ServicesHero />
       <OurServices services={services} />
-      <WhyChooseUs />
+      {/*<WhyChooseUs />*/}
       <CTA />
     </>
   );

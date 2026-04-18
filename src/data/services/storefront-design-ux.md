@@ -5,7 +5,7 @@ description: 'Brand-led UX for Shopify: design systems, component libraries in F
 icon: 'ns-shape-18'
 heroImage: '/images/opai-img-474.jpg'
 contentImages:
-  - '/images/opai-img-480.jpg'
+  - '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
   - '/images/opai-img-481.jpg'
 whatItDoes:
   - 'Design systems: typography, color, spacing tokens, and component states mapped to theme settings'

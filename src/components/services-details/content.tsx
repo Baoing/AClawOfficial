@@ -29,9 +29,9 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                   <ReactMarkdown rehypePlugins={[[rehypeSlug]]}>{contentBeforeWho}</ReactMarkdown>
                 </div>
 
-                {service.contentImages?.length ? (
-                  <ContentImages images={service.contentImages} alt={`${service.title} details`} />
-                ) : null}
+                {/*{service.contentImages?.length ? (*/}
+                {/*  <ContentImages images={service.contentImages} alt={`${service.title} details`} />*/}
+                {/*) : null}*/}
 
                 {contentWho ? (
                   <div className="service-details-markdown text-tagline-2 font-normal text-white/60">

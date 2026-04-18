@@ -33,19 +33,19 @@ const ServiceDetailsHero = ({ service }: ServiceDetailsHeroProps) => {
             </div>
           </RevealAnimation>
         </div>
-        {service.heroImage && (
-          <RevealAnimation delay={0.4}>
-            <figure className="mt-14 overflow-hidden rounded-[10px] md:mt-24 lg:mt-39">
-              <Image
-                src={service.heroImage}
-                alt={service.title}
-                width={1200}
-                height={600}
-                className="size-full object-cover"
-              />
-            </figure>
-          </RevealAnimation>
-        )}
+        {/*{service.heroImage && (*/}
+        {/*  <RevealAnimation delay={0.4}>*/}
+        {/*    <figure className="mt-14 overflow-hidden rounded-[10px] md:mt-24 lg:mt-39">*/}
+        {/*      <Image*/}
+        {/*        src={service.heroImage}*/}
+        {/*        alt={service.title}*/}
+        {/*        width={1200}*/}
+        {/*        height={600}*/}
+        {/*        className="size-full object-cover"*/}
+        {/*      />*/}
+        {/*    </figure>*/}
+        {/*  </RevealAnimation>*/}
+        {/*)}*/}
       </div>
     </section>
   );

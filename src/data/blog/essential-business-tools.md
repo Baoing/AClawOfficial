@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-04.png'
 category: 'Shopify'
 publishDate: '2026-03-22'
 readTime: '16 min read'
-thumbnail: '/images/opai-img-502.jpg'
+thumbnail: '/images/shopify_theme_editor_overview_1024x1024.webp'
 heroImages:
-  - '/images/opai-img-502.jpg'
+  - '/images/shopify_theme_editor_overview_1024x1024.webp'
 tags:
   - Store ops
 description: 'CLI, Theme Check, bulk editors, and shipping/analytics surfaces we treat as “table stakes” for professional Shopify delivery—aligned with our internal tooling guides.'

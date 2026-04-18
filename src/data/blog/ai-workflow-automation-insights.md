@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-04-02'
 readTime: '15 min read'
-thumbnail: '/images/opai-img-495.jpg'
+thumbnail: '/images/945dce06a6642cfe8caca3ff0366074a.webp'
 heroImages:
-  - '/images/opai-img-495.jpg'
+  - '/images/945dce06a6642cfe8caca3ff0366074a.webp'
 tags:
   - Store ops
 description: 'How we combine Shopify Flow, webhooks, and lightweight apps to automate order, fulfillment, and CX workflows—without brittle one-off scripts.'

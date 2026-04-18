@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-04-17'
 readTime: '12 min read'
-thumbnail: '/images/opai-img-488.jpg'
+thumbnail: '/images/opai-img-483.jpg'
 heroImages:
-  - '/images/opai-img-488.jpg'
+  - '/images/opai-img-483.jpg'
 tags:
   - MCP
   - Storefront

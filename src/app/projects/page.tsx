@@ -1,7 +1,7 @@
 import ProjectsHero from '@/src/components/projects/hero';
+import LiveStorefrontCases from '@/src/components/projects/live-storefront-cases';
 import ProjectsGrid from '@/src/components/projects/projects-grid';
 import CTA from '@/src/components/shared/cta';
-import WhyChooseUs from '@/src/components/shared/why-choose-us';
 import type { ProjectPost } from '@/src/interface';
 import getMarkDownData from '@/src/utils/getMarkDownData';
 import type { Metadata } from 'next';
@@ -11,7 +11,7 @@ const PROJECTS_PER_PAGE = 8;
 export const metadata: Metadata = {
   title: 'Shopify case studies | AI Clawers',
   description:
-    'Selected Shopify work—themes, apps, migrations, integrations, and performance passes—with clear before/after outcomes for merchants.',
+    'Live Shopify storefronts plus written case studies—themes, apps, migrations, integrations, and performance work with clear outcomes.',
 };
 
 interface ProjectsPageProps {
@@ -36,8 +36,16 @@ const page = async ({ searchParams }: ProjectsPageProps) => {
   return (
     <>
       <ProjectsHero />
+      <LiveStorefrontCases />
+      <div className="main-container border-stroke-1/10 border-t pt-16 text-center md:pt-20">
+        <h2 className="font-sora text-sora-heading-5 font-normal text-white/90 md:text-sora-heading-6">
+          Case study <span className="text-white/35">write-ups</span>
+        </h2>
+        <p className="text-tagline-2 mx-auto mt-3 max-w-2xl font-normal text-white/55">
+          Long-form notes with scope, trade-offs, and what changed after launch—each links to a full article on this site.
+        </p>
+      </div>
       <ProjectsGrid projects={projects} totalPages={totalPages} currentPage={currentPage} />
-      <WhyChooseUs />
       <CTA />
     </>
   );

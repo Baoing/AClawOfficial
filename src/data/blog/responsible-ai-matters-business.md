@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-03-14'
 readTime: '16 min read'
-thumbnail: '/images/opai-img-497.jpg'
+thumbnail: '/images/cruise-safety-tips.jpg'
 heroImages:
-  - '/images/opai-img-497.jpg'
+  - '/images/cruise-safety-tips.jpg'
 tags:
   - AI & trust
 description: 'Human review, disclosure, and scope limits for storefront and admin AI—patterns aligned with GDPR-minded commerce programs and Shopify’s own product guardrails.'

@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-04-11'
 readTime: '17 min read'
-thumbnail: '/images/opai-img-494.jpg'
+thumbnail: '/images/shopify_custom_app_benefits.avif'
 heroImages:
-  - '/images/opai-img-494.jpg'
+  - '/images/shopify_custom_app_benefits.avif'
 tags:
   - Build
 description: 'A decision frame for merchants debating private apps, checkout UI extensions, and off-the-shelf SaaS on Shopify.'

@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-04.png'
 category: 'Shopify'
 publishDate: '2026-04-08'
 readTime: '15 min read'
-thumbnail: '/images/opai-img-504.jpg'
+thumbnail: '/images/AI-Banner-Maker_1B.gif'
 heroImages:
-  - '/images/opai-img-504.jpg'
+  - '/images/AI-Banner-Maker_1B.gif'
 tags:
   - Store ops
 description: 'A practical checklist of Shopify-native tools and patterns we deploy with clients—grounded in day-to-day admin and storefront reality.'

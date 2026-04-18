@@ -1,14 +1,7 @@
 'use client';
 
-import nsImg424 from '@/public/images/ns-img-424.jpg';
-import nsImg425 from '@/public/images/ns-img-425.jpg';
 import {
-  AnalyticsIconV2,
-  CareerIconV2,
-  IntegrationIconV2,
-  PricingIcon,
-  SupportIconV2,
-  WhitePaperIconV2,
+  BlogIcon,
 } from '@/src/components/shared/icon/menu-icon';
 import { cn } from '@/src/utils/cn';
 import Image from 'next/image';
@@ -26,22 +19,41 @@ type IntegrationLink = SimpleNavLink & {
   icon: ComponentType<{ className?: string }>;
 };
 
-const overviewLinks: SimpleNavLink[] = [
-  { label: 'Features & Capabilities', href: '#', closesMenu: true },
-  { label: 'Process & Workflow', href: '#' },
-  { label: 'Security & Compliance', href: '#' },
-  { label: 'Our Brandkit', href: '#' },
-  { label: 'Download App', href: '#' },
-  { label: 'Press', href: '#' },
+// Replaced by blog picks (Shopify + AI field notes). Restore when dedicated pages exist.
+// const overviewLinks: SimpleNavLink[] = [
+//   { label: 'Features & Capabilities', href: '#', closesMenu: true },
+//   { label: 'Process & Workflow', href: '#' },
+//   { label: 'Security & Compliance', href: '#' },
+//   { label: 'Our Brandkit', href: '#' },
+//   { label: 'Download App', href: '#' },
+//   { label: 'Press', href: '#' },
+// ];
+//
+// const integrationLinks: IntegrationLink[] = [
+//   { label: 'Pricing', href: '/pricing', icon: PricingIcon },
+//   { label: 'HR & Payroll', href: '#', icon: CareerIconV2 },
+//   { label: 'Customer Support', href: '#', icon: SupportIconV2 },
+//   { label: 'Analytics & Reporting', href: '#', icon: AnalyticsIconV2 },
+//   { label: 'Whitepaper & Reports', href: '#', icon: WhitePaperIconV2 },
+//   { label: 'Explore All Integrations', href: '#', icon: IntegrationIconV2 },
+// ];
+
+const blogOverviewLinks: SimpleNavLink[] = [
+  { label: 'Storefront MCP', href: '/blog/storefront-mcp-overview' },
+  { label: 'AI Toolkit', href: '/blog/shopify-ai-toolkit-guide' },
+  { label: 'Ops playbook', href: '/blog/ai-playbook-merchants-and-operations' },
+  { label: 'Never finished', href: '/blog/your-shopify-store-is-never-finished' },
+  { label: 'AI copilots', href: '/blog/shopify-ai-copilots-with-guardrails' },
+  { label: 'Build vs buy', href: '/blog/shopify-custom-apps-build-vs-buy' },
 ];
 
-const integrationLinks: IntegrationLink[] = [
-  { label: 'Pricing', href: '/pricing', icon: PricingIcon },
-  { label: 'HR & Payroll', href: '#', icon: CareerIconV2 },
-  { label: 'Customer Support', href: '#', icon: SupportIconV2 },
-  { label: 'Analytics & Reporting', href: '#', icon: AnalyticsIconV2 },
-  { label: 'Whitepaper & Reports', href: '#', icon: WhitePaperIconV2 },
-  { label: 'Explore All Integrations', href: '#', icon: IntegrationIconV2 },
+const blogGuideLinks: IntegrationLink[] = [
+  { label: 'Speed checklist', href: '/blog/shopify-theme-performance-checklist', icon: BlogIcon },
+  { label: 'Prompt craft', href: '/blog/prompt-engineering-better-outputs', icon: BlogIcon },
+  { label: 'Responsible AI', href: '/blog/responsible-ai-matters-business', icon: BlogIcon },
+  { label: 'Workflow guide', href: '/blog/beginners-guide-automating-workflows-ai', icon: BlogIcon },
+  { label: 'Data privacy', href: '/blog/ai-data-privacy-leaders', icon: BlogIcon },
+  { label: 'All posts', href: '/blog', icon: BlogIcon },
 ];
 
 interface PlatformMenuProps {
@@ -73,9 +85,9 @@ const PlatformMenu = ({ menuDropdownId, setMenuDropdownId }: PlatformMenuProps) 
           <div className="col-span-12 grid grid-cols-12 gap-x-6 lg:col-span-6">
             <div className="col-span-12 xl:col-span-6">
               <div>
-                <p className="text-tagline-2 p-3 font-medium text-white/60">Overview</p>
+                <p className="text-tagline-2 p-3 font-medium text-white/60">Blog</p>
                 <ul>
-                  {overviewLinks.map((link) => (
+                  {blogOverviewLinks.map((link) => (
                     <PlatformMenuLink key={link.label} {...link} onClose={handleClose} />
                   ))}
                 </ul>
@@ -83,9 +95,9 @@ const PlatformMenu = ({ menuDropdownId, setMenuDropdownId }: PlatformMenuProps) 
             </div>
             <div className="col-span-12 xl:col-span-6">
               <div>
-                <p className="text-tagline-2 p-3 font-medium text-white/60">Integrations</p>
+                <p className="text-tagline-2 p-3 font-medium text-white/60">Guides</p>
                 <ul>
-                  {integrationLinks.map((link) => (
+                  {blogGuideLinks.map((link) => (
                     <PlatformMenuLink
                       key={link.label}
                       {...link}
@@ -102,24 +114,26 @@ const PlatformMenu = ({ menuDropdownId, setMenuDropdownId }: PlatformMenuProps) 
               <article className="border-stroke-3/18 group space-y-3 rounded-2xl border p-3">
                 <Link
                   onClick={handleClose}
-                  href="/blog/the-future-of-automation-ai-agency"
+                  href="/blog/storefront-mcp-overview"
                   className="block"
                 >
                   <figure className="h-[250px] w-full max-w-[400px] overflow-hidden rounded-lg">
                     <Image
-                      src={nsImg424}
-                      alt="Featured"
+                      src="/images/opai-img-483.jpg"
+                      alt=""
+                      width={800}
+                      height={500}
                       className="size-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     />
                   </figure>
                 </Link>
                 <div className="space-y-2">
-                  <Link href="/blog/the-future-of-automation-ai-agency" className="block">
-                    <p className="font-sora text-tagline-2 line-clamp-1 font-normal text-white">
-                      The Future of Automation
+                  <Link href="/blog/storefront-mcp-overview" onClick={handleClose} className="block">
+                    <p className="font-sora text-tagline-2 line-clamp-2 font-normal text-white">
+                      Storefront MCP
                     </p>
                     <p className="text-tagline-4 font-normal text-white/60">
-                      What every AI agency should know.
+                      Tools, inventory truth, and what to test before launch.
                     </p>
                   </Link>
                 </div>
@@ -129,24 +143,26 @@ const PlatformMenu = ({ menuDropdownId, setMenuDropdownId }: PlatformMenuProps) 
               <article className="border-stroke-3/18 group space-y-3 rounded-2xl border p-3">
                 <Link
                   onClick={handleClose}
-                  href="/blog/beginners-guide-automating-workflows-ai"
+                  href="/blog/shopify-ai-toolkit-guide"
                   className="block"
                 >
                   <figure className="h-[250px] w-full max-w-[400px] overflow-hidden rounded-lg">
                     <Image
-                      src={nsImg425}
-                      alt="Featured"
+                      src="/images/opai-avatar-img-888.png"
+                      alt=""
+                      width={800}
+                      height={500}
                       className="size-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                     />
                   </figure>
                 </Link>
                 <div className="space-y-2">
-                  <Link href="/blog/beginners-guide-automating-workflows-ai" className="block">
-                    <p className="font-sora text-tagline-2 line-clamp-1 font-normal text-white">
-                      A beginner&apos;s guide to automating workflows
+                  <Link href="/blog/shopify-ai-toolkit-guide" onClick={handleClose} className="block">
+                    <p className="font-sora text-tagline-2 line-clamp-2 font-normal text-white">
+                      AI Toolkit
                     </p>
                     <p className="text-tagline-4 font-normal text-white/60">
-                      Automating workflows with AI.
+                      Connect your editor to Shopify docs, schema, and Dev MCP.
                     </p>
                   </Link>
                 </div>

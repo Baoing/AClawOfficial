@@ -51,7 +51,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
     <>
       <ServiceDetailsHero service={service} />
       <ServiceDetailsContent service={service} />
-      <WhyChooseUs />
+      {/*<WhyChooseUs />*/}
       <CTA />
     </>
   );

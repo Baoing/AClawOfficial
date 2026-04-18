@@ -5,7 +5,7 @@ description: 'Practical AI features your team uses daily: support drafting, list
 icon: 'ns-shape-11'
 heroImage: '/images/opai-img-483.jpg'
 contentImages:
-  - '/images/opai-img-480.jpg'
+  - '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
   - '/images/opai-img-484.jpg'
 whatItDoes:
   - 'Support and inbox workflows—summaries, bilingual drafts, and macros grounded in policy snippets you approve'

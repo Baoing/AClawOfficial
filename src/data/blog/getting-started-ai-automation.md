@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-05.png'
 category: 'Shopify'
 publishDate: '2026-03-30'
 readTime: '15 min read'
-thumbnail: '/images/opai-img-503.jpg'
+thumbnail: '/images/Essential-Shopify-Store-Maintenance-Checklist-for-2024-ColorWhistle.webp'
 heroImages:
-  - '/images/opai-img-503.jpg'
+  - '/images/Essential-Shopify-Store-Maintenance-Checklist-for-2024-ColorWhistle.webp'
 tags:
   - Store ops
 description: 'A merchant-first onboarding path for Shopify—markets, catalog, checkout—then the safest places to add Flow and AI without destabilizing launch.'

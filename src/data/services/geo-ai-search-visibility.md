@@ -3,10 +3,10 @@ title: 'GEO & AI-search'
 titleItalic: 'visibility'
 description: 'Make your brand legible to answer engines and assistants: structured facts, policy clarity, FAQ surfaces, and measurement—not keyword stuffing.'
 icon: 'ns-shape-12'
-heroImage: '/images/opai-img-480.jpg'
+heroImage: '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
 contentImages:
-  - '/images/opai-img-488.jpg'
-  - '/images/opai-img-492.jpg'
+  - '/images/opai-img-483.jpg'
+  - '/images/opai-img-889.png'
 whatItDoes:
   - 'Content architecture for FAQs, policies, and comparison pages that assistants can cite accurately'
   - 'Schema and on-page patterns that reduce “confident wrong summaries” about shipping, returns, and warranties'

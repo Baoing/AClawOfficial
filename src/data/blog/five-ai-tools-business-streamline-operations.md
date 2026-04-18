@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-04-06'
 readTime: '14 min read'
-thumbnail: '/images/opai-img-494.jpg'
+thumbnail: '/images/shopify_custom_app_benefits.avif'
 heroImages:
-  - '/images/opai-img-494.jpg'
+  - '/images/shopify_custom_app_benefits.avif'
 tags:
   - AI & trust
 description: 'Where merchant AI helps on Shopify today—aligned with official AI Toolkit patterns and grounded in catalog data instead of generic chat.'

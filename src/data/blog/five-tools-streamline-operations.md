@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-01.png'
 category: 'Shopify'
 publishDate: '2026-04-04'
 readTime: '14 min read'
-thumbnail: '/images/opai-img-500.jpg'
+thumbnail: '/images/b35b87dc3a46e025892cd9d64109f813.webp'
 heroImages:
-  - '/images/opai-img-500.jpg'
+  - '/images/b35b87dc3a46e025892cd9d64109f813.webp'
 tags:
   - Store ops
 description: 'Concrete Shopify admin features—Flow, tags, metafields, locations, and notifications—that reduce manual ops work without fragile spreadsheets.'

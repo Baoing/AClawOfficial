@@ -2,7 +2,7 @@
 title: 'Online Store 2.0'
 titleItalic: 'rebuild & performance'
 excerpt: 'JSON templates, section architecture, and image discipline that cut LCP on collection pages and made merchandising updates safe without developer deploys for every tweak.'
-heroImage: '/images/opai-img-488.jpg'
+heroImage: '/images/opai-img-483.jpg'
 details:
   client: 'Confidential fashion retailer'
   year: '2024'

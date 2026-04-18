@@ -12,11 +12,18 @@ export interface ResourcesMenuLinkProps {
   onClose?: () => void;
 }
 
-const ResourcesMenuLink = ({ label, href, icon: Icon, onClose }: ResourcesMenuLinkProps) => (
+const isExternalHref = (href: string) => /^https?:\/\//i.test(href);
+
+const ResourcesMenuLink = ({ label, href, icon: Icon, onClose }: ResourcesMenuLinkProps) => {
+  const external = isExternalHref(href);
+
+  return (
   <li>
     <Link
       href={href}
       onClick={onClose}
+      target={external ? '_blank' : undefined}
+      rel={external ? 'noopener noreferrer' : undefined}
       className="group relative flex items-center gap-2 rounded-[10px] p-3"
     >
       <HoverBgTransform className="group-hover:opacity-100" />
@@ -26,6 +33,7 @@ const ResourcesMenuLink = ({ label, href, icon: Icon, onClose }: ResourcesMenuLi
       <span className="font-sora text-tagline-2 relative z-10 font-normal text-white">{label}</span>
     </Link>
   </li>
-);
+  );
+};
 
 export default ResourcesMenuLink;

@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-01.png'
 category: 'Shopify'
 publishDate: '2026-03-28'
 readTime: '14 min read'
-thumbnail: '/images/opai-img-493.jpg'
+thumbnail: '/images/The-AI-Storefront-is-Live-How-Shopifys-Catalog-Universal-Commerce-Are-Rewriting-E-Commerce.jpg'
 heroImages:
-  - '/images/opai-img-493.jpg'
+  - '/images/The-AI-Storefront-is-Live-How-Shopifys-Catalog-Universal-Commerce-Are-Rewriting-E-Commerce.jpg'
 tags:
   - Store ops
 description: 'Step-by-step: tags, Flow, email templates, and inventory events—so later AI features sit on top of predictable Shopify data.'

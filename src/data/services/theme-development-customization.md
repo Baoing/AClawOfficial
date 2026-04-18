@@ -3,7 +3,7 @@ title: 'Theme development'
 titleItalic: '& customization'
 description: 'Online Store 2.0 themes, Liquid architecture, metaobjects, app blocks, and performance-aware front ends—maintainable by your team after handover.'
 icon: 'ns-shape-19'
-heroImage: '/images/opai-img-492.jpg'
+heroImage: '/images/opai-img-889.png'
 contentImages:
   - '/images/opai-img-482.jpg'
   - '/images/opai-img-483.jpg'

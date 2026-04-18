@@ -125,6 +125,8 @@ const Footer = () => {
                     <li className="py-2">
                       <Link
                         href="https://shopify.baoea.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
                         Shopify Tutorial

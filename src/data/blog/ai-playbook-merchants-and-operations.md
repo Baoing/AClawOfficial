@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-04-14'
 readTime: '22 min read'
-thumbnail: '/images/opai-img-480.jpg'
+thumbnail: '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
 heroImages:
-  - '/images/opai-img-480.jpg'
+  - '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
 tags:
   - AI
   - Operations

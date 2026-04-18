@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-03-16'
 readTime: '16 min read'
-thumbnail: '/images/opai-img-499.jpg'
+thumbnail: '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
 heroImages:
-  - '/images/opai-img-499.jpg'
+  - '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
 tags:
   - AI & trust
 description: 'A practical audit list for PII, marketing consent, app scopes, and cross-border retention—mapped to GDPR-style questions we document for Shopify merchants.'

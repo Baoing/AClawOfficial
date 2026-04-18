@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-03-24'
 readTime: '13 min read'
-thumbnail: '/images/opai-img-505.jpg'
+thumbnail: '/images/CN3qwOHtsI8DEAE=.png'
 heroImages:
-  - '/images/opai-img-505.jpg'
+  - '/images/CN3qwOHtsI8DEAE=.png'
 tags:
   - Store ops
 description: 'Low-risk Flow recipes and admin habits inspired by our beginner automation curriculum—no custom code required.'

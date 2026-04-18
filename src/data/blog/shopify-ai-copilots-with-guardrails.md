@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-04-10'
 readTime: '17 min read'
-thumbnail: '/images/opai-img-492.jpg'
+thumbnail: '/images/opai-img-889.png'
 heroImages:
-  - '/images/opai-img-492.jpg'
+  - '/images/opai-img-889.png'
 tags:
   - AI & trust
 description: 'How to pair generative helpers with metafields, policy text, and approval flows so AI speeds merchants up without drifting off-brand.'

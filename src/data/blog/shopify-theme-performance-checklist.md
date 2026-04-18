@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-01.png'
 category: 'Shopify'
 publishDate: '2026-04-12'
 readTime: '18 min read'
-thumbnail: '/images/opai-img-503.jpg'
+thumbnail: '/images/Essential-Shopify-Store-Maintenance-Checklist-for-2024-ColorWhistle.webp'
 heroImages:
-  - '/images/opai-img-503.jpg'
+  - '/images/Essential-Shopify-Store-Maintenance-Checklist-for-2024-ColorWhistle.webp'
 tags:
   - Build
 description: 'How we audit Online Store 2.0 themes before high-traffic promos—Core Web Vitals, Liquid cost, and checkout-safe changes.'

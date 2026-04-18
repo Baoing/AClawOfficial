@@ -21,12 +21,11 @@ type ResourceLink = {
 
 const resourceLinks: ResourceLink[] = [
   { label: 'Blog', href: '/blog', icon: BlogIcon },
-  { label: 'Tutorial', href: '#', icon: TutorialIcon },
+  { label: 'Tutorial', href: 'https://shopify.baoea.com/', icon: TutorialIcon },
   { label: 'FAQ', href: '/faq', icon: FaqIcon },
-  { label: 'Glossary', href: '#', icon: GlossaryIcon },
-  { label: 'Support', href: '#', icon: SupportIcon },
+  { label: 'Support', href: 'mailto:will@baoea.com', icon: SupportIcon },
   { label: 'Contact', href: '/contact', icon: ContactIcon },
-  { label: 'Success Stories', href: '#', icon: SuccessIcon },
+  { label: 'Success Stories', href: '/projects', icon: SuccessIcon },
 ];
 
 interface ResourcesMenuProps {

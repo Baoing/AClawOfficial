@@ -2,7 +2,7 @@
 title: 'Merchandising clarity'
 titleItalic: 'for a high-SKU catalog'
 excerpt: 'Shopify admin extensions and reporting views so merchandisers could retire spreadsheets and act on inventory, price, and collection health in one place.'
-heroImage: '/images/opai-img-480.jpg'
+heroImage: '/images/be52f31fd3f9ef5800d3b8d48288e2a2.webp'
 details:
   client: 'Confidential multi-category retailer'
   year: '2024'

@@ -3,7 +3,7 @@ title: 'AI integration'
 titleItalic: 'on Shopify'
 description: 'Shopify AI Toolkit, Dev MCP, Storefront MCP, and grounded copilots—wired so assistants use docs, schema, and live data instead of hallucinating APIs or inventory.'
 icon: 'ns-shape-14'
-heroImage: '/images/opai-img-492.jpg'
+heroImage: '/images/opai-img-889.png'
 contentImages:
   - '/images/opai-img-474.jpg'
   - '/images/opai-img-487.jpg'

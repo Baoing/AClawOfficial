@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-05.png'
 category: 'Shopify'
 publishDate: '2026-03-20'
 readTime: '16 min read'
-thumbnail: '/images/opai-img-496.jpg'
+thumbnail: '/images/AI-Image-Generator_1B_Bring-your-vision-to-life.gif'
 heroImages:
-  - '/images/opai-img-496.jpg'
+  - '/images/AI-Image-Generator_1B_Bring-your-vision-to-life.gif'
 tags:
   - Build
 description: 'Roles, rituals, and training tracks for agencies and in-house teams shipping themes, apps, and AI copilots on Shopify without burning out.'

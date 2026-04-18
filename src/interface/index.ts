@@ -170,6 +170,15 @@ export interface ProjectPost {
   [key: string]: unknown;
 }
 
+/** Live storefront tiles on `/projects` (thumbnails under `public/images/cases`). */
+export interface CustomerCase {
+  title: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  tags: string[];
+}
+
 // mobile menu
 export interface MobileMenuSubItem {
   id: string;

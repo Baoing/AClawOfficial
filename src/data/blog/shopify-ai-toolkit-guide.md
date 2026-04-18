@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-03.png'
 category: 'Shopify'
 publishDate: '2026-04-16'
 readTime: '14 min read'
-thumbnail: '/images/opai-img-492.jpg'
+thumbnail: '/images/opai-avatar-img-888.png'
 heroImages:
-  - '/images/opai-img-492.jpg'
+  - '/images/opai-avatar-img-888.png'
 tags:
   - AI Toolkit
   - Developer experience

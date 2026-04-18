@@ -37,7 +37,7 @@ export const mobileMenuData: MobileMenuData[] = [
       { id: 'whitepapers', label: 'Whitepapers', href: '#' },
       { id: 'support', label: 'Support', href: '#' },
       { id: 'use-cases', label: 'Use Cases', href: '/use-cases' },
-      { id: 'success-stories', label: 'Success Stories', href: '#' },
+      { id: 'success-stories', label: 'Success Stories', href: '/projects' },
       { id: 'analytics', label: 'Analytics', href: '#' },
       { id: 'changelog', label: 'Changelog', href: '#' },
       { id: 'glossary', label: 'Glossary', href: '#' },

@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-04.png'
 category: 'Shopify'
 publishDate: '2026-03-12'
 readTime: '16 min read'
-thumbnail: '/images/opai-img-492.jpg'
+thumbnail: '/images/opai-img-889.png'
 heroImages:
-  - '/images/opai-img-492.jpg'
+  - '/images/opai-img-889.png'
 tags:
   - AI & trust
 description: 'How partner teams evolve when Shopify ships more native AI—fewer generic retainers, deeper platform expertise, and clearer lines on who owns risk at checkout.'

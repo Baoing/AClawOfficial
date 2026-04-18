@@ -12,17 +12,24 @@ export interface PlanAndSupportMenuLinkProps {
   onClose?: () => void;
 }
 
+const isExternalHref = (href: string) => /^https?:\/\//i.test(href);
+
 const PlanAndSupportMenuLink = ({
   title,
   description,
   href,
   icon: Icon,
   onClose,
-}: PlanAndSupportMenuLinkProps) => (
+}: PlanAndSupportMenuLinkProps) => {
+  const external = isExternalHref(href);
+
+  return (
   <li>
     <Link
       href={href}
       onClick={onClose}
+      target={external ? '_blank' : undefined}
+      rel={external ? 'noopener noreferrer' : undefined}
       className="group relative flex items-start gap-3 rounded-[10px] p-3 transition-all duration-300"
     >
       <HoverBgTransform className="group-hover:opacity-100" />
@@ -35,6 +42,7 @@ const PlanAndSupportMenuLink = ({
       </div>
     </Link>
   </li>
-);
+  );
+};
 
 export default PlanAndSupportMenuLink;

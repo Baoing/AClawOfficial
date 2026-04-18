@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-01.png'
 category: 'Shopify'
 publishDate: '2026-03-18'
 readTime: '16 min read'
-thumbnail: '/images/opai-img-498.jpg'
+thumbnail: '/images/SHOPIFY_SIDEKICK_POWER_8ad7c171-3554-42ed-b7ca-b4d34ec3ab43.webp'
 heroImages:
-  - '/images/opai-img-498.jpg'
+  - '/images/SHOPIFY_SIDEKICK_POWER_8ad7c171-3554-42ed-b7ca-b4d34ec3ab43.webp'
 tags:
   - AI & trust
 description: 'Practical prompt patterns for PDP copy, FAQs, and macros—grounded in metafields and policy pages so outputs stay on-brand on Shopify.'

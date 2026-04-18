@@ -3,7 +3,7 @@ title: 'Shopify store builds'
 titleItalic: '& migrations'
 description: 'New storefronts, replatforming, and launch playbooks—SEO-safe URLs, catalog structure, markets, and checkout you can run day one.'
 icon: 'ns-shape-17'
-heroImage: '/images/opai-img-488.jpg'
+heroImage: '/images/opai-img-483.jpg'
 contentImages:
   - '/images/opai-img-478.jpg'
   - '/images/opai-img-479.jpg'

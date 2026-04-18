@@ -5,9 +5,9 @@ authorImage: '/images/opai-avatar-img-02.png'
 category: 'Shopify'
 publishDate: '2026-03-26'
 readTime: '14 min read'
-thumbnail: '/images/opai-img-501.jpg'
+thumbnail: '/images/Shopify_Flow_workflow_202604091532.jpeg'
 heroImages:
-  - '/images/opai-img-501.jpg'
+  - '/images/Shopify_Flow_workflow_202604091532.jpeg'
 tags:
   - Store ops
 description: 'Starter playbooks for order tagging, fraud holds, B2B approvals, and fulfillment alerts—patterns we reuse from store setup and collaborator training docs.'
