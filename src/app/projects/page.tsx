@@ -45,7 +45,7 @@ const page = async ({ searchParams }: ProjectsPageProps) => {
           Long-form notes with scope, trade-offs, and what changed after launch—each links to a full article on this site.
         </p>
       </div>
-      <ProjectsGrid projects={projects} totalPages={totalPages} currentPage={currentPage} />
+      {/*<ProjectsGrid projects={projects} totalPages={totalPages} currentPage={currentPage} />*/}
       <CTA />
     </>
   );
