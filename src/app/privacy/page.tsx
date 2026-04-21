@@ -29,7 +29,7 @@ const page = () => {
         <h2 id="privacy-controller">1. Who we are</h2>
         <p>
           AI Clawers provides Shopify-related professional services. For privacy inquiries, contact{' '}
-          <a href="mailto:will@baoea.com">will@baoea.com</a>.
+          <a href="mailto:contact@aiclawers.com">contact@aiclawers.com</a>.
         </p>
       </section>
 

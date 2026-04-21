@@ -80,7 +80,7 @@ const page = () => {
         </ul>
         <p>
           To exercise rights, email{' '}
-          <a href="mailto:will@baoea.com">will@baoea.com</a>. We may need to verify your identity
+          <a href="mailto:contact@aiclawers.com">contact@aiclawers.com</a>. We may need to verify your identity
           before responding.
         </p>
       </section>
@@ -117,7 +117,7 @@ const page = () => {
         <h2 id="gdpr-contact">7. Contact</h2>
         <p>
           GDPR-related questions:{' '}
-          <a href="mailto:will@baoea.com">will@baoea.com</a>
+          <a href="mailto:contact@aiclawers.com">contact@aiclawers.com</a>
         </p>
         <p>
           For more general information about categories of data and cookies, see our{' '}

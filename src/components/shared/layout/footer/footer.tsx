@@ -45,6 +45,23 @@ const Footer = () => {
                     Intelligent Shopify help—launch, fix, and grow your store so you spend less time on the platform
                     and more on customers and sales.
                   </p>
+                  <div className="border-stroke-1/11 max-w-md space-y-2 rounded-lg border border-white/10 px-4 py-3">
+                    <p className="font-ibm-plex-mono text-tagline-3 font-medium tracking-wide text-white/85 uppercase">
+                      AI CLAWERS SOLUTIONS LIMITED
+                    </p>
+                    <p lang="zh-Hans" className="text-tagline-3 font-normal text-white/65">
+                      智爪集成有限公司
+                    </p>
+                    <p className="text-tagline-4 font-normal text-white/45">
+                      Legal entity for the AI Clawers brand.
+                    </p>
+                    <a
+                      href="mailto:contact@aiclawers.com"
+                      className="text-tagline-2 inline-block font-normal text-white/70 underline-offset-4 transition-colors hover:text-white hover:underline"
+                    >
+                      contact@aiclawers.com
+                    </a>
+                  </div>
                 </div>
                 {/*<div className="space-y-6">*/}
                 {/*  <div>*/}
@@ -134,10 +151,10 @@ const Footer = () => {
                     </li>
                     <li className="py-2">
                       <Link
-                        href="mailto:will@baoea.com"
+                        href="mailto:contact@aiclawers.com"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        will@baoea.com
+                        contact@aiclawers.com
                       </Link>
                     </li>
                   </ul>

@@ -14,8 +14,8 @@ export const footerData: FooterData = {
     label: 'Contact:',
     phone: '+1 (202) 555-0130',
     phoneHref: 'tel:+12025550130',
-    email: 'will@baoea.com',
-    emailHref: 'mailto:will@baoea.com',
+    email: 'contact@aiclawers.com',
+    emailHref: 'mailto:contact@aiclawers.com',
   },
   social: [
     { name: 'Facebook', href: '#' },

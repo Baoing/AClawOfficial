@@ -18,9 +18,9 @@ const BornInfo = () => {
               </TextReveal>
               <TextReveal delay={0.2}>
                 <p className="text-tagline-2 max-w-xl font-normal text-white/60">
-                  Our team formed around practitioners from Channelwill—seven years in the Shopify
-                  ecosystem across storefront delivery, Liquid themes, apps, SEO, and performance. We
-                  carry that product and services scale into focused work for brands that need
+                  Our team formed around senior practitioners from leading Shopify SaaS—seven years in
+                  the ecosystem across storefront delivery, Liquid themes, apps, SEO, and performance.
+                  We carry that product and services scale into focused work for brands that need
                   shipping, clarity, and outcomes.
                 </p>
               </TextReveal>
@@ -131,11 +131,12 @@ const BornInfo = () => {
                       </figure>
                     </RevealAnimation>
                     <h3 className="font-sora text-sora-heading-5 relative z-10 font-normal text-white/90">
-                      Channelwill pedigree
+                      SaaS-scale discipline
                     </h3>
                     <p className="text-tagline-2 relative z-10 font-normal text-white/90">
-                      We come from a top-tier Shopify SaaS environment—used to product rigor, merchant
-                      support volume, and shipping under real constraints.
+                      We are used to product rigor, high merchant support volume, and shipping under
+                      real constraints—the kind of background you get from years inside serious
+                      Shopify software, not one-off freelance gigs.
                     </p>
                   </div>
                 </div>

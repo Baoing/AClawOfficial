@@ -30,10 +30,34 @@ const WHY_US_ITEMS = [
 
 interface WhyUsProps {
   /** When set, anchors deep links (e.g. /about#why-choose-us) */
-  sectionId?: string
+  sectionId?: string;
   /** When false, only the four pillars render (e.g. dedicated /why-us page already has a hero). */
-  showIntro?: boolean
+  showIntro?: boolean;
 }
+
+const LegalEntityBlock = ({ animationDelay }: { animationDelay: number }) => (
+  <TextReveal delay={animationDelay}>
+    <div className="border-stroke-1/11 bg-background-6/80 mx-auto max-w-xl rounded-lg border px-5 py-4 text-center">
+      <p className="font-ibm-plex-mono text-tagline-2 font-medium tracking-wide text-white/90 uppercase">
+        AI CLAWERS SOLUTIONS LIMITED
+      </p>
+      <p lang="zh-Hans" className="text-tagline-2 mt-1 font-normal text-white/70">
+        智爪集成有限公司
+      </p>
+      <p className="text-tagline-4 mt-2 font-normal text-white/45">
+        Legal entity behind the AI Clawers brand and this site.
+      </p>
+      <p className="mt-3">
+        <a
+          href="mailto:contact@aiclawers.com"
+          className="text-tagline-2 font-normal text-white/65 underline-offset-4 transition-colors hover:text-white hover:underline"
+        >
+          contact@aiclawers.com
+        </a>
+      </p>
+    </div>
+  </TextReveal>
+);
 
 const WhyUs = ({ sectionId, showIntro = true }: WhyUsProps) => {
   const headingId = sectionId ? 'why-choose-heading' : 'why-choose-heading-standalone'
@@ -43,7 +67,7 @@ const WhyUs = ({ sectionId, showIntro = true }: WhyUsProps) => {
       <div className="main-container">
         <div className="space-y-18">
           {showIntro ? (
-            <div className="space-y-3 text-center">
+            <div className="space-y-4 text-center">
               <TextReveal>
                 <h2
                   id={headingId}
@@ -58,11 +82,15 @@ const WhyUs = ({ sectionId, showIntro = true }: WhyUsProps) => {
                   decks.
                 </p>
               </TextReveal>
+              <LegalEntityBlock animationDelay={0.28} />
             </div>
           ) : (
-            <h2 id={headingId} className="sr-only">
-              Why choose AI Clawers?
-            </h2>
+            <div className="space-y-8">
+              <h2 id={headingId} className="sr-only">
+                Why choose AI Clawers?
+              </h2>
+              <LegalEntityBlock animationDelay={0.15} />
+            </div>
           )}
           <div className="flex flex-col items-stretch gap-y-4 lg:flex-row lg:gap-x-4">
             {WHY_US_ITEMS.map((item, i) => (

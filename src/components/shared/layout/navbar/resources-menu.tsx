@@ -23,7 +23,7 @@ const resourceLinks: ResourceLink[] = [
   { label: 'Blog', href: '/blog', icon: BlogIcon },
   { label: 'Tutorial', href: 'https://shopify.baoea.com/', icon: TutorialIcon },
   { label: 'FAQ', href: '/faq', icon: FaqIcon },
-  { label: 'Support', href: 'mailto:will@baoea.com', icon: SupportIcon },
+  { label: 'Support', href: 'mailto:contact@aiclawers.com', icon: SupportIcon },
   { label: 'Contact', href: '/contact', icon: ContactIcon },
   { label: 'Success Stories', href: '/projects', icon: SuccessIcon },
 ];

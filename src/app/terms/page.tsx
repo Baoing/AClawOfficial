@@ -111,7 +111,7 @@ const page = () => {
         <h2 id="terms-contact">9. Contact</h2>
         <p>
           Questions about these Terms:{' '}
-          <a href="mailto:will@baoea.com">will@baoea.com</a>
+          <a href="mailto:contact@aiclawers.com">contact@aiclawers.com</a>
         </p>
       </section>
     </LegalDocumentLayout>
