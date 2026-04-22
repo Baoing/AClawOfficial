@@ -11,45 +11,45 @@ import {
 const faqData = [
   {
     value: 'item-one',
-    question: 'What Shopify work do you take on?',
+    question: 'What platform do you suggest for my store?',
     answer:
-      'We help merchants and brands with Online Store 2.0 themes, performance and Core Web Vitals, checkout and cart UX, metafields and content modeling, Shopify Flow and admin automation, public and custom apps, integrations (ERP, CRM, 3PL), and data reporting. We scope each engagement around your catalog, markets, and launch goals—not generic “AI packages.”',
+      'For an online store that feels intuitive and ships with strong ecommerce features out of the box, we usually recommend Shopify. It scales from small brands to larger catalogs, and it connects cleanly with the marketing, fulfillment, and analytics tools teams already use—so you can add capabilities over time without rebuilding from scratch.',
   },
   {
     value: 'item-two',
-    question: 'How long does a typical Shopify project take?',
+    question: 'Will my Shopify store be mobile friendly?',
     answer:
-      'It depends on scope. A focused theme tune-up, speed pass, or Flow build can ship in a few weeks. A new storefront, migration, or app-heavy build usually runs several weeks to a few months. We start with discovery on catalog structure, apps, markets, and checkout constraints so timelines and milestones match reality.',
+      'Yes. We treat responsive layout as a default, not an add-on. Your storefront should read well and feel easy to tap through on phones and tablets, because that is where most shoppers browse—and where small friction points quietly cost conversions.',
   },
   {
     value: 'item-three',
-    question: 'How do you handle data, apps, and compliance on Shopify?',
+    question: 'Will I be able to edit my store easily?',
     answer:
-      'We follow least-privilege app installs, document which apps and scopes touch customer data, and align tracking and marketing consent with your policies. For GDPR-style programs we map PII flows across Shopify, storefront, and connected tools. Work can stay in your org and collaborators where you prefer—we do not need open-ended exports of your order data to deliver storefront work.',
+      'We design builds so day-to-day updates stay inside Shopify admin whenever possible—products, collections, pages, and basic content blocks your team can own. We also walk you through the moving parts that are safer to touch with a checklist, and we stay available when you want help with bigger changes or seasonal launches.',
   },
   {
     value: 'item-four',
-    question: 'Can you work with our live store or migrate us to Shopify?',
+    question: 'What SEO basics will you incorporate?',
     answer:
-      'Yes. We often work on production stores with staged themes, duplicate environments, and clear QA checklists. For migrations we plan redirects, handle collection and URL structure, reconcile metafields, and test checkout, taxes, and shipping before cutover. ERP and fulfillment integrations are scoped early so launch week stays boring—in a good way.',
+      'We treat SEO as part of a healthy launch, not a mystery bolt-on. That typically includes clear titles and descriptions, clean URL structure, fast-loading theme patterns where we control them, structured data where it helps, and sensible internal linking. If you want to go further with content or off-site visibility, we can scope that separately once the storefront foundation is solid.',
   },
   {
     value: 'item-five',
-    question: 'What results should we expect from a rebuild or optimization?',
+    question: 'How much do your services cost?',
     answer:
-      'We tie work to metrics you already care about: conversion rate, mobile speed, average order value, support ticket volume, and operational time saved in admin. Theme and performance work targets measurable storefront gains; Flow and better data modeling reduce manual work. We agree on KPIs before build and review them after launch.',
+      'Pricing depends on what you need—new build, redesign, migration, apps, or ongoing care. Share your goals and timeline and we will reply with a tailored quote and a sensible phased plan, so you are not paying for work you do not need yet.',
   },
   {
     value: 'item-six',
-    question: 'Do you build custom themes and apps, or only configure existing ones?',
+    question: 'Do you provide ongoing support after the project is completed?',
     answer:
-      'Both. We use quality themes, apps, and Shopify-native features whenever they fit your roadmap. When you need something only your business does—custom sections, checkout UI extensions, private apps, or middleware—we design and ship that too. Most projects mix configuration, light custom Liquid or app code, and clear documentation so your team can own the store afterward.',
+      'Yes. Many teams want a light maintenance window after launch for fixes, app updates, and small improvements. We can also set up a simple support rhythm—think seasonal releases, checkout tweaks, or performance checks—so your site keeps feeling sharp after go-live.',
   },
   {
     value: 'item-seven',
-    question: 'What happens after launch—do you offer ongoing support?',
+    question: 'How long does it take to complete a Shopify website?',
     answer:
-      'We hand over theme notes, app list, and runbooks for campaigns and catalog updates. Many clients keep us on a light retainer for seasonal releases, A/B follow-ups, new markets, and app upgrades. We can also train your staff on Flow, metafields, and safe theme editing so day-to-day changes do not depend on a single vendor.',
+      'Timelines track complexity: a focused refresh can be weeks, while a full redesign, migration, or app-heavy build usually needs more runway. We agree milestones up front and keep communication tight, so you always know what is shipping next and why.',
   },
 ];
 
@@ -65,8 +65,8 @@ const FAQ = () => {
             </h2>
           </TextReveal>
           <TextReveal delay={0.2}>
-            <p className="font-inter-tight text-tagline-2 mx-auto max-w-[340px] text-white/60">
-              Themes, apps, migrations, and how we ship—before you book a call.
+            <p className="font-inter-tight text-tagline-2 mx-auto max-w-[380px] text-white/60">
+              Straight answers on Shopify, timelines, and what it is like to work with us—before you reach out.
             </p>
           </TextReveal>
         </div>

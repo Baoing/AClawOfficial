@@ -7,6 +7,7 @@ import OurImpact from '@/src/components/home/our-impact';
 import Projects from '@/src/components/home/projects';
 import Subscribe from '@/src/components/home/subscribe';
 import Testimonial from '@/src/components/home/testimonial';
+import WhyProfessionalShopify from '@/src/components/home/why-professional-shopify';
 import Contact from '@/src/components/shared/contact';
 import CTA from '@/src/components/shared/cta';
 import VideoModal from '@/src/components/shared/VideoModal';
@@ -29,6 +30,7 @@ const page = () => {
       <Testimonial />
       <Blog />
       <FAQ />
+      <WhyProfessionalShopify />
       <Subscribe />
       <CTA />
       <Contact />
