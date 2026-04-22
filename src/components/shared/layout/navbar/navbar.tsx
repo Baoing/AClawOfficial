@@ -47,7 +47,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
       <header
         onMouseLeave={() => handleMenuHover(null)}
         className={cn(
-          'fixed top-6 left-1/2 z-30 mx-auto w-full max-w-[350px] -translate-x-1/2 transition-all duration-500 ease-in-out md:max-w-[640px] lg:max-w-[818px]',
+          'fixed top-6 left-1/2 z-30 mx-auto w-full max-w-[350px] -translate-x-1/2 transition-all duration-500 ease-in-out md:max-w-[640px] lg:max-w-[900px]',
           showTopNav && 'top-13.5',
           isScrolled && 'top-2'
         )}
