@@ -27,13 +27,13 @@ const IncludeInEveryPlan = () => {
               <div className="space-y-3">
                 <TextReveal delay={0.3}>
                   <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal text-white/90 lg:max-w-[450px]">
-                    What’s included in <span className="text-white/30">every plan</span>
+                    What stays consistent <span className="text-white/30">across tiers</span>
                   </h2>
                 </TextReveal>
                 <TextReveal delay={0.4}>
                   <p className="font-inter-tight text-tagline-2 font-normal text-white/60">
-                    Key Advantages of Each Subscription Plan. Every subscription plan we offer comes
-                    with its own set of core benefits designed to enhance your experience.
+                    Scope changes with catalog size and design depth, but how we work with you does
+                    not—clear milestones, Shopify-native delivery, and room to grow after launch.
                   </p>
                 </TextReveal>
               </div>
@@ -41,27 +41,27 @@ const IncludeInEveryPlan = () => {
                 <ul className="space-y-3">
                   <li className="font-inter-tight text-tagline-1 flex items-center gap-x-2 text-white/90">
                     <span className="inline-block size-1.5 rounded-full bg-white"></span>
-                    Free Onboarding
+                    Discovery notes and written scope before build
                   </li>
                   <li className="font-inter-tight text-tagline-1 flex items-center gap-x-2 text-white/90">
                     <span className="inline-block size-1.5 rounded-full bg-white"></span>
-                    AI Insights
+                    Staging theme, QA, and launch checklist
                   </li>
                   <li className="font-inter-tight text-tagline-1 flex items-center gap-x-2 text-white/90">
                     <span className="inline-block size-1.5 rounded-full bg-white"></span>
-                    Secure Data Management
+                    Admin-friendly handover and training time
                   </li>
                   <li className="font-inter-tight text-tagline-1 flex items-center gap-x-2 text-white/90">
                     <span className="inline-block size-1.5 rounded-full bg-white"></span>
-                    Real-Time Analytics
+                    Analytics and Search Console wiring when you need it
                   </li>
                   <li className="font-inter-tight text-tagline-1 flex items-center gap-x-2 text-white/90">
                     <span className="inline-block size-1.5 rounded-full bg-white"></span>
-                    Cancel Anytime
+                    30-day post-launch support window on listed packages
                   </li>
                   <li className="font-inter-tight text-tagline-1 flex items-center gap-x-2 text-white/90">
                     <span className="inline-block size-1.5 rounded-full bg-white"></span>
-                    Free Updates
+                    Optional retainers for seasonal releases and upgrades
                   </li>
                 </ul>
               </TextReveal>

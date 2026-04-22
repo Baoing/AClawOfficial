@@ -7,17 +7,17 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
-  title: 'Pricing - AI Solutions || AI Clawers',
+  title: 'Pricing - Shopify Development || AI Clawers',
   description:
-    'Transparent pricing designed to scale with your business. No hidden fees, no surprises.',
+    'Transparent starting ranges for Shopify website projects in USD. Customizable packages—contact us for a tailored quote.',
 };
 
 const page = () => {
   return (
     <>
       <Pricing />
-      <OurImpact />
-      <IncludeInEveryPlan />
+      {/*<OurImpact />*/}
+      {/*<IncludeInEveryPlan />*/}
       <CTA />
     </>
   );
