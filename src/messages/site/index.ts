@@ -1,14 +1,18 @@
 import type { AppLocale } from '@/src/types/locale'
 import { siteEn } from '@/src/messages/site/en'
-import { siteZhCN } from '@/src/messages/site/zh-CN'
-import { siteZhTW } from '@/src/messages/site/zh-TW'
+import { siteZhCNPatch } from '@/src/messages/site/zh-CN'
+import { siteZhTWPatch } from '@/src/messages/site/zh-TW'
 
 export type SiteMessageKey = keyof typeof siteEn
 
-const tables: Record<AppLocale, Record<string, string>> = {
-  en: siteEn,
-  'zh-CN': siteZhCN,
-  'zh-TW': siteZhTW,
-}
+const enFlat = siteEn as Record<string, string>
 
-export const getSiteMessage = (locale: AppLocale): Record<string, string> => tables[locale]
+export const getSiteMessage = (locale: AppLocale): Record<string, string> => {
+  if (locale === 'zh-CN') {
+    return { ...enFlat, ...siteZhCNPatch }
+  }
+  if (locale === 'zh-TW') {
+    return { ...enFlat, ...siteZhTWPatch }
+  }
+  return enFlat
+}

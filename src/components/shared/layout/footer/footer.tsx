@@ -1,22 +1,17 @@
-import opai14 from '@/public/images/gradient/opai-14.png';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import BottomBar from '@/src/components/shared/layout/footer/bottom-bar';
-import Divider from '@/src/components/shared/layout/footer/divider';
-import Newsletter from '@/src/components/shared/layout/footer/news-letter';
-import ShuffledTitle from '@/src/components/shared/layout/footer/Shuffled-title';
-import { SocialIcons } from '@/src/components/shared/social-icons';
-import Image from 'next/image';
-import Link from 'next/link';
+'use client'
 
-const defaultSocialLinks = [
-  { name: 'Facebook', href: '#' },
-  { name: 'Instagram', href: '#' },
-  { name: 'X', href: '#' },
-  { name: 'LinkedIn', href: '#' },
-  { name: 'YouTube', href: '#' },
-];
+import opai14 from '@/public/images/gradient/opai-14.png'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import BottomBar from '@/src/components/shared/layout/footer/bottom-bar'
+import Divider from '@/src/components/shared/layout/footer/divider'
+import Newsletter from '@/src/components/shared/layout/footer/news-letter'
+import ShuffledTitle from '@/src/components/shared/layout/footer/Shuffled-title'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
+  const t = useSiteT()
   return (
     <footer className="bg-background-6 relative z-20 overflow-hidden pt-10 pb-[30px] md:pt-[80px]">
       <div className="main-container relative z-10">
@@ -31,30 +26,25 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-4">
             <RevealAnimation delay={0.1}>
               <div className="space-y-8">
-                <Link href="/" className="block" aria-label="AI Clawers home">
+                <Link href="/" className="block" aria-label={t('brand.homeAria')}>
                   <Image
                     src="/images/logo/logo-white.svg"
-                    alt="AI Clawers"
+                    alt={t('brand.logoAlt')}
                     width={166}
                     height={40}
                     className="h-[40px] w-[166px]"
                   />
                 </Link>
                 <div className="space-y-6">
-                  <p className="text-tagline-2 text-background-11 max-w-full">
-                    Intelligent Shopify help—launch, fix, and grow your store so you spend less time on the platform
-                    and more on customers and sales.
-                  </p>
+                  <p className="text-tagline-2 text-background-11 max-w-full">{t('footer.tagline')}</p>
                   <div className="border-stroke-1/11 max-w-md space-y-2 rounded-lg border border-white/10 px-4 py-3">
                     <p className="font-ibm-plex-mono text-tagline-3 font-medium tracking-wide text-white/85 uppercase">
-                      AI CLAWERS SOLUTIONS LIMITED
+                      {t('company.legalEntity')}
                     </p>
                     <p lang="zh-Hans" className="text-tagline-3 font-normal text-white/65">
-                      智爪集成有限公司
+                      {t('company.legalNameZh')}
                     </p>
-                    <p className="text-tagline-4 font-normal text-white/45">
-                      Legal entity for the AI Clawers brand.
-                    </p>
+                    <p className="text-tagline-4 font-normal text-white/45">{t('footer.legalNote')}</p>
                     <a
                       href="mailto:contact@aiclawers.com"
                       className="text-tagline-2 inline-block font-normal text-white/70 underline-offset-4 transition-colors hover:text-white hover:underline"
@@ -96,14 +86,14 @@ const Footer = () => {
             <div className="col-span-12 sm:col-span-4">
               <RevealAnimation delay={0.2}>
                 <div className="space-y-2 text-left lg:text-right">
-                  <p className="text-tagline-2 font-semibold text-white/90">Company</p>
+                  <p className="text-tagline-2 font-semibold text-white/90">{t('footer.col.company')}</p>
                   <ul>
                     <li className="py-2">
                       <Link
                         href="/about"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        About Us
+                        {t('footer.link.about')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -111,7 +101,7 @@ const Footer = () => {
                         href="/projects"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Case Studies
+                        {t('footer.link.cases')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -119,7 +109,7 @@ const Footer = () => {
                         href="/pricing"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Pricing
+                        {t('footer.link.pricing')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -127,7 +117,7 @@ const Footer = () => {
                         href="/blog"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Blogs
+                        {t('footer.link.blogs')}
                       </Link>
                     </li>
                   </ul>
@@ -137,14 +127,14 @@ const Footer = () => {
             <div className="col-span-12 sm:col-span-4">
               <RevealAnimation delay={0.3}>
                 <div className="space-y-2 text-left lg:text-right">
-                  <p className="text-tagline-2 font-semibold text-white/90">Support</p>
+                  <p className="text-tagline-2 font-semibold text-white/90">{t('footer.col.support')}</p>
                   <ul>
                     <li className="py-2">
                       <Link
                         href="/faq"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        FAQ
+                        {t('footer.link.faq')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -154,7 +144,7 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Shopify Tutorial
+                        {t('footer.link.tutorial')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -172,14 +162,14 @@ const Footer = () => {
             <div className="col-span-12 sm:col-span-4">
               <RevealAnimation delay={0.4}>
                 <div className="space-y-2 text-left lg:text-right">
-                  <p className="text-tagline-2 font-semibold text-white/90">Legal Policies</p>
+                  <p className="text-tagline-2 font-semibold text-white/90">{t('footer.col.legal')}</p>
                   <ul>
                     <li className="py-2">
                       <Link
                         href="/terms"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Terms & Conditions
+                        {t('footer.link.terms')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -187,7 +177,7 @@ const Footer = () => {
                         href="/privacy"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        Privacy Policy
+                        {t('footer.link.privacy')}
                       </Link>
                     </li>
                     <li className="py-2">
@@ -195,7 +185,7 @@ const Footer = () => {
                         href="/gdpr"
                         className="text-tagline-3 footer-link inline-block font-normal text-white/50 transition-colors duration-500 hover:text-white"
                       >
-                        GDPR Compliance
+                        {t('footer.link.gdpr')}
                       </Link>
                     </li>
                   </ul>

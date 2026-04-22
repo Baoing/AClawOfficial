@@ -3,11 +3,13 @@
 import heroImage from '@/public/images/aclaw-img-95.png';
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import HeroVideo from '@/src/components/home/hero-video';
-import { HeroLinkButton } from '@/src/components/shared/ui/button/hero-link-button';
-import Image from 'next/image';
+import HeroVideo from '@/src/components/home/hero-video'
+import { HeroLinkButton } from '@/src/components/shared/ui/button/hero-link-button'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Image from 'next/image'
 
 const Hero = () => {
+  const t = useSiteT()
   return (
     <section
       className="relative overflow-hidden pt-24 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-[200px]"
@@ -20,10 +22,10 @@ const Hero = () => {
             <div className="space-y-3 text-center">
               <TextReveal instant>
                 <h1 className="font-sora text-sora-heading-3 md:text-sora-heading-2 lg:text-sora-heading-1 mx-auto w-full max-w-[1036px] font-normal max-md:leading-[110%]">
-                  <span className="text-white">Intelligent Shopify services</span>
+                  <span className="text-white">{t('home.hero.line1')}</span>
                   <div className="text-white/30">
                     <br className="md:hidden" />
-                    Help to launch, and grow your store
+                    {t('home.hero.line2')}
                   </div>
                 </h1>
               </TextReveal>
@@ -33,8 +35,7 @@ const Hero = () => {
                   className="font-inter-tight text-tagline-2 mx-auto w-full max-w-[450px] font-normal text-white/50"
                   aria-describedby="hero-heading"
                 >
-                  We handle the hard Shopify work—setup, speed, and fixes—so you can focus on
-                  customers and sales.
+                  {t('home.hero.sub')}
                 </p>
               </TextReveal>
             </div>
@@ -46,7 +47,7 @@ const Hero = () => {
             >
               <RevealAnimation delay={0.4} instant>
                 <div>
-                  <HeroLinkButton href="/projects">View case studies</HeroLinkButton>
+                  <HeroLinkButton href="/projects">{t('home.hero.ctaCases')}</HeroLinkButton>
                 </div>
               </RevealAnimation>
             </div>
@@ -57,7 +58,7 @@ const Hero = () => {
             <figure className="relative z-10 mx-auto h-[300px] max-w-[1223px] md:h-[400px] lg:h-[573px]">
               <Image
                 src={heroImage}
-                alt="Shopify storefront and operations dashboard with analytics and automation"
+                alt={t('home.hero.imgAlt')}
                 width={1223}
                 height={573}
                 loading="eager"

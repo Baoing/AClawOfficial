@@ -1,21 +1,20 @@
-'use client';
+'use client'
 
-import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card';
-import { shopifyCommonQuestionsFaqSection } from '@/src/data/faq-data';
+import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card'
+import { getShopifyCommonFaqSection } from '@/src/data/faq-locale'
+import { useLocale } from '@/src/context/LocaleContext'
+import { useMemo } from 'react'
 
 type ShopifyCommonFaqProps = {
-  isFirst?: boolean;
-  titleDelay?: number;
-};
+  isFirst?: boolean
+  titleDelay?: number
+}
 
 const ShopifyCommonFaq = ({ isFirst = true, titleDelay = 0 }: ShopifyCommonFaqProps) => {
-  return (
-    <FaqSectionCard
-      section={shopifyCommonQuestionsFaqSection}
-      isFirst={isFirst}
-      titleDelay={titleDelay}
-    />
-  );
-};
+  const { locale } = useLocale()
+  const section = useMemo(() => getShopifyCommonFaqSection(locale), [locale])
 
-export default ShopifyCommonFaq;
+  return <FaqSectionCard section={section} isFirst={isFirst} titleDelay={titleDelay} />
+}
+
+export default ShopifyCommonFaq

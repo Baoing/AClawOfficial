@@ -1,8 +1,9 @@
 'use client';
 
-import NumberAnimation from '@/src/components/animation/number-animation';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { StarIcon } from '@/src/components/shared/icon';
+import NumberAnimation from '@/src/components/animation/number-animation'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { StarIcon } from '@/src/components/shared/icon'
+import { useSiteT } from '@/src/hooks/use-site-translation'
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -18,6 +19,7 @@ const CARD_ANIMATIONS = [
 ] as const;
 
 const ClientSatisfaction = () => {
+  const t = useSiteT()
   const cardsContainerRef = useRef<HTMLDivElement>(null);
   const card1Ref = useRef<HTMLDivElement>(null);
   const card2Ref = useRef<HTMLDivElement>(null);
@@ -213,7 +215,7 @@ const ClientSatisfaction = () => {
               <div className="text-center">
                 <h3
                   className="font-sora text-sora-heading-3 flex items-center justify-center font-normal text-black"
-                  aria-label="100 percent plus five-star partner reviews"
+                  aria-label={t('home.stat.reviewsAria')}
                 >
                   <NumberAnimation
                     number={100}
@@ -225,7 +227,7 @@ const ClientSatisfaction = () => {
                   />
                 </h3>
                 <p className="font-inter-tight text-tagline-2 text-background-13/50 font-normal">
-                  100% five-star partner reviews
+                  {t('home.stat.reviews')}
                 </p>
               </div>
             </div>

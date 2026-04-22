@@ -1,11 +1,13 @@
-'use client';
+'use client'
 
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import ClientSatisfaction from '@/src/components/home/client-satisfaction';
-import HoursSaved from '@/src/components/home/hours-saved';
-import SuccessfulProjects from '@/src/components/home/successful-projects';
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
+import ClientSatisfaction from '@/src/components/home/client-satisfaction'
+import HoursSaved from '@/src/components/home/hours-saved'
+import SuccessfulProjects from '@/src/components/home/successful-projects'
+import { useSiteT } from '@/src/hooks/use-site-translation'
 
 const OurImpact = () => {
+  const t = useSiteT()
   return (
     <section
       className="our-impact-section bg-background-7 pt-20 pb-20 md:pt-28 md:pb-28 lg:pt-50 xl:pb-44"
@@ -20,8 +22,8 @@ const OurImpact = () => {
                 id="impact-heading"
                 className="font-sora lg:text-sora-heading-2 md:text-sora-heading-3 text-sora-heading-4 font-normal max-md:leading-[110%]"
               >
-                <span className="text-background-13/90 font-normal">Fresh team,</span>{' '}
-                <span className="text-background-13/50">serious outcomes</span>
+                <span className="text-background-13/90 font-normal">{t('home.impact.title1')}</span>{' '}
+                <span className="text-background-13/50">{t('home.impact.title2')}</span>
               </h2>
             </TextReveal>
           </div>
@@ -29,7 +31,7 @@ const OurImpact = () => {
           {/* cards */}
           <div
             className="grid grid-cols-12 items-center justify-center gap-x-8 gap-y-8 lg:gap-x-2 xl:gap-x-8"
-            aria-label="Impact statistics cards"
+            aria-label={t('home.impact.ariaGrid')}
           >
             <SuccessfulProjects />
             <ClientSatisfaction />

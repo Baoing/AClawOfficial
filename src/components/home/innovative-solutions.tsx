@@ -1,62 +1,37 @@
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
+'use client'
+
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
 import {
   FinanceIcon,
   HealthcareIcon,
   LegalRealEstateIcon,
   RetailEcommerceIcon,
-} from '@/src/components/shared/icon';
-import { SecondaryLinkButton } from '@/src/components/shared/ui/button/secondary-link-button';
-import { cn } from '@/src/utils/cn';
+} from '@/src/components/shared/icon'
+import { SecondaryLinkButton } from '@/src/components/shared/ui/button/secondary-link-button'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import { cn } from '@/src/utils/cn'
+import type { ComponentType } from 'react'
 
 const iconMap: Record<
   'RetailEcommerce' | 'Healthcare' | 'Finance' | 'LegalRealEstate',
-  React.ComponentType<{ className?: string }>
+  ComponentType<{ className?: string }>
 > = {
   RetailEcommerce: RetailEcommerceIcon,
   Healthcare: HealthcareIcon,
   Finance: FinanceIcon,
   LegalRealEstate: LegalRealEstateIcon,
-};
-
-interface InnovativeSolutionCard {
-  id: string;
-  iconId: keyof typeof iconMap;
-  title: string;
-  description: string;
 }
 
+const innovativeCardDefs = [
+  { id: 'store-builds', iconId: 'RetailEcommerce' as const, titleKey: 'home.innov.card1.title', descKey: 'home.innov.card1.desc' },
+  { id: 'theme-liquid', iconId: 'LegalRealEstate' as const, titleKey: 'home.innov.card2.title', descKey: 'home.innov.card2.desc' },
+  { id: 'custom-apps', iconId: 'Finance' as const, titleKey: 'home.innov.card3.title', descKey: 'home.innov.card3.desc' },
+  { id: 'ai-growth', iconId: 'Healthcare' as const, titleKey: 'home.innov.card4.title', descKey: 'home.innov.card4.desc' },
+] as const
+
 const InnovativeSolutions = () => {
-  const innovativeSolutionsCards: InnovativeSolutionCard[] = [
-    {
-      id: 'store-builds',
-      iconId: 'RetailEcommerce',
-      title: 'Store builds & optimization',
-      description:
-        'Launches, migrations, OS 2.0 rebuilds when you need them.\nSpeed, SEO, accessibility, and checkout passes so the store stays fast under traffic.',
-    },
-    {
-      id: 'theme-liquid',
-      iconId: 'LegalRealEstate',
-      title: 'Themes & Liquid',
-      description:
-        'Section libraries, metafields, and multi-market UX your team can own.\nLiquid architecture that stays readable as merchandising and promos evolve.',
-    },
-    {
-      id: 'custom-apps',
-      iconId: 'Finance',
-      title: 'Custom apps',
-      description:
-        'Private and embedded apps for admin workflows merchants live in daily.\nIntegrations that keep catalog, finance, and fulfillment aligned with the storefront.',
-    },
-    {
-      id: 'ai-growth',
-      iconId: 'Healthcare',
-      title: 'AI for growth',
-      description:
-        'Copilots for merchandising, content, and support grounded in your rules.\nOutputs tied to Shopify data so teams gain speed without losing brand control.',
-    },
-  ];
+  const t = useSiteT()
 
   return (
     <section
@@ -73,11 +48,8 @@ const InnovativeSolutions = () => {
                 className="font-sora text-sora-heading-4 text-background-13/90 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%] lg:mx-auto lg:max-w-[600px]"
                 itemProp="name"
               >
-                Four ways we help{' '}
-                <span className="text-background-13/50">
-                  build, tune, extend, <br className="hidden md:block" />
-                  and grow on Shopify
-                </span>
+                {t('home.innov.title1')}{' '}
+                <span className="text-background-13/50">{t('home.innov.title2')}</span>
               </h2>
             </TextReveal>
             <TextReveal>
@@ -85,14 +57,14 @@ const InnovativeSolutions = () => {
                 className="font-inter-tight text-tagline-2 text-background-13/60 font-normal lg:mx-auto lg:max-w-[380px]"
                 itemProp="description"
               >
-                Storefronts, themes, apps, and lean AI—kept tight so your team ships without noise.
+                {t('home.innov.sub')}
               </p>
             </TextReveal>
           </div>
 
           <div className="grid grid-cols-12 gap-y-8 md:gap-8">
-            {innovativeSolutionsCards.map((card, index) => {
-              const IconComponent = iconMap[card.iconId as keyof typeof iconMap];
+            {innovativeCardDefs.map((card, index) => {
+              const IconComponent = iconMap[card.iconId]
               return (
                 <div
                   key={card.id}
@@ -111,16 +83,16 @@ const InnovativeSolutions = () => {
                           id={`innovative-solutions-card-${card.id}`}
                           className="font-sora text-sora-heading-5 text-background-6/80 font-normal tracking-[-0.72px]"
                         >
-                          {card.title}
+                          {t(card.titleKey)}
                         </h3>
                         <p className="mt-2 font-inter-tight text-tagline-3 text-background-6/50 mx-auto max-w-[280px] whitespace-pre-line font-normal leading-snug">
-                          {card.description}
+                          {t(card.descKey)}
                         </p>
                       </div>
                     </div>
                   </RevealAnimation>
                 </div>
-              );
+              )
             })}
           </div>
           <RevealAnimation delay={0.5}>
@@ -130,14 +102,14 @@ const InnovativeSolutions = () => {
                 displayClassName="max-md:w-[85%] max-md:mx-auto"
                 className="w-full"
               >
-                Explore services
+                {t('home.innov.cta')}
               </SecondaryLinkButton>
             </div>
           </RevealAnimation>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default InnovativeSolutions;
+export default InnovativeSolutions

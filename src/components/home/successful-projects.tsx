@@ -3,9 +3,10 @@
 import img97 from '@/public/images/opai-img-97.png';
 import img98 from '@/public/images/opai-img-98.png';
 import img99 from '@/public/images/opai-img-99.png';
-import NumberAnimation from '@/src/components/animation/number-animation';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { ClipBoardIcon } from '@/src/components/shared/icon';
+import NumberAnimation from '@/src/components/animation/number-animation'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { ClipBoardIcon } from '@/src/components/shared/icon'
+import { useSiteT } from '@/src/hooks/use-site-translation'
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -21,6 +22,7 @@ const IMAGE_ANIMATIONS = [
 ] as const;
 
 const SuccessfulProjects = () => {
+  const t = useSiteT()
   const imageGroupRef = useRef<HTMLDivElement>(null);
   const image1Ref = useRef<HTMLElement>(null);
   const image2Ref = useRef<HTMLElement>(null);
@@ -113,7 +115,7 @@ const SuccessfulProjects = () => {
             <div className="text-center">
               <h3
                 className="font-sora text-sora-heading-3 flex items-center justify-center font-normal text-black"
-                aria-label="42 plus Shopify builds shipped"
+                aria-label={t('home.stat.shippedAria')}
               >
                 <NumberAnimation
                   number={42}
@@ -125,7 +127,7 @@ const SuccessfulProjects = () => {
                 +
               </h3>
               <p className="font-inter-tight text-tagline-2 text-background-13/50 font-normal">
-                Shopify builds shipped
+                {t('home.stat.shipped')}
               </p>
             </div>
           </div>

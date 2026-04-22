@@ -16,7 +16,7 @@ const navBarLabels: Record<AppLocale, NavBarLabels> = {
     platform: "Platform",
     resources: "Resources",
     support: "Support",
-    contactCta: "Connect with us",
+    contactCta: "Book demo",
   },
   "zh-CN": {
     company: "公司",

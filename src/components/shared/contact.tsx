@@ -1,21 +1,23 @@
-'use client';
+'use client'
 
-import opai2 from '@/public/images/gradient/opai-2.png';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
+import opai2 from '@/public/images/gradient/opai-2.png'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
 import {
   ChevronRightIcon,
   ContactAddressIcon,
   ContactEmailIcon,
   ContactPhoneIcon,
-} from '@/src/components/shared/icon';
-import { useButtonSplitText } from '@/src/hooks/use-button-split-text';
-import Image from 'next/image';
-import { useRef } from 'react';
+} from '@/src/components/shared/icon'
+import { useButtonSplitText } from '@/src/hooks/use-button-split-text'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Image from 'next/image'
+import { useRef } from 'react'
 
 const Contact = () => {
-  const submitButtonWrapperRef = useRef<HTMLDivElement>(null);
-  useButtonSplitText(submitButtonWrapperRef);
+  const t = useSiteT()
+  const submitButtonWrapperRef = useRef<HTMLDivElement>(null)
+  useButtonSplitText(submitButtonWrapperRef)
 
   return (
     <section className="bg-background-6 relative overflow-hidden py-10 pb-20 md:py-28 lg:py-39">
@@ -23,12 +25,12 @@ const Contact = () => {
         <div className="space-y-2 text-center">
           <TextReveal>
             <h2 className="font-sora md:text-sora-heading-3 text-sora-heading-4 lg:text-sora-heading-2 font-normal tracking-[-2.4px] text-white/90 max-md:leading-[110%]">
-              Let&apos;s <span className="font-normal text-white/30"> connect </span>
+              {t('contact.h1')} <span className="font-normal text-white/30">{t('contact.h2')}</span>
             </h2>
           </TextReveal>
           <TextReveal delay={0.2}>
             <p className="text-tagline-2 font-inter-tight text-white/60">
-              Have a project in mind? Let&apos;s make it a reality.
+              {t('contact.sub')}
             </p>
           </TextReveal>
         </div>
@@ -44,7 +46,7 @@ const Contact = () => {
                       <ContactEmailIcon />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <p className="text-it-heading-6 text-white/90">Email</p>
+                      <p className="text-it-heading-6 text-white/90">{t('contact.email')}</p>
                       <a
                         href="mailto:support@aiclawers.com"
                         className="text-tagline-2 font-inter-tight text-white/60"
@@ -63,7 +65,7 @@ const Contact = () => {
                       <ContactPhoneIcon />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <p className="text-it-heading-6 text-white/90">Phone</p>
+                      <p className="text-it-heading-6 text-white/90">{t('contact.phone')}</p>
                       <a
                         href="tel:+8618779656217"
                         className="text-tagline-2 font-inter-tight text-white/60"
@@ -106,7 +108,7 @@ const Contact = () => {
                       type="text"
                       required
                       id="full-name"
-                      placeholder="Full name"
+                      placeholder={t('contact.phFullName')}
                       className="font-inter-tight text-tagline-2 w-full bg-transparent font-normal text-white/60 placeholder:text-white/60 focus:outline-none"
                     />
                   </div>
@@ -116,7 +118,7 @@ const Contact = () => {
                       type="email"
                       required
                       id="email-address"
-                      placeholder="Email address"
+                      placeholder={t('contact.phEmail')}
                       className="font-inter-tight text-tagline-2 w-full bg-transparent font-normal text-white/60 placeholder:text-white/60 focus:outline-none"
                     />
                   </div>
@@ -127,7 +129,7 @@ const Contact = () => {
                         type="text"
                         required
                         id="company-name"
-                        placeholder="Company name"
+                        placeholder={t('contact.phCompany')}
                         className="font-inter-tight text-tagline-2 w-full bg-transparent font-normal text-white/60 placeholder:text-white/60 focus:outline-none"
                       />
                     </div>
@@ -136,7 +138,7 @@ const Contact = () => {
                         type="tel"
                         required
                         id="phone"
-                        placeholder="Phone"
+                        placeholder={t('contact.phPhone')}
                         className="font-inter-tight text-tagline-2 w-full bg-transparent font-normal text-white/60 placeholder:text-white/60 focus:outline-none"
                       />
                     </div>
@@ -147,7 +149,7 @@ const Contact = () => {
                       type="text"
                       required
                       id="subject"
-                      placeholder="Subject"
+                      placeholder={t('contact.phSubject')}
                       className="font-inter-tight text-tagline-2 w-full bg-transparent font-normal text-white/60 placeholder:text-white/60 focus:outline-none"
                     />
                   </div>
@@ -156,7 +158,7 @@ const Contact = () => {
                     <textarea
                       required
                       id="message"
-                      placeholder="Your message"
+                      placeholder={t('contact.phMessage')}
                       rows={6}
                       className="font-inter-tight text-tagline-2 flex-1 resize-none bg-transparent font-normal text-white/60 placeholder:text-white/60 focus:outline-none"
                     />
@@ -172,12 +174,12 @@ const Contact = () => {
                           <div className="relative overflow-hidden">
                             <div className="h-5.5">
                               <div className="text-background-5 font-ibm-plex-mono button-split-upper-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                                Submit
+                                {t('contact.submit')}
                               </div>
                             </div>
                             <div className="absolute h-5.5">
                               <div className="text-background-5 font-ibm-plex-mono button-split-lower-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                                Submit
+                                {t('contact.submit')}
                               </div>
                             </div>
                           </div>
@@ -207,7 +209,7 @@ const Contact = () => {
         </div>
       </RevealAnimation>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

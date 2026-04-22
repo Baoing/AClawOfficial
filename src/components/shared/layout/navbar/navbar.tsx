@@ -4,6 +4,7 @@ import MobileMenu from '@/src/components/shared/layout/mobile-menu/MobileMenu';
 import { DefaultLinkButton } from '@/src/components/shared/ui/button/default-link-button';
 import { MobileMenuProvider } from '@/src/context/MobileMenuContext';
 import { useLocale } from '@/src/context/LocaleContext';
+import { useSiteT } from '@/src/hooks/use-site-translation';
 import { mobileMenuData } from '@/src/data/mobile-meu';
 import { getNavBarLabels, translateMobileMenu } from '@/src/messages/navigation';
 import { useNavbarScroll } from '@/src/hooks/useScrollHeader';
@@ -33,6 +34,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
   const { isScrolled } = useNavbarScroll(150);
   const [menuDropdownId, setMenuDropdownId] = useState<string | null>(null);
   const { locale } = useLocale();
+  const t = useSiteT();
   const navLabels = useMemo(() => getNavBarLabels(locale), [locale]);
   const localizedMobileMenu = useMemo(() => translateMobileMenu(mobileMenuData, locale), [locale]);
 
@@ -56,17 +58,17 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
               'bg-background-6 border-stroke-3/18 flex items-center justify-between rounded-full border py-1.5 pr-5 pl-2 lg:gap-12 lg:py-0 lg:pr-1.5 lg:pl-1.5'
             )}
           >
-            <Link href="/" className="block size-11 ml-2" aria-label="AI Clawers home">
+            <Link href="/" className="block size-11 ml-2" aria-label={t('brand.homeAria')}>
               <figure className="size-full">
                 <Image
                   src="/images/logo/logo.svg"
-                  alt="AI Clawers"
+                  alt={t('brand.logoAlt')}
                   width={44}
                   height={44}
                   className="size-full"
                 />
               </figure>
-              <span className="sr-only">AI Clawers</span>
+              <span className="sr-only">{t('brand.name')}</span>
             </Link>
 
             <ul className="relative hidden items-center gap-6 lg:flex lg:gap-8">

@@ -8,15 +8,11 @@ import PrivacyAndSecurityFaq from '@/src/components/faq/privacy-and-security-faq
 import ServicesAndFeaturesFaq from '@/src/components/faq/services-and-features-faq';
 import TechnicalSupportFaq from '@/src/components/faq/technical-support-faq';
 import CTA from '@/src/components/shared/cta';
-import { generateMetadata } from '@/src/utils/generateMetaData';
-import { Metadata } from 'next';
+import { buildLocalizedPageMetadata } from '@/src/utils/page-metadata-locale';
+import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  ...generateMetadata(),
-  title: 'FAQ | Shopify builds, apps & pricing | AI Clawers',
-  description:
-    'FAQ for merchants and teams: what Shopify is, pricing and domains, designer/developer needs, plus apps, pricing with AI Clawers, migrations, and how to get started.',
-};
+export const generateMetadata = async (): Promise<Metadata> =>
+  buildLocalizedPageMetadata('meta.faq.title', 'meta.faq.description', '/faq');
 
 const page = () => {
   return (

@@ -1,16 +1,22 @@
-'use client';
+'use client'
 
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { CheckIcon, LightningIcon } from '@/src/components/shared/icon';
-import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button';
-import { SecondaryLinkButton } from '@/src/components/shared/ui/button/secondary-link-button';
-import type { PricingPlanItem } from '@/src/data/pricing-data';
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { CheckIcon, LightningIcon } from '@/src/components/shared/icon'
+import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button'
+import { SecondaryLinkButton } from '@/src/components/shared/ui/button/secondary-link-button'
+import type { PricingPlanItem } from '@/src/data/pricing-data'
+import { useSiteT } from '@/src/hooks/use-site-translation'
 
 const PricingCard = ({
   plan,
   isYearly,
 }: Readonly<{ plan: PricingPlanItem; isYearly: boolean }>) => {
-  const isProject = plan.billingModel === 'project';
+  const t = useSiteT()
+  const isProject = plan.billingModel === 'project'
+  const name = t(`${plan.i18nPrefix}.name`)
+  const description = t(`${plan.i18nPrefix}.desc`)
+  const ctaLabel = t(`${plan.i18nPrefix}.cta`)
+  const featureKeys = Array.from({ length: plan.featureCount }, (_, i) => `${plan.i18nPrefix}.f${i + 1}`)
   const strikePrice = isYearly ? plan.yearlyStrikePrice : plan.monthlyStrikePrice;
   const mainPrice = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
   const formattedMain = mainPrice.toLocaleString('en-US');
@@ -24,10 +30,10 @@ const PricingCard = ({
           </span>
           <div className="space-y-1">
             <h3 className="xl:text-sora-heading-5 lg:text-sora-heading-4 text-sora-heading-5 font-normal text-white/90">
-              {plan.name}
+              {name}
             </h3>
             <p className="font-inter-tight text-tagline-2 font-normal text-white/60">
-              {plan.description}
+              {description}
             </p>
           </div>
         </div>
@@ -35,10 +41,15 @@ const PricingCard = ({
         <div>
           {isProject ? (
             <h4 className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <span className="font-inter-tight text-tagline-2 font-normal text-white/50">From</span>
+              <span className="font-inter-tight text-tagline-2 font-normal text-white/50">
+                {t('pricing.card.from')}
+              </span>
               <span className="font-manrope text-manrope-heading-4 font-medium text-white/90">
                 ${formattedMain}
-                <span className="font-inter-tight text-tagline-2 font-normal text-white/50"> USD</span>
+                <span className="font-inter-tight text-tagline-2 font-normal text-white/50">
+                  {' '}
+                  {t('pricing.card.usd')}
+                </span>
               </span>
             </h4>
           ) : (
@@ -53,7 +64,7 @@ const PricingCard = ({
                 ${mainPrice}
               </span>
               <span className="font-inter-tight text-tagline-2 font-normal text-white/50">
-                /{isYearly ? 'year' : 'month'}
+                /{isYearly ? t('pricing.card.perYear') : t('pricing.card.perMonth')}
               </span>
             </h4>
           )}
@@ -62,15 +73,15 @@ const PricingCard = ({
 
       <div className="flex flex-col pt-8">
         <ul className="space-y-4 pb-6">
-          {plan.features.map((feature) => (
+          {featureKeys.map((featureKey) => (
             <li
-              key={feature}
+              key={featureKey}
               className="font-inter-tight text-tagline-2 flex items-center justify-start gap-x-4 text-left font-normal text-white/60"
             >
-              <span className="flex size-4 items-center justify-center" aria-label="Included">
+              <span className="flex size-4 items-center justify-center" aria-label={t('pricing.card.includedAria')}>
                 <CheckIcon className="h-2 w-3 stroke-white/90" />
               </span>
-              {feature}
+              {t(featureKey)}
             </li>
           ))}
         </ul>
@@ -78,11 +89,11 @@ const PricingCard = ({
         <div className="block w-full">
           {plan.featured ? (
             <PrimaryLinkButton href={plan.ctaHref} displayClassName="w-full">
-              {plan.ctaLabel ?? 'Get started'}
+              {ctaLabel || t('pricing.card.ctaFallback')}
             </PrimaryLinkButton>
           ) : (
             <SecondaryLinkButton href={plan.ctaHref} displayClassName="w-full">
-              {plan.ctaLabel ?? 'Get started'}
+              {ctaLabel || t('pricing.card.ctaFallback')}
             </SecondaryLinkButton>
           )}
         </div>

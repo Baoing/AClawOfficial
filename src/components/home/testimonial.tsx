@@ -1,10 +1,15 @@
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import TestimonialCard from '@/src/components/shared/ui/card/testimonial-card';
-import { testimonialsData } from '@/src/data/testimonials-data';
-import Marquee from 'react-fast-marquee';
+'use client'
+
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
+import TestimonialCard from '@/src/components/shared/ui/card/testimonial-card'
+import { testimonialsData } from '@/src/data/testimonials-data'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Marquee from 'react-fast-marquee'
 
 const Testimonial = () => {
+  const t = useSiteT()
+
   return (
     <section
       className="py-10 md:py-28 lg:py-36 xl:py-40 2xl:py-44"
@@ -18,10 +23,9 @@ const Testimonial = () => {
               id="testimonial-heading"
               className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 mx-auto max-w-[700px] font-normal max-md:leading-[110%]"
             >
-              <span className="font-normal text-white/90">What merchants </span>
+              <span className="font-normal text-white/90">{t('home.testimonial.h1')} </span>
               <span className="text-white/30">
-                say about <br className="hidden md:block" />
-                our Shopify work
+                {t('home.testimonial.h2')}
               </span>
             </h2>
           </TextReveal>
@@ -29,9 +33,7 @@ const Testimonial = () => {
       </div>
       <RevealAnimation delay={0.2}>
         <div className="relative overflow-hidden">
-          {/* left gradient background */}
           <div className="from-background-6 absolute top-0 left-0 z-10 h-full w-1/3 bg-linear-to-r to-transparent" />
-          {/* right gradient background */}
           <div className="from-background-6 absolute top-0 right-0 z-10 h-full w-1/3 bg-linear-to-l to-transparent" />
           <Marquee speed={40} pauseOnHover>
             {testimonialsData.map((item) => (
@@ -49,7 +51,7 @@ const Testimonial = () => {
         </div>
       </RevealAnimation>
     </section>
-  );
-};
+  )
+}
 
-export default Testimonial;
+export default Testimonial

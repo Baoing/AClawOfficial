@@ -1,24 +1,15 @@
-'use client';
+'use client'
 
-import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card';
-import { pricingAndBillingFaqSection } from '@/src/data/faq-data';
+import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card'
+import { useLocale } from '@/src/context/LocaleContext'
+import { getPricingAndBillingFaqSection } from '@/src/data/faq-locale'
+import { useMemo } from 'react'
 
-type PricingAndBillingFaqProps = {
-  isFirst?: boolean;
-  titleDelay?: number;
-};
+const PricingAndBillingFaq = () => {
+  const { locale } = useLocale()
+  const section = useMemo(() => getPricingAndBillingFaqSection(locale), [locale])
 
-const PricingAndBillingFaq = ({
-  isFirst = false,
-  titleDelay = 0.04,
-}: PricingAndBillingFaqProps) => {
-  return (
-    <FaqSectionCard
-      section={pricingAndBillingFaqSection}
-      isFirst={isFirst}
-      titleDelay={titleDelay}
-    />
-  );
-};
+  return <FaqSectionCard section={section} isFirst={false} titleDelay={0} />
+}
 
-export default PricingAndBillingFaq;
+export default PricingAndBillingFaq

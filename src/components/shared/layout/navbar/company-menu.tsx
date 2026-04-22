@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import nsImg422 from '@/public/images/ns-img-422.jpg';
-import { ChevronRightIcon } from '@/src/components/shared/icon';
+import nsImg422 from '@/public/images/ns-img-422.jpg'
+import { ChevronRightIcon } from '@/src/components/shared/icon'
 import {
   AboutIcon,
   CaseStudyICon,
@@ -11,85 +11,97 @@ import {
   TestimonialIcon,
   UseCaseIcon,
   WhyChooseUsIcon,
-} from '@/src/components/shared/icon/menu-icon';
-import { cn } from '@/src/utils/cn';
-import Image from 'next/image';
-import Link from 'next/link';
-import CompanyMenuLink, { type CompanyMenuLinkProps } from './company-menu-link';
+} from '@/src/components/shared/icon/menu-icon'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import { cn } from '@/src/utils/cn'
+import Image from 'next/image'
+import Link from 'next/link'
+import CompanyMenuLink, { type CompanyMenuLinkProps } from './company-menu-link'
 
-type CompanyLink = Omit<CompanyMenuLinkProps, 'onClose'>;
+type CompanyLinkDef = Omit<CompanyMenuLinkProps, 'onClose' | 'title' | 'description'> & {
+  titleKey: string
+  descriptionKey?: string
+  /** When true, description = before + channelwill + after (localized company name). */
+  channelwillDescription?: boolean
+}
 
-const aboutLinks: CompanyLink[] = [
+type CompanyDescLinkDef = Omit<CompanyMenuLinkProps, 'onClose' | 'title' | 'description'> & {
+  titleKey: string
+  descriptionKey: string
+}
+
+const aboutLinkDefs: CompanyLinkDef[] = [
   {
-    title: 'About Us',
-    description: 'Story, roots in Channelwill, and how we work',
+    titleKey: 'nav.co.aboutTitle',
+    channelwillDescription: true,
     href: '/about',
     icon: AboutIcon,
   },
   {
-    title: 'Why Choose Us',
-    description: 'Depth, coverage, judgment, and client-win delivery',
+    titleKey: 'nav.co.whyTitle',
+    descriptionKey: 'nav.co.whyDesc',
     href: '/why-us',
     icon: WhyChooseUsIcon,
   },
-];
+]
 
-const cultureLinks: CompanyLink[] = [
+const cultureLinkDefs: CompanyDescLinkDef[] = [
   {
-    title: 'Our Manifesto',
-    description: 'Principles for scoping, shipping, and handovers',
+    titleKey: 'nav.co.manifestoTitle',
+    descriptionKey: 'nav.co.manifestoDesc',
     href: '/manifesto',
     icon: ManifestoIcon,
   },
   {
-    title: 'Customers',
-    description: 'Who we engage and how projects start',
+    titleKey: 'nav.co.customersTitle',
+    descriptionKey: 'nav.co.customersDesc',
     href: '/customers',
     icon: CustomersIcon,
   },
   {
-    title: 'Testimonials',
-    description: 'What merchants say about our Shopify work',
+    titleKey: 'nav.co.testimonialsTitle',
+    descriptionKey: 'nav.co.testimonialsDesc',
     href: '/testimonials',
     icon: TestimonialIcon,
   },
   {
-    title: 'Case Studies',
-    description: 'Write-ups of themes, apps, and integrations',
+    titleKey: 'nav.co.casesTitle',
+    descriptionKey: 'nav.co.casesDesc',
     href: '/projects',
     icon: CaseStudyICon,
   },
-];
+]
 
-const solutionLinks: CompanyLink[] = [
+const solutionLinkDefs: CompanyDescLinkDef[] = [
   {
-    title: 'Services',
-    description: 'Themes, apps, migrations, and integrations',
+    titleKey: 'nav.co.servicesTitle',
+    descriptionKey: 'nav.co.servicesDesc',
     href: '/services',
     icon: ServiceIcon,
   },
   {
-    title: 'Use Cases',
-    description: 'Problems we solve repeatedly on Shopify',
+    titleKey: 'nav.co.usecasesTitle',
+    descriptionKey: 'nav.co.usecasesDesc',
     href: '/use-cases',
     icon: UseCaseIcon,
   },
-];
+]
 
 interface CompanyMenuProps {
-  menuDropdownId: string | null;
-  setMenuDropdownId: (id: string | null) => void;
+  menuDropdownId: string | null
+  setMenuDropdownId: (id: string | null) => void
 }
 
 const CompanyMenu = ({ menuDropdownId, setMenuDropdownId }: CompanyMenuProps) => {
-  const handleClose = () => setMenuDropdownId(null);
+  const t = useSiteT()
+  const handleClose = () => setMenuDropdownId(null)
 
   return (
     <div>
       <div
         className={cn(
           'pointer-events-none absolute top-full left-1/2 z-40 h-3 w-[946px] -translate-x-1/2 bg-transparent opacity-0 transition-opacity duration-300 ease-in-out',
-          menuDropdownId === 'company-mega-menu' && 'pointer-events-auto! opacity-100'
+          menuDropdownId === 'company-mega-menu' && 'pointer-events-auto! opacity-100',
         )}
       />
       <div
@@ -98,37 +110,61 @@ const CompanyMenu = ({ menuDropdownId, setMenuDropdownId }: CompanyMenuProps) =>
           'border-stroke-3/18 bg-background-6 fixed top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 items-start gap-y-6 rounded-[20px] border p-4 transition-all duration-500 ease-out md:w-[946px] md:gap-x-6 lg:flex',
           menuDropdownId === 'company-mega-menu'
             ? 'translate-y-0 opacity-100'
-            : 'pointer-events-none translate-y-2.5 opacity-0'
+            : 'pointer-events-none translate-y-2.5 opacity-0',
         )}
       >
         <div className="flex-1 space-y-3">
           <ul className="space-y-2">
-            {aboutLinks.map((link) => (
-              <CompanyMenuLink key={link.title} {...link} onClose={handleClose} />
+            {aboutLinkDefs.map((link) => (
+              <CompanyMenuLink
+                key={link.href}
+                title={t(link.titleKey)}
+                description={
+                  link.channelwillDescription
+                    ? `${t('nav.co.aboutDescBefore')}${t('company.channelwill')}${t('nav.co.aboutDescAfter')}`
+                    : t(link.descriptionKey ?? '')}
+                href={link.href}
+                icon={link.icon}
+                onClose={handleClose}
+              />
             ))}
           </ul>
         </div>
         <div className="flex-1 space-y-3">
           <ul className="space-y-2">
-            {cultureLinks.map((link) => (
-              <CompanyMenuLink key={link.title} {...link} onClose={handleClose} />
+            {cultureLinkDefs.map((link) => (
+              <CompanyMenuLink
+                key={link.href}
+                title={t(link.titleKey)}
+                description={t(link.descriptionKey)}
+                href={link.href}
+                icon={link.icon}
+                onClose={handleClose}
+              />
             ))}
           </ul>
         </div>
         <div className="flex-1">
           <div className="space-y-3">
             <ul className="space-y-2">
-              {solutionLinks.map((link) => (
-                <CompanyMenuLink key={link.title} {...link} onClose={handleClose} />
+              {solutionLinkDefs.map((link) => (
+                <CompanyMenuLink
+                  key={link.href}
+                  title={t(link.titleKey)}
+                  description={t(link.descriptionKey)}
+                  href={link.href}
+                  icon={link.icon}
+                  onClose={handleClose}
+                />
               ))}
             </ul>
           </div>
-          <p className="text-tagline-2 p-3 font-medium text-white/60">What&apos;s new</p>
+          <p className="text-tagline-2 p-3 font-medium text-white/60">{t('nav.co.whatsNew')}</p>
           <div>
             <Link
               href="/blog"
               onClick={handleClose}
-              aria-label="Read studio updates on our blog"
+              aria-label={t('nav.co.studioCardAria')}
               className="group/company-menu-link border-stroke-1/11 relative block overflow-hidden rounded-[14px] border"
             >
               <figure className="relative h-[166px] w-full max-w-full overflow-hidden rounded-[14px]">
@@ -139,9 +175,11 @@ const CompanyMenu = ({ menuDropdownId, setMenuDropdownId }: CompanyMenuProps) =>
                 />
                 <div className="absolute top-3 bottom-3 left-3 w-full space-y-5 p-2">
                   <div>
-                    <p className="text-tagline-1 text-background-13 font-normal">Studio updates</p>
+                    <p className="text-tagline-1 text-background-13 font-normal">
+                      {t('nav.co.studioTitle')}
+                    </p>
                     <p className="text-tagline-2 text-background-13/60 w-full max-w-[200px] font-normal">
-                      Shopify experiments, changelog-style posts.
+                      {t('nav.co.studioSub')}
                     </p>
                   </div>
                   <span className="ring-background-13/60 bg-background-13 inline-block rounded-full px-5 py-1 ring-4">
@@ -161,7 +199,7 @@ const CompanyMenu = ({ menuDropdownId, setMenuDropdownId }: CompanyMenuProps) =>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CompanyMenu;
+export default CompanyMenu

@@ -1,0 +1,50 @@
+/** Pricing page — merged into `siteEn` / locale patches. */
+export const pricingSiteMessages = {
+  'pricing.card.from': 'From',
+  'pricing.card.usd': 'USD',
+  'pricing.card.perMonth': 'month',
+  'pricing.card.perYear': 'year',
+  'pricing.card.includedAria': 'Included',
+  'pricing.card.ctaFallback': 'Get started',
+
+  'pricing.plan.starter.name': 'Starter Shopify website',
+  'pricing.plan.starter.desc':
+    'Fast theme-led launch: core pages, SEO basics, analytics, and a clean handover.',
+  'pricing.plan.starter.cta': 'Schedule a call',
+  'pricing.plan.starter.f1': 'Core pages: home, catalog, product, cart, account, about',
+  'pricing.plan.starter.f2': 'Proven theme path—no bespoke identity program',
+  'pricing.plan.starter.f3': '2 revision rounds · responsive, mobile-first layout',
+  'pricing.plan.starter.f4': 'On-page SEO + GA4 & Search Console wired',
+  'pricing.plan.starter.f5': '30-day post-launch care',
+  'pricing.plan.starter.f6': 'Launch-day and DNS assist',
+  'pricing.plan.starter.f7': '1h live admin training',
+
+  'pricing.plan.custom.name': 'Custom Shopify website',
+  'pricing.plan.custom.desc':
+    'Branded in-theme: extra pages, merch, custom fonts, stronger SEO, and a focused speed pass.',
+  'pricing.plan.custom.cta': 'Schedule a call',
+  'pricing.plan.custom.f1': 'Core + 3+ templates (blog, FAQ, campaign, policies—by scope)',
+  'pricing.plan.custom.f2': 'Custom fonts, type, color, reusable section system',
+  'pricing.plan.custom.f3': 'Merch blocks: features, promos, short story sections',
+  'pricing.plan.custom.f4': 'Metafield-rich PDP when your catalog supports it',
+  'pricing.plan.custom.f5': '2 design rounds · cart & mini-cart polish',
+  'pricing.plan.custom.f6': 'Light motion within a performance budget',
+  'pricing.plan.custom.f7': 'Technical SEO + product rich results',
+  'pricing.plan.custom.f8': 'Lazy images, lean fonts/scripts in theme scope',
+  'pricing.plan.custom.f9': 'Handover doc + 1.5h merch & admin training',
+
+  'pricing.plan.premium.name': 'Premium Shopify website',
+  'pricing.plan.premium.desc':
+    'Multilingual or loyalty, SEO, speed, and metrics—scoped before we build.',
+  'pricing.plan.premium.cta': 'Schedule a call',
+  'pricing.plan.premium.f1': 'Core + 5+ templates on your roadmap',
+  'pricing.plan.premium.f2': 'Premium finish + custom fonts on priority templates',
+  'pricing.plan.premium.f3': '3 design rounds · richer motion & scroll storytelling',
+  'pricing.plan.premium.f4': 'Multilingual / loyalty / advanced forms (written scope)',
+  'pricing.plan.premium.f5': 'SEO program: keywords, on-page, alts, hreflang as needed',
+  'pricing.plan.premium.f6': 'Speed hardening in theme layer',
+  'pricing.plan.premium.f7': 'Goals, key events, short QA checklist',
+  'pricing.plan.premium.f8': 'Trust pages to your legal copy',
+  'pricing.plan.premium.f9': '30-day priority post-launch',
+  'pricing.plan.premium.f10': '1.5h workflow training for your team',
+} as const

@@ -1,24 +1,15 @@
-'use client';
+'use client'
 
-import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card';
-import { privacyAndSecurityFaqSection } from '@/src/data/faq-data';
+import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card'
+import { useLocale } from '@/src/context/LocaleContext'
+import { getPrivacyAndSecurityFaqSection } from '@/src/data/faq-locale'
+import { useMemo } from 'react'
 
-type PrivacyAndSecurityFaqProps = {
-  isFirst?: boolean;
-  titleDelay?: number;
-};
+const PrivacyAndSecurityFaq = () => {
+  const { locale } = useLocale()
+  const section = useMemo(() => getPrivacyAndSecurityFaqSection(locale), [locale])
 
-const PrivacyAndSecurityFaq = ({
-  isFirst = false,
-  titleDelay = 0.01,
-}: PrivacyAndSecurityFaqProps) => {
-  return (
-    <FaqSectionCard
-      section={privacyAndSecurityFaqSection}
-      isFirst={isFirst}
-      titleDelay={titleDelay}
-    />
-  );
-};
+  return <FaqSectionCard section={section} isFirst={false} titleDelay={0} />
+}
 
-export default PrivacyAndSecurityFaq;
+export default PrivacyAndSecurityFaq

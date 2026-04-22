@@ -1,13 +1,15 @@
-'use client';
+'use client'
 
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import { useButtonSplitText } from '@/src/hooks/use-button-split-text';
-import { useRef } from 'react';
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
+import { useButtonSplitText } from '@/src/hooks/use-button-split-text'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import { useRef } from 'react'
 
 const Subscribe = () => {
-  const subscribeButtonWrapperRef = useRef<HTMLDivElement>(null);
-  useButtonSplitText(subscribeButtonWrapperRef);
+  const t = useSiteT()
+  const subscribeButtonWrapperRef = useRef<HTMLDivElement>(null)
+  useButtonSplitText(subscribeButtonWrapperRef)
 
   return (
     <section className="bg-background-6 py-10 md:py-32 lg:py-30 xl:py-32">
@@ -15,28 +17,27 @@ const Subscribe = () => {
         <div className="space-y-1.5 md:space-y-3">
           <TextReveal delay={0.1}>
             <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%]">
-              <span className="font-normal text-white/90"> Stay Informed with </span>
-              <span className="text-white/30"> AI Clawers updates </span>
+              <span className="font-normal text-white/90">{t('home.subscribe.h1')} </span>
+              <span className="text-white/30">{t('home.subscribe.h2')}</span>
             </h2>
           </TextReveal>
           <TextReveal delay={0.2}>
             <p className="font-inter-tight text-tagline-2 text-white/60">
-              Subscribe to our newsletter for the latest trends, insights, and success stories in AI
-              technology.
+              {t('home.subscribe.sub')}
             </p>
           </TextReveal>
         </div>
 
         <form className="mx-auto flex w-full flex-col items-center justify-center gap-4 text-left sm:flex-row">
           <label className="sr-only" htmlFor="cta-newsletter-email">
-            Enter your email
+            {t('home.subscribe.label')}
           </label>
           <RevealAnimation delay={0.3} direction="left" offset={100}>
             <input
               id="cta-newsletter-email"
               type="email"
               required
-              placeholder="Enter your email"
+              placeholder={t('home.subscribe.placeholder')}
               className="placeholder:text-tagline-2 placeholder:font-inter-tight border-stroke-3/18 bg-background-5 text-tagline-2 focus:border-stroke-3/30 w-full max-w-[355px] rounded-[300px] border px-6 py-2 text-white placeholder:font-normal placeholder:text-white/50 focus:outline-none md:py-3"
               data-opai-animate
             />
@@ -55,12 +56,12 @@ const Subscribe = () => {
                   <div className="relative overflow-hidden">
                     <div className="h-5.5">
                       <div className="text-background-5 font-ibm-plex-mono button-split-upper-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                        Subscribe now
+                        {t('home.subscribe.cta')}
                       </div>
                     </div>
                     <div className="absolute h-5.5">
                       <div className="text-background-5 font-ibm-plex-mono button-split-lower-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                        Subscribe now
+                        {t('home.subscribe.cta')}
                       </div>
                     </div>
                   </div>

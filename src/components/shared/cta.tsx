@@ -1,11 +1,12 @@
-'use client';
+'use client'
 
-import ctaImage120 from '@/public/images/opai-img-120.jpg';
-import ctaImage121 from '@/public/images/opai-img-121.jpg';
-import ctaImage122 from '@/public/images/opai-img-122.jpg';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button';
+import ctaImage120 from '@/public/images/opai-img-120.jpg'
+import ctaImage121 from '@/public/images/opai-img-121.jpg'
+import ctaImage122 from '@/public/images/opai-img-122.jpg'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
+import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button'
+import { useSiteT } from '@/src/hooks/use-site-translation'
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -15,6 +16,7 @@ import { useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const CTA = () => {
+  const t = useSiteT()
   const wrapperRef = useRef<HTMLDivElement>(null);
   const image1Ref = useRef<HTMLElement>(null);
   const image2Ref = useRef<HTMLElement>(null);
@@ -87,18 +89,18 @@ const CTA = () => {
           <div className="space-y-1.5 sm:max-w-[400px] lg:max-w-[567px] lg:space-y-3">
             <TextReveal delay={0.3}>
               <h2 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%]">
-                <span className="font-normal text-white/90"> Ship a faster </span>
-                <span className="text-white/30"> Shopify storefront. </span>
+                <span className="font-normal text-white/90">{t('shared.cta.h1')} </span>
+                <span className="text-white/30">{t('shared.cta.h2')}</span>
               </h2>
             </TextReveal>
             <TextReveal delay={0.4}>
               <p className="font-inter-tight text-tagline-2 text-white/60">
-                Themes, checkout UX, apps, and Flow—tell us your catalog and markets and we&apos;ll map a practical build.
+                {t('shared.cta.sub')}
               </p>
             </TextReveal>
             <RevealAnimation delay={0.5}>
               <div className="mt-6 md:mt-12" data-opai-animate>
-                <PrimaryLinkButton href="/contact">Plan a project</PrimaryLinkButton>
+                <PrimaryLinkButton href="/contact">{t('shared.cta.btn')}</PrimaryLinkButton>
               </div>
             </RevealAnimation>
           </div>

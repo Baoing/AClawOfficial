@@ -1,18 +1,20 @@
-'use client';
+'use client'
 
-import opai1 from '@/public/images/gradient/opai-1.png';
-import opai2 from '@/public/images/gradient/opai-2.png';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
+import opai1 from '@/public/images/gradient/opai-1.png'
+import opai2 from '@/public/images/gradient/opai-2.png'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
 import AIChatbotVoiceAssistants from '@/src/components/home/ai-chatbot-voice-assistants';
 import DataAnalyticsInsights from '@/src/components/home/data-analytics-insights';
 import ExploreAllServices from '@/src/components/home/explore-all-services';
 import IntelligentAutomation from '@/src/components/home/intelligent-automation';
 import PredictiveAnalytics from '@/src/components/home/predictive-analytics';
 import GlowingCard from '@/src/components/shared/ui/glowing-card/glowing-card';
-import GlowingCards from '@/src/components/shared/ui/glowing-card/glowing-cards';
-import Image from 'next/image';
+import GlowingCards from '@/src/components/shared/ui/glowing-card/glowing-cards'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Image from 'next/image'
 
 const EmpoweringBusiness = () => {
+  const t = useSiteT()
   return (
     <section
       className="relative -my-0.5 overflow-hidden py-10 sm:py-20 md:py-28 lg:py-30 xl:py-44"
@@ -29,22 +31,18 @@ const EmpoweringBusiness = () => {
                 className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 text-background-13/90 mx-auto max-w-[700px] font-normal max-md:leading-[110%]"
                 itemProp="name"
               >
-                Themes, apps, and{' '}
-                <span className="text-background-13/50">
-                  storefront optimization <br className="hidden md:block" />
-                  sharpened with practical AI
-                </span>
+                {t('home.empower.h1')}{' '}
+                <span className="text-background-13/50">{t('home.empower.h2')}</span>
               </h2>
             </TextReveal>
 
             <TextReveal delay={0.2}>
               <p
                 className="font-inter-tight text-tagline-2 text-background-13/60 mx-auto max-w-[440px] font-normal"
-                aria-label="Shopify themes, performance, apps, and AI copilots for merchants"
+                aria-label={t('home.empower.aria')}
                 itemProp="description"
               >
-                Launch-ready Liquid, faster Core Web Vitals, checkout-safe changes, and private apps
-                in admin—paired with AI copilots that remove busywork instead of adding noise.
+                {t('home.empower.sub')}
               </p>
             </TextReveal>
           </div>
@@ -53,7 +51,7 @@ const EmpoweringBusiness = () => {
           <div className="relative z-5">
             <GlowingCards
               className="flex flex-col items-center justify-center gap-y-8"
-              aria-label="Shopify technical services showcase"
+              aria-label={t('home.empower.ariaCards')}
             >
               {/* row one */}
               <div className="flex w-full flex-col items-center justify-center gap-x-4 gap-y-8 overflow-hidden md:flex-row md:gap-y-0">

@@ -1,12 +1,16 @@
-'use client';
-import faqContactGradient from '@/public/images/gradient/opai-6.svg';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { useButtonSplitText } from '@/src/hooks/use-button-split-text';
-import Image from 'next/image';
-import { useRef } from 'react';
+'use client'
+
+import faqContactGradient from '@/public/images/gradient/opai-6.svg'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { useButtonSplitText } from '@/src/hooks/use-button-split-text'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Image from 'next/image'
+import { useRef } from 'react'
+
 const FaqContact = () => {
-  const contactButtonWrapperRef = useRef<HTMLDivElement>(null);
-  useButtonSplitText(contactButtonWrapperRef);
+  const t = useSiteT()
+  const contactButtonWrapperRef = useRef<HTMLDivElement>(null)
+  useButtonSplitText(contactButtonWrapperRef)
   return (
     <RevealAnimation direction="right" offset={100} delay={0.3}>
       <div
@@ -18,33 +22,31 @@ const FaqContact = () => {
           <Image src={faqContactGradient} alt="faq-v7-contact" fill className="object-cover" />
         </figure>
         <h4 className="font-inter-tight text-it-heading-5 mb-2 font-medium text-white/90">
-          Still have questions?
+          {t('faqContact.title')}
         </h4>
-        <p className="text-tagline-4 font-inter-tight mb-6 text-white/60">
-          Tell us about your store, timeline, and markets—we reply with next steps.
-        </p>
+        <p className="text-tagline-4 font-inter-tight mb-6 text-white/60">{t('faqContact.sub')}</p>
         <form className="space-y-4">
           <input
             type="text"
-            placeholder="Your name"
+            placeholder={t('faqContact.phName')}
             required
             className="focus:outline-stroke-3 text-tagline-2 font-inter-tight bg-background-13/90 border-stroke-3/35 min-h-12 w-full rounded-md border px-4 font-extralight text-white/90 backdrop-blur-[32px] placeholder:text-white/60 focus:outline-1"
           />
           <input
             type="email"
             required
-            placeholder="Your email"
+            placeholder={t('faqContact.phEmail')}
             className="focus:outline-stroke-3 text-tagline-2 font-inter-tight bg-background-13/90 border-stroke-3/35 min-h-12 w-full rounded-md border px-4 font-extralight text-white/90 backdrop-blur-[32px] placeholder:text-white/60 focus:outline-1"
           />
           <input
             type="text"
             required
-            placeholder="Subject"
+            placeholder={t('faqContact.phSubject')}
             className="focus:outline-stroke-3 text-tagline-2 font-inter-tight bg-background-13/90 border-stroke-3/35 min-h-12 w-full rounded-md border px-4 font-extralight text-white/90 backdrop-blur-[32px] placeholder:text-white/60 focus:outline-1"
           />
           <textarea
             required
-            placeholder="Your Questions"
+            placeholder={t('faqContact.phQuestions')}
             className="focus:outline-stroke-3 text-tagline-2 font-inter-tight bg-background-13/90 border-stroke-3/35 min-h-[220px] w-full rounded-md border p-4 font-extralight text-white/90 backdrop-blur-[32px] placeholder:text-white/60 focus:outline-1"
           />
           <div className="w-full max-md:mx-auto max-md:w-[85%] md:mx-0 md:w-auto">
@@ -57,12 +59,12 @@ const FaqContact = () => {
                   <div className="relative overflow-hidden">
                     <div className="h-5.5">
                       <div className="text-background-5 font-ibm-plex-mono button-split-upper-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                        Contact us
+                        {t('faqContact.submit')}
                       </div>
                     </div>
                     <div className="absolute h-5.5">
                       <div className="text-background-5 font-ibm-plex-mono button-split-lower-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                        Contact us
+                        {t('faqContact.submit')}
                       </div>
                     </div>
                   </div>

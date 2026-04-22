@@ -1,24 +1,24 @@
-'use client';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { ChevronRightIcon } from '@/src/components/shared/icon';
-import { useButtonSplitText } from '@/src/hooks/use-button-split-text';
-import Link from 'next/link';
-import { useRef } from 'react';
+'use client'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { ChevronRightIcon } from '@/src/components/shared/icon'
+import { useButtonSplitText } from '@/src/hooks/use-button-split-text'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Link from 'next/link'
+import { useRef } from 'react'
 
 const Newsletter = () => {
-  const subscribeButtonRef = useRef<HTMLDivElement>(null);
-  useButtonSplitText(subscribeButtonRef);
+  const t = useSiteT()
+  const subscribeButtonRef = useRef<HTMLDivElement>(null)
+  useButtonSplitText(subscribeButtonRef)
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
       <RevealAnimation delay={0.1}>
         <div className="text-center lg:text-left">
           <p className="text-background-11 text-sora-heading-5 font-normal tracking-[-0.72px]">
-            Subscribe to our newsletter
+            {t('footer.newsletter.title')}
           </p>
-          <p className="text-tagline-2 font-normal text-white/50">
-            Stay updated with our latest news and updates.
-          </p>
+          <p className="text-tagline-2 font-normal text-white/50">{t('footer.newsletter.sub')}</p>
         </div>
       </RevealAnimation>
 
@@ -29,8 +29,8 @@ const Newsletter = () => {
               <input
                 type="email"
                 required
-                aria-label="Enter your email"
-                placeholder="Enter your email"
+                aria-label={t('footer.newsletter.placeholder')}
+                placeholder={t('footer.newsletter.placeholder')}
                 className="border-stroke-3/30 bg-background-6 placeholder:text-background-8 placeholder:text-tagline-3 text-background-8 text-tagline-2 focus:ring-stroke-3/50 mx-auto block h-10 w-full rounded-full border px-4 py-3 font-normal placeholder:font-normal focus:ring-[0.5px] focus:outline-none max-sm:w-[85%] md:mx-0"
               />
             </div>
@@ -42,12 +42,12 @@ const Newsletter = () => {
                 <div className="relative overflow-hidden">
                   <div className="h-5.5">
                     <div className="text-background-5 font-ibm-plex-mono button-split-upper-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                      Subscribe
+                      {t('footer.newsletter.submit')}
                     </div>
                   </div>
                   <div className="absolute h-5.5">
                     <div className="text-background-5 font-ibm-plex-mono button-split-lower-text text-tagline-2 block leading-[1.4] font-medium text-nowrap">
-                      Subscribe
+                      {t('footer.newsletter.submit')}
                     </div>
                   </div>
                 </div>
@@ -65,9 +65,9 @@ const Newsletter = () => {
         </RevealAnimation>
         <RevealAnimation delay={0.2}>
           <p className="text-tagline-4 font-normal text-white/60">
-            By subscribing you agree to with our{' '}
+            {t('footer.newsletter.disclaimer')}{' '}
             <Link href="/privacy" className="font-medium text-white hover:underline">
-              Privacy Policy
+              {t('footer.newsletter.privacy')}
             </Link>
           </p>
         </RevealAnimation>

@@ -1,13 +1,17 @@
-import opai1 from '@/public/images/gradient/opai-1.png';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { TextReveal } from '@/src/components/animation/text-reveal-animation';
-import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button';
-import ProjectCard from '@/src/components/shared/ui/card/project-card';
-import { customerCases, homeFeaturedCustomerCaseCount } from '@/src/data/customer-cases';
-import Image from 'next/image';
+'use client'
+
+import opai1 from '@/public/images/gradient/opai-1.png'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { TextReveal } from '@/src/components/animation/text-reveal-animation'
+import { PrimaryLinkButton } from '@/src/components/shared/ui/button/primary-link-button'
+import ProjectCard from '@/src/components/shared/ui/card/project-card'
+import { customerCases, homeFeaturedCustomerCaseCount } from '@/src/data/customer-cases'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Image from 'next/image'
 
 const Projects = () => {
-  const featuredCases = customerCases.slice(0, homeFeaturedCustomerCaseCount);
+  const t = useSiteT()
+  const featuredCases = customerCases.slice(0, homeFeaturedCustomerCaseCount)
 
   return (
     <section
@@ -27,17 +31,15 @@ const Projects = () => {
                 className="font-sora text-sora-heading-4 text-background-7 min-[500px]:text-background-13/90 md:text-sora-heading-3 lg:text-sora-heading-2 font-normal max-md:leading-[110%] lg:mx-auto lg:max-w-[600px]"
                 id="projects-heading"
               >
-                Proof on{' '}
+                {t('home.projects.h1')}{' '}
                 <span className="text-background-7/50 min-[500px]:text-background-13/50">
-                  Shopify—builds, apps, <br className="hidden md:block" />
-                  and themes we shipped
+                  {t('home.projects.h2')}
                 </span>
               </h2>
             </TextReveal>
             <TextReveal delay={0.2}>
               <p className="font-inter-tight text-tagline-2 text-background-7 min-[500px]:text-background-13/50 font-normal lg:mx-auto lg:max-w-[380px]">
-                Launches, custom apps, and optimization passes—real merchants, real timelines, no
-                fluff.
+                {t('home.projects.sub')}
               </p>
             </TextReveal>
           </div>
@@ -62,14 +64,14 @@ const Projects = () => {
           <RevealAnimation delay={0.1}>
             <div className="mx-auto w-full text-center max-md:w-[85%] md:mx-0 md:w-auto">
               <PrimaryLinkButton href="/projects" className="w-full md:w-auto">
-                View Shopify work
+                {t('home.projects.cta')}
               </PrimaryLinkButton>
             </div>
           </RevealAnimation>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

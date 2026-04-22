@@ -1,17 +1,15 @@
-'use client';
+'use client'
 
-import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card';
-import { gettingStartedFaqSection } from '@/src/data/faq-data';
+import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card'
+import { useLocale } from '@/src/context/LocaleContext'
+import { getGettingStartedFaqSection } from '@/src/data/faq-locale'
+import { useMemo } from 'react'
 
-type GettingStartedFaqProps = {
-  isFirst?: boolean;
-  titleDelay?: number;
-};
+const GettingStartedFaq = () => {
+  const { locale } = useLocale()
+  const section = useMemo(() => getGettingStartedFaqSection(locale), [locale])
 
-const GettingStartedFaq = ({ isFirst = false, titleDelay = 0.01 }: GettingStartedFaqProps) => {
-  return (
-    <FaqSectionCard section={gettingStartedFaqSection} isFirst={isFirst} titleDelay={titleDelay} />
-  );
-};
+  return <FaqSectionCard section={section} isFirst={false} titleDelay={0} />
+}
 
-export default GettingStartedFaq;
+export default GettingStartedFaq

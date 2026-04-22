@@ -3,16 +3,12 @@ import OurServices from '@/src/components/services/our-services';
 import CTA from '@/src/components/shared/cta';
 import WhyChooseUs from '@/src/components/shared/why-choose-us';
 import type { ServicePost } from '@/src/interface';
-import { generateMetadata } from '@/src/utils/generateMetaData';
+import { buildLocalizedPageMetadata } from '@/src/utils/page-metadata-locale';
 import getMarkDownData from '@/src/utils/getMarkDownData';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  ...generateMetadata(),
-  title: 'Shopify services | AI Clawers',
-  description:
-    'Store builds, design, theme customization, custom apps, technical SEO, GEO, AI integration, and integrations—scoped for maintainability and merchant outcomes.',
-};
+export const generateMetadata = async (): Promise<Metadata> =>
+  buildLocalizedPageMetadata('meta.services.title', 'meta.services.description', '/services');
 
 const SERVICES_ORDER = [
   'shopify-store-builds',

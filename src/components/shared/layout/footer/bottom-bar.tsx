@@ -1,10 +1,14 @@
-import Link from 'next/link';
+'use client'
+
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import Link from 'next/link'
 
 const BottomBar = () => {
+  const t = useSiteT()
   return (
     <div className="border-stroke-1/10 flex flex-col items-center justify-between gap-2.5 border-y px-5 py-3.5 sm:flex-row sm:gap-0 lg:py-5">
       <p className="text-tagline-4 font-normal text-white/50">
-        &copy; {new Date().getFullYear()} AClawers. All rights reserved.
+        &copy; {new Date().getFullYear()} {t('brand.footerMark')}. {t('footer.bottom.copyright')}
       </p>
       <ul className="flex items-center gap-6">
         <li>
@@ -12,7 +16,7 @@ const BottomBar = () => {
             href="/privacy"
             className="footer-link font-inter-tight text-tagline-4 font-normal text-white/50 transition-colors duration-200 hover:text-white"
           >
-            Privacy Policy
+            {t('footer.bottom.privacy')}
           </Link>
         </li>
         <li>
@@ -20,7 +24,7 @@ const BottomBar = () => {
             href="/terms"
             className="footer-link font-inter-tight text-tagline-4 font-normal text-white/50 transition-colors duration-200 hover:text-white"
           >
-            Terms of Service
+            {t('footer.bottom.terms')}
           </Link>
         </li>
         <li>
@@ -28,12 +32,12 @@ const BottomBar = () => {
             href="/privacy#cookies"
             className="footer-link font-inter-tight text-tagline-4 font-normal text-white/50 transition-colors duration-200 hover:text-white"
           >
-            Cookie Settings
+            {t('footer.bottom.cookies')}
           </Link>
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default BottomBar;
+export default BottomBar

@@ -1,16 +1,12 @@
-import ContactHero from '@/src/components/contact/contact-hero';
-import { generateMetadata } from '@/src/utils/generateMetaData';
-import { Metadata } from 'next';
+import Contact from '@/src/components/shared/contact'
+import { buildLocalizedPageMetadata } from '@/src/utils/page-metadata-locale'
+import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  ...generateMetadata(),
-  title: 'Contact us - AI Solutions || AI Clawers',
-  description:
-    'Reach out to AI Clawers. We’ll get back within 24 hours. Get in touch for AI solutions and support.',
-};
+export const generateMetadata = async (): Promise<Metadata> =>
+  buildLocalizedPageMetadata('meta.contact.title', 'meta.contact.description', '/contact')
 
 const page = () => {
-  return <ContactHero />;
-};
+  return <Contact />
+}
 
-export default page;
+export default page

@@ -1,15 +1,20 @@
-'use client';
+'use client'
 
-import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card';
-import { generalFaqSection } from '@/src/data/faq-data';
+import FaqSectionCard from '@/src/components/shared/ui/card/faq-section-card'
+import { useLocale } from '@/src/context/LocaleContext'
+import { getGeneralFaqSection } from '@/src/data/faq-locale'
+import { useMemo } from 'react'
 
 type GeneralFaqProps = {
-  isFirst?: boolean;
-  titleDelay?: number;
-};
+  isFirst?: boolean
+  titleDelay?: number
+}
 
 const GeneralFaq = ({ isFirst = true, titleDelay = 0 }: GeneralFaqProps) => {
-  return <FaqSectionCard section={generalFaqSection} isFirst={isFirst} titleDelay={titleDelay} />;
-};
+  const { locale } = useLocale()
+  const section = useMemo(() => getGeneralFaqSection(locale), [locale])
 
-export default GeneralFaq;
+  return <FaqSectionCard section={section} isFirst={isFirst} titleDelay={titleDelay} />
+}
+
+export default GeneralFaq

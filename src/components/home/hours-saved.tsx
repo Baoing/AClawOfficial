@@ -1,17 +1,19 @@
 'use client';
 
-import NumberAnimation from '@/src/components/animation/number-animation';
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import Connector from '@/src/components/home/connector';
-import { TimerIcon } from '@/src/components/shared/icon';
+import NumberAnimation from '@/src/components/animation/number-animation'
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import Connector from '@/src/components/home/connector'
+import { TimerIcon } from '@/src/components/shared/icon'
+import { useSiteT } from '@/src/hooks/use-site-translation'
 
 const HoursSaved = () => {
+  const t = useSiteT()
   return (
     <div className="col-span-12 md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-auto">
       <RevealAnimation delay={0.4}>
         <div
           className="border-stroke-3/18 relative h-[420px] w-full max-w-[409px] rounded-lg border bg-white p-4 max-md:mx-auto min-[1050px]:p-4.5! min-[1100px]:p-5! min-[1200px]:p-10.5! sm:p-10.5 md:p-4 lg:p-2"
-          aria-label="Operations hours returned through automation"
+          aria-label={t('home.hours.ariaCard')}
         >
           <div
             className="pointer-events-none absolute bottom-0 left-0 z-20 h-[334px] w-full bg-linear-to-b from-transparent from-[10.09%] to-[#FFF] to-[99.05%] select-none"
@@ -27,7 +29,7 @@ const HoursSaved = () => {
               <div className="border-stroke-1/11 bg-background-5 flex items-center justify-center gap-x-1 rounded-full border px-[14px] py-[5px]">
                 <span className="bg-opai-blue h-2 w-2 rounded-full" />
                 <span className="text-tagline-4 font-inter-tight font-normal text-white/50">
-                  Sync
+                  {t('home.hours.pill.sync')}
                 </span>
               </div>
             </div>
@@ -35,7 +37,7 @@ const HoursSaved = () => {
               <div className="border-stroke-1/11 bg-background-5 flex w-24 items-center justify-start gap-x-1 rounded-full border px-[14px] py-[5px]">
                 <span className="bg-opai-purple h-2 w-2 rounded-full" />
                 <span className="text-tagline-4 font-inter-tight font-normal text-white/50">
-                  Process
+                  {t('home.hours.pill.process')}
                 </span>
               </div>
             </div>
@@ -43,7 +45,7 @@ const HoursSaved = () => {
               <div className="border-stroke-1/11 bg-background-5 flex w-24 items-center justify-start gap-x-1 rounded-full border px-[14px] py-1.5">
                 <span className="bg-opai-purple h-2 w-2 rounded-full" />
                 <span className="text-tagline-4 font-inter-tight font-normal text-white/50">
-                  Flow
+                  {t('home.hours.pill.flow')}
                 </span>
               </div>
             </div>
@@ -51,7 +53,7 @@ const HoursSaved = () => {
               <div className="border-stroke-1/11 bg-background-5 flex items-center justify-center gap-x-1 rounded-full border px-[14px] py-[5px]">
                 <span className="bg-opai-purple h-2 w-2 rounded-full" />
                 <span className="text-tagline-4 font-inter-tight font-normal text-white/50">
-                  Grow
+                  {t('home.hours.pill.grow')}
                 </span>
               </div>
             </div>
@@ -94,7 +96,7 @@ const HoursSaved = () => {
               <div className="text-center">
                 <h3
                   className="font-sora text-sora-heading-3 flex items-center justify-center font-normal text-black"
-                  aria-label="60 thousand plus hours returned to teams"
+                  aria-label={t('home.stat.hoursAria')}
                 >
                   <NumberAnimation
                     number={60}
@@ -106,7 +108,7 @@ const HoursSaved = () => {
                   K+
                 </h3>
                 <p className="font-inter-tight text-tagline-2 text-background-13/50 font-normal">
-                  Ops hours given back to teams
+                  {t('home.stat.hours')}
                 </p>
               </div>
             </div>

@@ -39,6 +39,7 @@ export const LocaleProvider = ({ children }: Readonly<{ children: ReactNode }>) 
     setLocaleState(next)
     window.localStorage.setItem(localeStorageKey, next)
     document.documentElement.lang = next === 'en' ? 'en' : next
+    document.cookie = `${localeStorageKey}=${next};path=/;max-age=31536000;SameSite=Lax`
   }, [])
 
   const value = useMemo(() => ({ locale, setLocale }), [locale, setLocale])
