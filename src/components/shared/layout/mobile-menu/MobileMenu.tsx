@@ -1,6 +1,7 @@
 'use client';
 import logoSmall from '@/public/images/logo/logo.svg';
 import { useMobileMenuContext } from '@/src/context/MobileMenuContext';
+import LocaleSwitch from '@/src/components/shared/layout/navbar/locale-switch';
 import { cn } from '@/src/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -43,6 +44,10 @@ const MobileMenu = ({ menuData }: { menuData: MobileMenuGroup[] }) => {
             </figure>
           </Link>
           <MenuCloseButton />
+        </div>
+
+        <div className="mt-4">
+          <LocaleSwitch variant="mobile" />
         </div>
 
         <div className="scroll-bar mt-6 h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">

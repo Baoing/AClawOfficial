@@ -146,7 +146,7 @@ const PricingCard = ({
 
   return (
     <div className="w-full max-w-[608px] flex-1 xl:basis-[408px]">
-      <div className="flex flex-col rounded-4xl bg-transparent px-4 py-8 xl:px-8 xl:py-11">
+      <div className="flex flex-col rounded-4xl bg-transparent p-4">
         {cardContent}
       </div>
     </div>

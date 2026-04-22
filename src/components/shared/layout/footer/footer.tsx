@@ -41,7 +41,7 @@ const Footer = () => {
                   />
                 </Link>
                 <div className="space-y-6">
-                  <p className="text-tagline-2 text-background-11 max-w-md">
+                  <p className="text-tagline-2 text-background-11 max-w-full">
                     Intelligent Shopify help—launch, fix, and grow your store so you spend less time on the platform
                     and more on customers and sales.
                   </p>

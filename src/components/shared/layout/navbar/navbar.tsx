@@ -3,13 +3,16 @@ import RevealAnimation from '@/src/components/animation/reveal-animation';
 import MobileMenu from '@/src/components/shared/layout/mobile-menu/MobileMenu';
 import { DefaultLinkButton } from '@/src/components/shared/ui/button/default-link-button';
 import { MobileMenuProvider } from '@/src/context/MobileMenuContext';
+import { useLocale } from '@/src/context/LocaleContext';
 import { mobileMenuData } from '@/src/data/mobile-meu';
+import { getNavBarLabels, translateMobileMenu } from '@/src/messages/navigation';
 import { useNavbarScroll } from '@/src/hooks/useScrollHeader';
 import { cn } from '@/src/utils/cn';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import CompanyMenu from './company-menu';
+import LocaleSwitch from './locale-switch';
 import MobileMenuButton from './mobile-menu-button';
 import PlanAndSupportMenu from './plan-and-support-menu';
 import PlatformMenu from './platform-menu';
@@ -29,6 +32,9 @@ interface NavbarProps {
 const Navbar = ({ showTopNav = false }: NavbarProps) => {
   const { isScrolled } = useNavbarScroll(150);
   const [menuDropdownId, setMenuDropdownId] = useState<string | null>(null);
+  const { locale } = useLocale();
+  const navLabels = useMemo(() => getNavBarLabels(locale), [locale]);
+  const localizedMobileMenu = useMemo(() => translateMobileMenu(mobileMenuData, locale), [locale]);
 
   const handleMenuHover = (dropdownId?: string | null) => {
     setMenuDropdownId(dropdownId ?? null);
@@ -75,7 +81,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
                   <div className={navItemGradientClasses} />
                 </div>
                 <Link href="#" className="relative z-5 flex items-center gap-1.5">
-                  <span className={navLinkTextClasses}>Company</span>
+                  <span className={navLinkTextClasses}>{navLabels.company}</span>
                   <span className="block origin-center translate-y-px transition-all duration-500 group-hover/nav-item:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +116,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
                   <div className={navItemGradientClasses} />
                 </div>
                 <Link href="#" className="relative z-5 flex items-center gap-1.5">
-                  <span className={navLinkTextClasses}>Platform</span>
+                  <span className={navLinkTextClasses}>{navLabels.platform}</span>
                   <span className="block origin-center translate-y-px transition-all duration-500 group-hover/nav-item:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +151,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
                   <div className={navItemGradientClasses} />
                 </div>
                 <Link href="#" className="relative z-5 flex items-center gap-1.5">
-                  <span className={navLinkTextClasses}>Resources</span>
+                  <span className={navLinkTextClasses}>{navLabels.resources}</span>
                   <span className="block origin-center translate-y-px transition-all duration-500 group-hover/nav-item:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +186,7 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
                   <div className={navItemGradientClasses} />
                 </div>
                 <Link href="#" className="relative z-5 flex items-center gap-1.5">
-                  <span className={navLinkTextClasses}>Support</span>
+                  <span className={navLinkTextClasses}>{navLabels.support}</span>
                   <span className="block origin-center translate-y-px transition-all duration-500 group-hover/nav-item:rotate-180">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -205,20 +211,26 @@ const Navbar = ({ showTopNav = false }: NavbarProps) => {
               </li>
             </ul>
 
-            <div className="hidden lg:block">
-              <DefaultLinkButton
-                href="/login"
-                className="shadow-[0_3px_18px_0_rgba(141,89,255,0.80)]"
+            <div className="hidden items-center lg:flex">
+              <div
+                className="flex items-center gap-1 rounded-full from-white/[0.09] to-white/[0.02] p-1 pr-1 backdrop-blur-md"
+                aria-label="Language and contact"
               >
-                Try now
-              </DefaultLinkButton>
+                <LocaleSwitch variant="desktop" triggerClassName="border-transparent bg-transparent hover:bg-white/[0.06]" />
+                <DefaultLinkButton
+                  href="/contact"
+                  className="shadow-[0_4px_24px_rgba(141,89,255,0.55),inset_0_1px_0_rgba(255,255,255,0.22)] transition-[box-shadow,transform] duration-300 ease-out hover:-translate-y-px hover:shadow-[0_8px_36px_rgba(141,89,255,0.48)]"
+                >
+                  {navLabels.contactCta}
+                </DefaultLinkButton>
+              </div>
             </div>
 
             <MobileMenuButton />
           </nav>
         </RevealAnimation>
       </header>
-      <MobileMenu menuData={mobileMenuData} />
+      <MobileMenu menuData={localizedMobileMenu} />
     </MobileMenuProvider>
   );
 };
