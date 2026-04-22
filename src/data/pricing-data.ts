@@ -35,7 +35,7 @@ export const pricingPlans: PricingPlanItem[] = [
     ctaLabel: 'Schedule a call',
     features: [
       'Core templates: home, catalog, product, cart, account, about',
-      'Polished Shopify theme—not a bespoke brand programme',
+      'Polished Shopify theme—not a bespoke brand program',
       'Two revision rounds on your copy and layout',
       'Responsive across mobile, tablet, and desktop',
       'Basic SEO: page titles and meta descriptions',
@@ -58,7 +58,7 @@ export const pricingPlans: PricingPlanItem[] = [
     ctaLabel: 'Schedule a call',
     features: [
       'Core pages plus 3+ extras (blog, FAQ, campaign, policies—by scope)',
-      'Custom type, color, and reusable section styles in theme',
+      'Custom web fonts, type scale, color, and reusable section styles in theme',
       'Merch blocks: featured collections, promos, short storytelling',
       'Metafield-rich product detail when your catalog supports it',
       'Two design rounds; cart and mini-cart polish',
@@ -83,7 +83,7 @@ export const pricingPlans: PricingPlanItem[] = [
     ctaLabel: 'Schedule a call',
     features: [
       'Core pages plus 5+ templates mapped to your roadmap',
-      'Premium finish on layouts, components, and in-theme art direction',
+      'Premium finish: custom fonts on key templates, layouts, components, and art direction',
       'Three design revision rounds',
       'Richer motion and scroll storytelling sections',
       'Complex flows: multilingual, loyalty, or advanced forms (scoped in writing)',
