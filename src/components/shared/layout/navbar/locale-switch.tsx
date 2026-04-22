@@ -1,6 +1,7 @@
 'use client'
 
 import { useLocale } from '@/src/context/LocaleContext'
+import { LanguageGlobeIcon } from '@/src/components/shared/icon'
 import type { AppLocale } from '@/src/types/locale'
 import { cn } from '@/src/utils/cn'
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
@@ -75,6 +76,7 @@ const LocaleSwitch = ({ variant = 'desktop', triggerClassName }: LocaleSwitchPro
           }
         }}
       >
+        <LanguageGlobeIcon className="text-white/55" />
         <span className={cn('text-white/70', variant === 'desktop' && 'min-w-[1.5rem] text-center')}>
           {variant === 'mobile' ? current.label : current.short}
         </span>
@@ -103,7 +105,7 @@ const LocaleSwitch = ({ variant = 'desktop', triggerClassName }: LocaleSwitchPro
                   role="option"
                   aria-selected={selected}
                   className={cn(
-                    'cursor-pointer font-inter-tight text-tagline-3 block w-full px-3 py-2 text-left font-normal text-white/75 transition-colors',
+                    'hover:bg-white/10 hover:text-white/95 cursor-pointer font-inter-tight text-tagline-3 block w-full px-3 py-2 text-left font-normal text-white/75 transition-colors',
                     selected && 'bg-white/10 text-white/95'
                   )}
                   onClick={() => handleSelect(opt.id)}

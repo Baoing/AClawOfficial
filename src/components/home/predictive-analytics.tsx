@@ -1,32 +1,34 @@
-'use client';
+'use client'
 
-import RevealAnimation from '@/src/components/animation/reveal-animation';
-import { useGSAP } from '@gsap/react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef } from 'react';
+import RevealAnimation from '@/src/components/animation/reveal-animation'
+import { useSiteT } from '@/src/hooks/use-site-translation'
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useRef } from 'react'
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 const PredictiveAnalytics = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const circleRef = useRef<HTMLDivElement>(null);
-  const pathRefs = useRef<(SVGPathElement | null)[]>([]);
+  const t = useSiteT()
+  const containerRef = useRef<HTMLDivElement>(null)
+  const circleRef = useRef<HTMLDivElement>(null)
+  const pathRefs = useRef<(SVGPathElement | null)[]>([])
 
   useGSAP(
     () => {
-      const container = containerRef.current;
-      const circle = circleRef.current;
-      const paths = pathRefs.current.filter((p): p is SVGPathElement => p != null);
-      if (!container || paths.length === 0) return;
+      const container = containerRef.current
+      const circle = circleRef.current
+      const paths = pathRefs.current.filter((p): p is SVGPathElement => p != null)
+      if (!container || paths.length === 0) return
 
       if (circle) {
-        gsap.set(circle, { opacity: 0, scale: 0.2 });
+        gsap.set(circle, { opacity: 0, scale: 0.2 })
       }
 
       paths.forEach((path, index) => {
-        const len = path.getTotalLength();
-        gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
+        const len = path.getTotalLength()
+        gsap.set(path, { strokeDasharray: len, strokeDashoffset: len })
 
         gsap.to(path, {
           strokeDashoffset: 0,
@@ -38,8 +40,8 @@ const PredictiveAnalytics = () => {
             start: 'top 80%',
             once: true,
           },
-        });
-      });
+        })
+      })
 
       if (circle) {
         gsap.to(circle, {
@@ -53,18 +55,17 @@ const PredictiveAnalytics = () => {
             start: 'top 80%',
             once: true,
           },
-        });
+        })
       }
     },
-    { scope: containerRef }
-  );
+    { scope: containerRef },
+  )
 
   return (
     <div
       className="border-stroke-1/18 bg-background-6 relative h-[344px] w-full overflow-hidden rounded-lg border p-10.5"
       aria-labelledby="predictive-analytics-heading"
     >
-      {/* glowing gradient */}
       <div className="pointer-events-none absolute top-[-51%] left-[-18%] select-none">
         <div className="pointer-events-none relative z-20 h-[276px] w-[188px] rotate-[-10.86deg] rounded-[50%] bg-white/40 blur-[25.5px] select-none">
           <div className="bg-opai-purple/90 absolute right-0 bottom-[-4px] left-[102px] z-10 h-[194px] w-[133px] rotate-12 rounded-[50%] mix-blend-plus-lighter blur-[82px]" />
@@ -78,14 +79,13 @@ const PredictiveAnalytics = () => {
             className="font-sora text-sora-heading-5 font-normal text-white/80"
             itemProp="name"
           >
-            Growth & conversion signals
+            {t('home.predictive.title')}
           </h3>
           <p
             className="font-inter-tight text-tagline-2 w-full text-left font-normal text-white/50 md:max-w-[269px]"
             itemProp="description"
           >
-            See what moves AOV, retention, and funnel drop-offs—then prioritize Shopify fixes that
-            pay back fastest.
+            {t('home.predictive.sub')}
           </p>
         </div>
       </RevealAnimation>
@@ -156,7 +156,7 @@ const PredictiveAnalytics = () => {
           >
             <path
               ref={(el) => {
-                pathRefs.current[0] = el;
+                pathRefs.current[0] = el
               }}
               className="flow-line-curve-path"
               d="M6 165.184C15.1674 165.184 43.128 157.191 81.6312 125.22C129.76 85.2554 165.857 172.919 204.102 146.706C242.347 120.493 208.829 71.5054 253.52 51.7382C298.211 31.9709 330.87 49.1598 371.694 5.32812"
@@ -190,7 +190,7 @@ const PredictiveAnalytics = () => {
             <g filter="url(#filter0_f_5781_22993)">
               <path
                 ref={(el) => {
-                  pathRefs.current[1] = el;
+                  pathRefs.current[1] = el
                 }}
                 className="flow-line-curve-path"
                 d="M18 177.184C27.1674 177.184 55.128 169.191 93.6312 137.22C141.76 97.2554 177.857 184.919 216.102 158.706C254.347 132.493 220.829 83.5054 265.52 63.7382C310.211 43.9709 342.87 61.1598 383.694 17.3281"
@@ -229,7 +229,7 @@ const PredictiveAnalytics = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PredictiveAnalytics;
+export default PredictiveAnalytics

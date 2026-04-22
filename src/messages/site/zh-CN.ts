@@ -119,6 +119,48 @@ export const siteZhCNPatch: { [K in keyof typeof siteEn]: string } = {
   'home.empower.h2': '店铺优化，结合务实 AI',
   'home.empower.sub':
     '可上线的 Liquid、更快的核心指标、安全的结账改动与后台私有应用——搭配能减负而非添乱的 AI 副驾驶。',
+  'home.predictive.title': '增长与转化信号',
+  'home.predictive.sub':
+    '看清客单价、留存与漏斗流失的驱动因素，再优先处理回报最快的 Shopify 修复项。',
+
+  'home.customApps.title': '定制 Shopify 应用',
+  'home.customApps.sub':
+    '嵌入式后台工具、店面能力与融入商家日常工作的 AI 副驾驶。',
+  'home.customApps.imgAlt': '定制 Shopify 应用界面示意，含后台与店面操作',
+
+  'home.intelligent.stepKickoff': '启动',
+  'home.intelligent.stepKickoffSub': '范围、技术栈与成功指标已对齐',
+  'home.intelligent.stepBuild': '搭建',
+  'home.intelligent.stepBuildLine1': '主题、分区与应用块',
+  'home.intelligent.stepBuildLine2': 'Liquid 架构与目录及运营流程贯通',
+  'home.intelligent.stepReview': '验收',
+  'home.intelligent.stepReviewSub': '结账、SEO、无障碍与性能通过检视',
+  'home.intelligent.stepShip': '上线',
+  'home.intelligent.stepShipSub': '生产发布，含监控与回退预案',
+  'home.intelligent.footerTitle': '建站与优化',
+  'home.intelligent.footerSub':
+    '可上线的主题、性能调优与 SEO 友好的 Liquid——让每次发布都更有把握。',
+
+  'home.dataInsights.title': '店铺健康与运营洞察',
+  'home.dataInsights.sub':
+    '整合收入、履约与客户体验信号，让管理层看到统一的 Shopify 视图，而不是十个互不关联的标签页。',
+  'home.dataInsights.ariaPanel': 'Shopify 店铺指标可视化',
+  'home.dataInsights.performance': '性能',
+  'home.dataInsights.periodButtonAria': '选择分析的时间范围',
+  'home.dataInsights.lastWeek': '上周',
+  'home.dataInsights.metricSpeed': '主题速度',
+  'home.dataInsights.metricCheckout': '结账',
+  'home.dataInsights.metricRetention': '留存',
+  'home.dataInsights.kpiRowAria': 'KPI 刻度：基线、目标、挑战',
+  'home.dataInsights.baseline': '基线',
+  'home.dataInsights.target': '目标',
+  'home.dataInsights.stretch': '挑战',
+
+  'home.empower.exploreShopifyServices': '探索 Shopify 服务',
+  'home.empower.exploreBlockAria': '探索 Shopify 服务行动号召',
+
+  'home.hero.videoNoSupport': '您的浏览器不支持视频播放。',
+
   'home.innov.title1': '四种方式助力',
   'home.innov.title2': '在 Shopify 上搭建、调优、扩展与增长',
   'home.innov.sub': '店铺、主题、应用与克制的 AI——让团队高效交付、少噪音。',

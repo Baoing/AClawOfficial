@@ -1,8 +1,13 @@
+'use client';
+
 import AI_CHATBOT_IMAGE from '@/public/images/opai-img-94.png';
 import RevealAnimation from '@/src/components/animation/reveal-animation';
+import { useSiteT } from '@/src/hooks/use-site-translation';
 import Image from 'next/image';
 
 const AIChatbotVoiceAssistants = () => {
+  const t = useSiteT();
+
   return (
     <div
       className="border-stroke-1/18 bg-background-6 relative z-10 flex h-[344px] w-full flex-col items-start justify-between overflow-hidden rounded-lg border pt-10.5 pl-10.5 max-lg:gap-y-10 lg:flex-row"
@@ -22,14 +27,13 @@ const AIChatbotVoiceAssistants = () => {
             className="font-sora text-sora-heading-5 max-w-[200px] font-normal text-white/80 sm:mx-auto md:mx-0"
             itemProp="name"
           >
-            Custom Shopify apps
+            {t('home.customApps.title')}
           </h3>
           <p
             className="font-inter-tight text-tagline-2 w-full max-w-[269px] text-left font-normal text-white/50 sm:mx-auto sm:text-center md:mx-0 md:text-left"
             itemProp="description"
           >
-            Embedded admin tools, storefront features, and AI copilots that sit where merchants
-            work every day.
+            {t('home.customApps.sub')}
           </p>
         </div>
       </RevealAnimation>
@@ -38,7 +42,7 @@ const AIChatbotVoiceAssistants = () => {
         <figure className="w-full max-w-[502px]">
           <Image
             src={AI_CHATBOT_IMAGE}
-            alt="Custom Shopify app interface with admin and storefront controls"
+            alt={t('home.customApps.imgAlt')}
             loading="lazy"
             className="size-full object-cover"
             width={502}

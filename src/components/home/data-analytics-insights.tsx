@@ -2,6 +2,7 @@
 
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { DownArrowIcon } from '@/src/components/shared/icon';
+import { useSiteT } from '@/src/hooks/use-site-translation';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -10,6 +11,7 @@ import { useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const DataAnalyticsInsights = () => {
+  const t = useSiteT();
   const progressContainerRef = useRef<HTMLDivElement>(null);
   const progressBarRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
@@ -57,36 +59,35 @@ const DataAnalyticsInsights = () => {
             className="font-sora text-sora-heading-5 max-w-[200px] font-normal text-white/80"
             itemProp="name"
           >
-            Store health & ops clarity
+            {t('home.dataInsights.title')}
           </h3>
           <p
             className="font-inter-tight text-tagline-2 w-full max-w-[269px] text-left font-normal text-white/50"
             itemProp="description"
           >
-            Unify revenue, fulfillment, and CX signals so leadership sees one Shopify truth—not ten
-            disconnected tabs.
+            {t('home.dataInsights.sub')}
           </p>
         </div>
 
         <div
           ref={progressContainerRef}
           className="border-stroke-1/18 z-10 w-full max-w-[270px] space-y-4 rounded-lg border px-10.5 pt-6 pb-[43px] lg:max-w-[300px]"
-          aria-label="Shopify store metrics visualization"
+          aria-label={t('home.dataInsights.ariaPanel')}
         >
           <div className="flex w-full items-center justify-between gap-x-2">
             <h4 className="font-manrope text-manrope-heading-6 font-medium text-white/30">
-              Performance
+              {t('home.dataInsights.performance')}
             </h4>
             <div className="border-stroke-1/18 w-full max-w-[97px] cursor-pointer rounded-sm border py-[3px] pr-1 pl-2">
               <button
                 type="button"
                 className="flex w-full cursor-pointer items-center justify-center gap-x-2"
-                aria-label="Select time period for analytics"
+                aria-label={t('home.dataInsights.periodButtonAria')}
                 aria-expanded={false}
                 aria-haspopup="listbox"
               >
                 <span className="font-inter-tight text-tagline-4 font-normal text-nowrap text-white/30">
-                  Last week
+                  {t('home.dataInsights.lastWeek')}
                 </span>
                 <span className="flex size-6 items-center justify-center">
                   <DownArrowIcon className="stroke-stroke-3/25" />
@@ -99,7 +100,7 @@ const DataAnalyticsInsights = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-start gap-x-11">
                 <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">
-                  Theme speed
+                  {t('home.dataInsights.metricSpeed')}
                 </h5>
                 <span
                   ref={(el) => {
@@ -110,7 +111,7 @@ const DataAnalyticsInsights = () => {
               </div>
               <div className="flex items-center justify-start gap-x-5">
                 <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">
-                  Checkout
+                  {t('home.dataInsights.metricCheckout')}
                 </h5>
                 <span
                   ref={(el) => {
@@ -121,7 +122,7 @@ const DataAnalyticsInsights = () => {
               </div>
               <div className="flex items-center justify-start gap-x-14">
                 <h5 className="text-tagline-4 font-inter-tight font-normal text-white/20">
-                  Retention
+                  {t('home.dataInsights.metricRetention')}
                 </h5>
                 <span
                   ref={(el) => {
@@ -134,11 +135,11 @@ const DataAnalyticsInsights = () => {
 
             <p
               className="font-inter-tight text-tagline-4 flex w-full items-center justify-center gap-x-2.5 font-normal text-white/20"
-              aria-label="KPI scale markers: baseline, target, stretch"
+              aria-label={t('home.dataInsights.kpiRowAria')}
             >
-              <span>Baseline</span>
-              <span>Target</span>
-              <span>Stretch</span>
+              <span>{t('home.dataInsights.baseline')}</span>
+              <span>{t('home.dataInsights.target')}</span>
+              <span>{t('home.dataInsights.stretch')}</span>
             </p>
           </div>
         </div>

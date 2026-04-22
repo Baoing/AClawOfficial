@@ -1,7 +1,12 @@
+'use client';
+
 import RevealAnimation from '@/src/components/animation/reveal-animation';
 import { DownArrowLongIcon, GloveIcon, InfinityIcon } from '@/src/components/shared/icon';
+import { useSiteT } from '@/src/hooks/use-site-translation';
 
 const IntelligentAutomation = () => {
+  const t = useSiteT();
+
   return (
     <div
       className="border-stroke-1/11 bg-background-6 relative z-10 flex h-[719px] w-full flex-col items-center justify-center gap-y-2 overflow-hidden rounded-[8px] border px-[29px] pt-[26px] pb-10.5 md:max-w-[380px] lg:h-[710px] xl:h-[719px]"
@@ -22,11 +27,11 @@ const IntelligentAutomation = () => {
               <GloveIcon className="stroke-opai-blue/60 size-full" />
             </span>
             <span className="text-opai-blue/60 font-inter-tight text-tagline-4 font-normal">
-              Kickoff
+              {t('home.intelligent.stepKickoff')}
             </span>
           </div>
           <p className="bg-background-5 font-inter-tight text-tagline-3 rounded-[3px] px-6 py-3 text-center font-normal text-white/20 backdrop-blur-[17px]">
-            Scope, stack, and success metrics locked
+            {t('home.intelligent.stepKickoffSub')}
           </p>
         </div>
       </RevealAnimation>
@@ -37,7 +42,7 @@ const IntelligentAutomation = () => {
         </RevealAnimation>
       </div>
 
-      {/* Initiate */}
+      {/* Build */}
       <RevealAnimation delay={0.1}>
         <div className="z-10 flex flex-col items-center justify-center">
           <div className="bg-opai-lemon/10 flex max-w-[117px] items-center justify-center gap-x-2 rounded-[4px] px-2 py-1">
@@ -45,13 +50,13 @@ const IntelligentAutomation = () => {
               <InfinityIcon className="stroke-opai-lemon/60 size-full" />
             </span>
             <span className="text-opai-lemon/60 font-inter-tight text-tagline-4 font-normal">
-              Build
+              {t('home.intelligent.stepBuild')}
             </span>
           </div>
           <div className="bg-background-5 space-y-1 rounded-[3px] px-6 py-3 text-center backdrop-blur-[17px]">
-            <p className="text-white/60">Theme, sections, and app blocks</p>
+            <p className="text-white/60">{t('home.intelligent.stepBuildLine1')}</p>
             <p className="font-inter-tight text-tagline-3 font-normal text-white/20">
-              Liquid architecture wired to your catalog and ops
+              {t('home.intelligent.stepBuildLine2')}
             </p>
           </div>
         </div>
@@ -63,7 +68,7 @@ const IntelligentAutomation = () => {
         </RevealAnimation>
       </div>
 
-      {/* Check if/else */}
+      {/* Review */}
       <RevealAnimation delay={0.1}>
         <div className="z-10 flex flex-col items-center justify-center">
           <div className="bg-opai-purple/10 flex max-w-[117px] items-center justify-center gap-x-2 rounded-[4px] px-2 py-1">
@@ -71,11 +76,11 @@ const IntelligentAutomation = () => {
               <InfinityIcon className="stroke-opai-purple/60 size-full" />
             </span>
             <span className="text-opai-purple/60 font-inter-tight text-tagline-4 shrink-0 font-normal">
-              Review
+              {t('home.intelligent.stepReview')}
             </span>
           </div>
           <p className="bg-background-5 font-inter-tight text-tagline-3 rounded-[3px] px-6 py-3 text-center font-normal text-white/20 backdrop-blur-[17px]">
-            Checkout, SEO, accessibility, and speed pass
+            {t('home.intelligent.stepReviewSub')}
           </p>
         </div>
       </RevealAnimation>
@@ -86,7 +91,7 @@ const IntelligentAutomation = () => {
         </RevealAnimation>
       </div>
 
-      {/* Lunch */}
+      {/* Ship */}
       <RevealAnimation delay={0.1}>
         <div className="z-10 flex flex-col items-center justify-center">
           <div className="bg-opai-green/10 flex max-w-[117px] items-center justify-center gap-x-2 rounded-[4px] px-2 py-1">
@@ -94,11 +99,11 @@ const IntelligentAutomation = () => {
               <InfinityIcon className="stroke-opai-green/60 size-full" />
             </span>
             <span className="text-opai-green/60 font-inter-tight text-tagline-4 shrink-0 font-normal">
-              Ship
+              {t('home.intelligent.stepShip')}
             </span>
           </div>
           <p className="font-inter-tight text-tagline-3 rounded-[3px] px-6 py-3 text-center font-normal text-white/20 backdrop-blur-[17px]">
-            Production go-live with monitoring and rollback plan
+            {t('home.intelligent.stepShipSub')}
           </p>
         </div>
       </RevealAnimation>
@@ -114,7 +119,7 @@ const IntelligentAutomation = () => {
             className="font-sora text-sora-heading-5 font-normal text-white/80"
             itemProp="name"
           >
-            Store build & optimization
+            {t('home.intelligent.footerTitle')}
           </h3>
         </RevealAnimation>
         <RevealAnimation delay={0.2}>
@@ -122,8 +127,7 @@ const IntelligentAutomation = () => {
             className="font-inter-tight text-tagline-2 font-normal text-white/50"
             itemProp="description"
           >
-            Launch-ready themes, performance tuning, and SEO-safe Liquid—so every release ships
-            with confidence.
+            {t('home.intelligent.footerSub')}
           </p>
         </RevealAnimation>
       </div>

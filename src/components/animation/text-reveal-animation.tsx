@@ -5,7 +5,25 @@ import { gsap } from 'gsap';
 import { CustomEase } from 'gsap/CustomEase';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
-import React, { cloneElement, isValidElement, useCallback, useRef } from 'react';
+import React, { cloneElement, Fragment, isValidElement, useCallback, useRef } from 'react';
+
+/** Stable string for deps so locale / copy changes re-run SplitText after revert. */
+const getPlainTextFingerprint = (node: React.ReactNode): string => {
+  if (node == null || typeof node === 'boolean') {
+    return '';
+  }
+  if (typeof node === 'string' || typeof node === 'number') {
+    return String(node);
+  }
+  if (Array.isArray(node)) {
+    return node.map(getPlainTextFingerprint).join('\u0001');
+  }
+  if (isValidElement(node)) {
+    const props = node.props as { children?: React.ReactNode };
+    return getPlainTextFingerprint(props.children ?? null);
+  }
+  return '';
+};
 
 gsap.registerPlugin(SplitText, CustomEase, useGSAP, ScrollTrigger);
 
@@ -49,6 +67,10 @@ export const TextReveal = ({
   const setRef = useCallback((el: HTMLElement | null) => {
     (scopeRef as { current: HTMLElement | null }).current = el;
   }, []);
+
+  const contentFingerprint = isValidElement(children)
+    ? getPlainTextFingerprint((children.props as { children?: React.ReactNode }).children)
+    : '';
 
   useGSAP(
     () => {
@@ -117,7 +139,7 @@ export const TextReveal = ({
     },
     {
       scope: scopeRef,
-      dependencies: [type, duration, stagger, delay, instant, start, end],
+      dependencies: [type, duration, stagger, delay, instant, start, end, contentFingerprint],
     }
   );
 
@@ -126,9 +148,14 @@ export const TextReveal = ({
     return null;
   }
 
-  // eslint-disable-next-line react-hooks/refs -- ref callback forwarded to clone for useGSAP scope
-  return cloneElement(children, {
-    ref: setRef,
-    'data-ns-split-text': true,
-  } as React.HTMLAttributes<HTMLElement> & { ref: React.Ref<HTMLElement> });
+  // Remount when copy changes so DOM is not stuck on SplitText wrappers from the previous locale.
+  return (
+    <Fragment key={contentFingerprint}>
+      {/* eslint-disable-next-line react-hooks/refs -- ref callback forwarded to clone for useGSAP scope */}
+      {cloneElement(children, {
+        ref: setRef,
+        'data-ns-split-text': true,
+      } as React.HTMLAttributes<HTMLElement> & { ref: React.Ref<HTMLElement> })}
+    </Fragment>
+  );
 };

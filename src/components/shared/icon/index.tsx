@@ -915,6 +915,25 @@ const DurationIcon: FC<IconProps> = ({ className }) => (
   </svg>
 );
 
+const LanguageGlobeIcon: FC<IconProps> = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    aria-hidden
+    className={cn('size-4 shrink-0 fill-none stroke-current', className)}
+  >
+    <path
+      d="M7.99967 1.33325C9.99967 2.66658 10.6148 5.52794 10.6663 7.99992C10.6148 10.4719 9.99968 13.3333 7.99968 14.6666M7.99967 1.33325C5.99967 2.66659 5.38451 5.52794 5.33301 7.99992C5.38451 10.4719 5.99968 13.3333 7.99968 14.6666M7.99967 1.33325C4.31778 1.33325 1.33301 4.31802 1.33301 7.99992M7.99967 1.33325C11.6816 1.33325 14.6663 4.31802 14.6663 7.99992M7.99968 14.6666C11.6816 14.6666 14.6663 11.6818 14.6663 7.99992M7.99968 14.6666C4.31778 14.6666 1.33301 11.6818 1.33301 7.99992M14.6663 7.99992C13.333 9.99992 10.4717 10.6151 7.99967 10.6666C5.5277 10.6151 2.66634 9.99992 1.33301 7.99992M14.6663 7.99992C13.333 5.99992 10.4717 5.38475 7.99967 5.33325C5.5277 5.38475 2.66634 5.99992 1.33301 7.99992"
+      strokeWidth="1.33333"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 export {
   BlurSvg,
   CalendarIcon,
@@ -941,6 +960,7 @@ export {
   IconGradient,
   InfinityIcon,
   InstagramIcon,
+  LanguageGlobeIcon,
   LegalRealEstateIcon,
   LightningIcon,
   LinkedInIcon,

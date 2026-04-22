@@ -123,6 +123,49 @@ export const siteEn = {
   'home.empower.sub':
     'Launch-ready Liquid, faster Core Web Vitals, checkout-safe changes, and private apps in admin—paired with AI copilots that remove busywork instead of adding noise.',
 
+  'home.predictive.title': 'Growth & conversion signals',
+  'home.predictive.sub':
+    'See what moves AOV, retention, and funnel drop-offs—then prioritize Shopify fixes that pay back fastest.',
+
+  'home.customApps.title': 'Custom Shopify apps',
+  'home.customApps.sub':
+    'Embedded admin tools, storefront features, and AI copilots that sit where merchants work every day.',
+  'home.customApps.imgAlt':
+    'Custom Shopify app interface with admin and storefront controls',
+
+  'home.intelligent.stepKickoff': 'Kickoff',
+  'home.intelligent.stepKickoffSub': 'Scope, stack, and success metrics locked',
+  'home.intelligent.stepBuild': 'Build',
+  'home.intelligent.stepBuildLine1': 'Theme, sections, and app blocks',
+  'home.intelligent.stepBuildLine2': 'Liquid architecture wired to your catalog and ops',
+  'home.intelligent.stepReview': 'Review',
+  'home.intelligent.stepReviewSub': 'Checkout, SEO, accessibility, and speed pass',
+  'home.intelligent.stepShip': 'Ship',
+  'home.intelligent.stepShipSub': 'Production go-live with monitoring and rollback plan',
+  'home.intelligent.footerTitle': 'Store builds & optimization',
+  'home.intelligent.footerSub':
+    'Launch-ready themes, performance tuning, and SEO-safe Liquid—so every release ships with confidence.',
+
+  'home.dataInsights.title': 'Store health & ops clarity',
+  'home.dataInsights.sub':
+    'Unify revenue, fulfillment, and CX signals so leadership sees one Shopify truth—not ten disconnected tabs.',
+  'home.dataInsights.ariaPanel': 'Shopify store metrics visualization',
+  'home.dataInsights.performance': 'Performance',
+  'home.dataInsights.periodButtonAria': 'Select time period for analytics',
+  'home.dataInsights.lastWeek': 'Last week',
+  'home.dataInsights.metricSpeed': 'Theme speed',
+  'home.dataInsights.metricCheckout': 'Checkout',
+  'home.dataInsights.metricRetention': 'Retention',
+  'home.dataInsights.kpiRowAria': 'KPI scale markers: baseline, target, stretch',
+  'home.dataInsights.baseline': 'Baseline',
+  'home.dataInsights.target': 'Target',
+  'home.dataInsights.stretch': 'Stretch',
+
+  'home.empower.exploreShopifyServices': 'Explore Shopify services',
+  'home.empower.exploreBlockAria': 'Explore Shopify services call to action',
+
+  'home.hero.videoNoSupport': 'Your browser does not support the video tag.',
+
   'home.innov.title1': 'Four ways we help',
   'home.innov.title2': 'build, tune, extend, and grow on Shopify',
   'home.innov.sub':

@@ -119,6 +119,48 @@ export const siteZhTWPatch: { [K in keyof typeof siteEn]: string } = {
   'home.empower.h2': '店面最佳化，結合務實 AI',
   'home.empower.sub':
     '可上線的 Liquid、更快的核心指標、安全的結帳改動與後台私有應用——搭配能減負而非添亂的 AI 副駕。',
+  'home.predictive.title': '成長與轉換訊號',
+  'home.predictive.sub':
+    '看清客單價、留存與漏斗流失的驅動因素，再優先處理回報最快的 Shopify 修復項。',
+
+  'home.customApps.title': '自訂 Shopify 應用',
+  'home.customApps.sub':
+    '嵌入式後台工具、店面能力與融入商家日常工作的 AI 副駕。',
+  'home.customApps.imgAlt': '自訂 Shopify 應用介面示意，含後台與店面操作',
+
+  'home.intelligent.stepKickoff': '啟動',
+  'home.intelligent.stepKickoffSub': '範圍、技術棧與成功指標已對齊',
+  'home.intelligent.stepBuild': '搭建',
+  'home.intelligent.stepBuildLine1': '主題、區段與應用區塊',
+  'home.intelligent.stepBuildLine2': 'Liquid 架構與目錄及營運流程貫通',
+  'home.intelligent.stepReview': '驗收',
+  'home.intelligent.stepReviewSub': '結帳、SEO、無障礙與效能通過檢視',
+  'home.intelligent.stepShip': '上線',
+  'home.intelligent.stepShipSub': '生產發布，含監控與回退預案',
+  'home.intelligent.footerTitle': '建站與最佳化',
+  'home.intelligent.footerSub':
+    '可上線的主題、效能調校與 SEO 友善的 Liquid——讓每次發布都更有把握。',
+
+  'home.dataInsights.title': '店面健康與營運洞察',
+  'home.dataInsights.sub':
+    '整合收入、履約與顧客體驗訊號，讓管理層看到統一的 Shopify 視圖，而不是十個互不關聯的分頁。',
+  'home.dataInsights.ariaPanel': 'Shopify 店面指標視覺化',
+  'home.dataInsights.performance': '效能',
+  'home.dataInsights.periodButtonAria': '選擇分析的時間範圍',
+  'home.dataInsights.lastWeek': '上週',
+  'home.dataInsights.metricSpeed': '主題速度',
+  'home.dataInsights.metricCheckout': '結帳',
+  'home.dataInsights.metricRetention': '留存',
+  'home.dataInsights.kpiRowAria': 'KPI 刻度：基線、目標、挑戰',
+  'home.dataInsights.baseline': '基線',
+  'home.dataInsights.target': '目標',
+  'home.dataInsights.stretch': '挑戰',
+
+  'home.empower.exploreShopifyServices': '探索 Shopify 服務',
+  'home.empower.exploreBlockAria': '探索 Shopify 服務行動號召',
+
+  'home.hero.videoNoSupport': '您的瀏覽器不支援影片播放。',
+
   'home.innov.title1': '四種方式助力',
   'home.innov.title2': '在 Shopify 上搭建、調校、擴展與成長',
   'home.innov.sub': '店面、主題、應用與克制的 AI——讓團隊高效交付、少噪音。',
