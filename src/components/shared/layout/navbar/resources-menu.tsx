@@ -4,7 +4,7 @@ import {
   BlogIcon,
   ContactIcon,
   FaqIcon,
-  GlossaryIcon,
+  GlossaryIcon, PricingIcon,
   SuccessIcon,
   SupportIcon,
   TutorialIcon,
@@ -20,6 +20,7 @@ type ResourceLink = {
 };
 
 const resourceLinks: ResourceLink[] = [
+  { label: 'Pricing', href: '/pricing', icon: PricingIcon },
   { label: 'Blog', href: '/blog', icon: BlogIcon },
   { label: 'Tutorial', href: 'https://shopify.baoea.com/', icon: TutorialIcon },
   { label: 'FAQ', href: '/faq', icon: FaqIcon },
