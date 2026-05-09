@@ -18,6 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta {...({ name: 'impact-site-verification', value: 'f91b14c9-3e28-41e4-b938-58a3d11b47d5' } as React.MetaHTMLAttributes<HTMLMetaElement>)} />
+      </head>
       <body className={`${fontVariables} antialiased`}>
         <Suspense>
           <LocaleProvider>
