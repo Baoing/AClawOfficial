@@ -12,8 +12,8 @@ import Link from 'next/link'
 import { SocialIcons } from '@/src/components/shared/social-icons';
 
 const defaultSocialLinks = [
-  { name: 'X', href: 'https://x.com/janjanakoname' },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/will-hu-8192b9406/' },
+  { name: 'X', href: 'https://x.com/janjanakoname' },
   { name: 'YouTube', href: 'https://www.youtube.com/@aclawer' },
 ];
 const Footer = () => {
