@@ -44,6 +44,7 @@ const SocialIcons: FC<SocialIconsProps> = ({
                 linkClassName
               )}
               aria-label={item?.name}
+              target={"_blank"}
             >
               {Icon ? <Icon className={iconClassName} /> : null}
             </Link>

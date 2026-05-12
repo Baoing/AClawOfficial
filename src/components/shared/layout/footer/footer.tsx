@@ -9,7 +9,13 @@ import ShuffledTitle from '@/src/components/shared/layout/footer/Shuffled-title'
 import { useSiteT } from '@/src/hooks/use-site-translation'
 import Image from 'next/image'
 import Link from 'next/link'
+import { SocialIcons } from '@/src/components/shared/social-icons';
 
+const defaultSocialLinks = [
+  { name: 'X', href: 'https://x.com/janjanakoname' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/will-hu-8192b9406/' },
+  { name: 'YouTube', href: 'https://www.youtube.com/@aclawer' },
+];
 const Footer = () => {
   const t = useSiteT()
   return (
@@ -77,7 +83,7 @@ const Footer = () => {
                 {/*    </Link>*/}
                 {/*  </div>*/}
                 {/*</div>*/}
-                {/* <SocialIcons links={defaultSocialLinks} /> */}
+                 <SocialIcons links={defaultSocialLinks} />
               </div>
             </RevealAnimation>
           </div>
